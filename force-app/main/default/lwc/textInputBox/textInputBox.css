@@ -1,7 +1,8 @@
 lightning-input {
+	/* display: flex;
 	width: 432px;
-	height: 54px;
-	border-radius: 4px;
+	min-height: 54px !important; */
+	border-radius: 1px;
 	fill: solid #FFFFFF;
 	border: solid grey;
 }
