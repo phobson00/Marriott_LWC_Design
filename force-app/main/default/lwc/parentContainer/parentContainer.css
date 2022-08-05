@@ -1,0 +1,8 @@
+.existing-button {
+	--slds-c-button-outline-brand-color-border: black;
+	--slds-c-button-text-color: black;
+	--slds-c-button-line-height: 50px;
+	font-size: large;
+	font-weight: 600;
+	margin-left: 70%;
+}

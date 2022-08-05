@@ -1,0 +1,7 @@
+:host{
+    --sds-c-button-text-color: #fff;
+}
+
+.lg-width{
+    min-width: 900px;
+}
