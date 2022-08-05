@@ -1,4 +1,4 @@
-input {
+select {
 	width: 432px;
 	height: 54px;
 	border-radius: 4px;
@@ -9,12 +9,7 @@ input {
 	display: block;
 }
 
-input::placeholder {
-	font: arial;
-	font-size: 14px;
-	line-height: 20px;
-	letter-spacing: normal;
-	color: darkgray;
+option {
 	margin-left: 20px;
 }
 
@@ -33,5 +28,3 @@ label {
 div {
 	display: inline;
 }
-
-
