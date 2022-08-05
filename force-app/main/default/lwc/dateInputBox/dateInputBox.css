@@ -22,3 +22,11 @@ input:focus, input:active {
     border: 1px solid black;
     box-shadow: none;
 }
+
+label {
+	display: block;
+}
+
+div {
+	display: inline;
+}

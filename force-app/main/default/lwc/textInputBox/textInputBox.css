@@ -11,6 +11,7 @@ input {
 	border: solid gray;
 	border-width: 1px;
 	padding-left: 20px;
+	display: block;
 }
 
 input::placeholder {
@@ -20,6 +21,14 @@ input::placeholder {
 	letter-spacing: normal;
 	color: darkgray;
 	margin-left: 20px;
+}
+
+label {
+	display: block;
+}
+
+div {
+	display: inline;
 }
 
 
