@@ -1,16 +1,11 @@
-/* div {
-	width: 432px;
-	min-height: px !important;
-} */
-
 input {
 	width: 432px;
 	height: 54px;
 	border-radius: 4px;
-	fill: solid #FFFFFF;
 	border: solid gray;
 	border-width: 1px;
 	padding-left: 20px;
+	display: block;
 }
 
 input::placeholder {
@@ -20,6 +15,12 @@ input::placeholder {
 	letter-spacing: normal;
 	color: darkgray;
 	margin-left: 20px;
+}
+
+input:focus, input:active {
+	outline: none !important;
+    border: 1px solid black;
+    box-shadow: none;
 }
 
 
