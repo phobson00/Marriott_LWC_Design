@@ -26,6 +26,8 @@ input:focus, input:active {
 
 label {
 	display: block;
+	font-size: 15px;
+	font-weight: 500;
 }
 
 div {
