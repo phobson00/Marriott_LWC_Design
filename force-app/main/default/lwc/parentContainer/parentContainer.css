@@ -6,3 +6,8 @@
 	font-weight: 600;
 	margin-left: 70%;
 }
+
+.input-div {
+	display: inline-block !important;
+	margin-inline: 10px;
+}
