@@ -1,8 +1,25 @@
-lightning-input {
-	/* display: flex;
+/* div {
 	width: 432px;
-	min-height: 54px !important; */
-	border-radius: 1px;
+	min-height: px !important;
+} */
+
+input {
+	width: 432px;
+	height: 54px;
+	border-radius: 4px;
 	fill: solid #FFFFFF;
-	border: solid grey;
+	border: solid gray;
+	border-width: 1px;
+	padding-left: 20px;
 }
+
+input::placeholder {
+	font: arial;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: normal;
+	color: darkgray;
+	margin-left: 20px;
+}
+
+
