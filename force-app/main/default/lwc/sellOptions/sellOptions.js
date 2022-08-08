@@ -3,14 +3,17 @@ import { LightningElement } from 'lwc';
 export default class SellOptions extends LightningElement {
 
 	showDropdown(event) {
-		var dropdowns = this.template.querySelector('.dropdown-content');
-			if (dropdown.style.display == "flex") {
-				dropdown.style.display = "none";
+			var dropdowns = this.template.querySelectorAll('.dropdown-content');
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.style.display == "flex") {
+				openDropdown.style.display = "none";
+			  }
+			  else {
+				openDropdown.style.display = "flex";
+			  }
 			}
-			else {
-				dropdown.style.display = "flex";
-			}
-		
 	}
 
 	changeBtnColor(event) {

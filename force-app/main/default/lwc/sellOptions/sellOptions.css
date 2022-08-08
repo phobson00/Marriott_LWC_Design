@@ -1,0 +1,74 @@
+.dropbtn {
+	width: 432px;
+	height: 54px;
+	border-radius: 4px;
+	fill: solid #FFFFFF;
+	border: solid gray;
+	border-width: 1px;
+	padding-left: 20px;
+	display: block;
+	text-align: left;
+}
+
+button:focus, button:active {
+	outline: none !important;
+    border: 1px solid black;
+    box-shadow: none;
+}
+
+label {
+	display: block;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+div {
+	display: inline;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	width: 432px;
+	z-index: 1;
+	padding: 20px 10px 10px 10px;
+	justify-content: center;
+}
+  
+/* Links inside the dropdown */
+.content-link {
+	color: black;
+	padding: 11px 10px 11px 10px;
+	text-decoration: none;
+	display: block;
+	font-size: 1rem;
+	font-weight: 600;
+	background-color: rgba(28,28,28,0.1);
+}
+
+.content-link-selected {
+	color: white;
+	padding: 11px 10px 11px 10px;
+	text-decoration: none;
+	display: block;
+	font-size: 1rem;
+	font-weight: 600;
+	background-color: black;
+}
+
+.dropdown-content a:hover {
+	text-decoration: underline;
+}
+
+.content-btn {
+	margin-bottom: 14px;
+	width: 380px;
+	height: 44px;
+	display: block;
+	background-color: rgba(28,28,28,0.1);
+}
+

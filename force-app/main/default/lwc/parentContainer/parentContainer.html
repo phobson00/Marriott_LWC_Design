@@ -3,26 +3,26 @@
 		<c-navigation-bar></c-navigation-bar>
 	</div>
     <lightning-layout multiple-rows>
-		<!-- Top -->
 		<lightning-layout-item size="11">
-			<lightning-button variant="brand-outline" label="Existing Reservation" class="slds-var-m-right_x-large existing-button"></lightning-button>
+
 		</lightning-layout-item>
 		<lightning-layout-item size="11">
 			<div class="input-div">
 				<c-text-input-box></c-text-input-box>
 			</div>
 			<div class="input-div">
-				<c-dropdown label="Sell Options" first-option="Sell Strategy"></c-dropdown>
+				<c-sell-options></c-sell-options>
 		  	</div>
 		</lightning-layout-item>
 		<lightning-layout-item size="11">
 			<div class="input-div">
-				<c-dropdown label="Rooms &amp; Guests " first-option="Choose Rooms and Guests"></c-dropdown>
+				<c-sell-options></c-sell-options>
 			</div>
 			<div class="input-div">
-				<c-date-input-box></c-date-input-box>
+				<c-dest-input-box></c-dest-input-box>
 		  	</div>
 		</lightning-layout-item>
 		  
-	  </lightning-layout>
+    </lightning-layout>
 </template>
+
