@@ -1,4 +1,15 @@
 lightning-button-menu {
 	--slds-c-button-color-border: black;
+	--slds-c-button-color-border-active: black;
+	--slds-c-button-color-border-hover: black;
 	--slds-c-button-color-background: white;
+	--slds-c-button-color-background-active: white;
+	--slds-c-button-color-background-hover: white;
+	--slds-c-button-spacing-block-end: 10px;
+	--slds-c-button-spacing-block-start: 10px;
+	--slds-c-button-spacing-inline-end: 150px;
+	--slds-c-button-spacing-inline-start: 150px;
+	--slds-c-button-text-color: black;
+	--slds-c-button-text-color-hover: black;
+	--slds-c-button-text-color-active: black;
 }
