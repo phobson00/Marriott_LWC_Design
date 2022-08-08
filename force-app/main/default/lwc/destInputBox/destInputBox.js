@@ -3,7 +3,7 @@ import { LightningElement } from 'lwc';
 export default class SellOptions extends LightningElement {
 
 	showDropdown(event) {
-		var dropdowns = this.template.querySelector('.dropdown-content');
+		var dropdown = this.template.querySelector('.dropdown-content');
 			if (dropdown.style.display == "flex") {
 				dropdown.style.display = "none";
 			}
