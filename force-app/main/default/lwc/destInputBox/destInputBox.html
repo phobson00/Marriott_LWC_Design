@@ -1,3 +1,14 @@
+<!-- sldsValidatorIgnore -->
 <template>
-	<input type="text" id="text-input-id-47" placeholder="Where do you want to go?" class="slds-input" />
+	<label>Destination</label>
+	<input type="text" id="text-input-id-47" placeholder="Where do you want to go?" class="slds-input" onclick={showDropdown}/>
+	<div id="myDropdown" class="dropdown-content">
+		<div class="btn-group">
+			<div class="content-btn" onclick={changeBtnColor}><a class="content-link" href="#">None</a></div>
+			<div class="content-btn" onclick={changeBtnColor}><a class="content-link" href="#">Government &amp; Military</a></div>
+			<div class="content-btn" onclick={changeBtnColor}><a class="content-link" href="#">AAA / CAA</a></div>
+			<div class="content-btn" onclick={changeBtnColor}><a class="content-link" href="#">Senior Discount</a></div>
+			<div class="content-btn" onclick={changeBtnColor}><a class="content-link" href="#">Corporate / Promo / SET#</a></div>
+		  </div> 
+	</div>
 </template>
