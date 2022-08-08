@@ -2,15 +2,15 @@
 <template>
 	<div>
 		<label>Sell Options</label>
-		<button onclick={showDropdown} class="slds-button dropbtn">Sell Strategy</button>
-		<div id="myDropdown" class="dropdown-content">
-			<div class="slds-button-group btn-group">
-				<div class="slds-button content-btn" onclick={changeBtnColor}><a class="content-link" href="#">None</a></div>
-				<div class="slds-button content-btn" onclick={changeBtnColor}><a class="content-link" href="#">Government &amp; Military</a></div>
-				<div class="slds-button content-btn" onclick={changeBtnColor}><a class="content-link" href="#">AAA / CAA</a></div>
-				<div class="slds-button content-btn" onclick={changeBtnColor}><a class="content-link" href="#">Senior Discount</a></div>
-				<div class="slds-button content-btn" onclick={changeBtnColor}><a class="content-link" href="#">Corporate / Promo / SET#</a></div>
-			  </div> 
+		<div class="slds-p-vertical_medium lgc-bg slds-p-horizontal_x-large">
+			<lightning-button-menu label="Sell Strategy" alternative-text="Show menu" variant="bare-inverse"
+				class="slds-p-around_small slds-button slds-button_full_width">
+				<lightning-menu-item value="None" label="None"></lightning-menu-item>
+				<lightning-menu-item value="Government &amp; Military" label="Government &amp; Military"></lightning-menu-item>
+				<lightning-menu-item value="AAA / CAA" label="AAA / CAA"></lightning-menu-item>
+				<lightning-menu-item value="Senior Discount" label="Senior Discount"></lightning-menu-item>
+				<lightning-menu-item value="Corporate / Promo / SET#" label="Corporate / Promo / SET#"></lightning-menu-item>
+			</lightning-button-menu>
 		</div>
 	</div>
 </template>
