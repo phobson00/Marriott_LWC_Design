@@ -39,39 +39,20 @@ label {
 	width: 432px;
 	z-index: 1;
 	padding: 20px 10px 10px 10px;
-	justify-content: center;
+	justify-content: left;
 }
   
 /* Links inside the dropdown */
 .content-link {
 	color: black;
-	padding: 11px 10px 11px 10px;
+	padding: 2px 30px 11px 2px;
 	text-decoration: none;
 	display: block;
 	font-size: 1rem;
 	font-weight: 600;
-	background-color: rgba(28,28,28,0.1);
-}
-
-.content-link-selected {
-	color: white;
-	padding: 11px 10px 11px 10px;
-	text-decoration: none;
-	display: block;
-	font-size: 1rem;
-	font-weight: 600;
-	background-color: black;
 }
 
 .dropdown-content a:hover {
 	text-decoration: underline;
-}
-
-.content-btn {
-	margin-bottom: 14px;
-	width: 380px;
-	height: 44px;
-	display: block;
-	background-color: rgba(28,28,28,0.1);
 }
 
