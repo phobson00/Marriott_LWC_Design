@@ -1,15 +1,19 @@
 <!-- sldsValidatorIgnore -->
 <template>
-	<div>
-		<label>Sell Options</label>
-		<div class="slds-p-vertical_medium lgc-bg slds-p-horizontal_x-large">
-			<lightning-button-menu label="Sell Strategy" alternative-text="Show menu" variant="container" >
-				<lightning-menu-item value="None" label="None"></lightning-menu-item>
-				<lightning-menu-item value="Government &amp; Military" label="Government &amp; Military"></lightning-menu-item>
-				<lightning-menu-item value="AAA / CAA" label="AAA / CAA"></lightning-menu-item>
-				<lightning-menu-item value="Senior Discount" label="Senior Discount"></lightning-menu-item>
-				<lightning-menu-item value="Corporate / Promo / SET#" label="Corporate / Promo / SET#"></lightning-menu-item>
-			</lightning-button-menu>
+		<div class="slds-p-vertical_medium lgc-bg slds-grid">
+			<div class="slds-col">
+				<div class="slds-row">
+					<label>Sell Options</label>
+				</div>
+				<div class="slds-row">
+					<lightning-button-menu label="Sell Strategy" alternative-text="Show menu" variant="container" class="slds-dropdown_large">
+						<lightning-menu-item class="slds-dropdown_medium" value="None" label="None"></lightning-menu-item>
+						<lightning-menu-item class="slds-dropdown_medium" value="Government &amp; Military" label="Government &amp; Military"></lightning-menu-item>
+						<lightning-menu-item class="slds-dropdown_medium" value="AAA / CAA" label="AAA / CAA"></lightning-menu-item>
+						<lightning-menu-item class="slds-dropdown_medium" value="Senior Discount" label="Senior Discount"></lightning-menu-item>
+						<lightning-menu-item class="slds-dropdown_medium" value="Corporate / Promo / SET#" label="Corporate / Promo / SET#"></lightning-menu-item>
+					</lightning-button-menu>
+				</div>
+			</div>
 		</div>
-	</div>
 </template>
