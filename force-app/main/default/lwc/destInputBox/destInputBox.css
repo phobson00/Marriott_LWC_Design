@@ -1,58 +1,6 @@
-input {
-	width: 432px;
-	height: 54px;
-	border-radius: 4px;
-	fill: solid #FFFFFF;
-	border: solid gray;
-	border-width: 1px;
-	padding-left: 20px;
-	display: block;
+lightning-button {
+	--slds-c-input-color-border: black;
+	--slds-c-input-color-border-focus: black;
+	--slds-c-input-color-background: white;
+	--slds-c-input-color-background-focus: white;
 }
-
-input::placeholder {
-	font: arial;
-	font-size: 14px;
-	line-height: 20px;
-	letter-spacing: normal;
-	color: darkgray;
-	margin-left: 20px;
-}
-
-input:focus, input:active {
-	outline: none !important;
-    border: 1px solid black;
-    box-shadow: none;
-}
-
-label {
-	display: block;
-	font-size: 15px;
-	font-weight: 500;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	width: 432px;
-	z-index: 1;
-	padding: 20px 10px 10px 10px;
-	justify-content: left;
-}
-  
-/* Links inside the dropdown */
-.content-link {
-	color: black;
-	padding: 2px 30px 11px 2px;
-	text-decoration: none;
-	display: block;
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-.dropdown-content a:hover {
-	text-decoration: underline;
-}
-
