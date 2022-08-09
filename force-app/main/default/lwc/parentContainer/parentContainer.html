@@ -2,27 +2,47 @@
 	<div class="nav-div">
 		<c-navigation-bar></c-navigation-bar>
 	</div>
-    <lightning-layout multiple-rows>
-		<lightning-layout-item size="11">
-
-		</lightning-layout-item>
-		<lightning-layout-item size="11">
+    <!-- <lightning-layout>
+		<lightning-layout-item size="12">
 			<div class="input-div">
 				<c-dest-input-box></c-dest-input-box>
 			</div>
+		</lightning-layout-item>
+		<lightning-layout-item size="12">
 			<div class="input-div">
 				<c-sell-options></c-sell-options>
 		  	</div>
 		</lightning-layout-item>
-		<lightning-layout-item size="11">
+		<lightning-layout-item size="12">
 			<div class="input-div">
 				<c-rooms-and-guests></c-rooms-and-guests>
 			</div>
+		</lightning-layout-item>
+		<lightning-layout-item size="12">
 			<div class="input-div">
 				<c-dest-input-box></c-dest-input-box>
 		  	</div>
 		</lightning-layout-item>
 		  
-    </lightning-layout>
+    </lightning-layout> -->
+
+	<div class="slds-grid">
+		<div class="slds-row">
+			<div class="slds-col">
+				<c-dest-input-box></c-dest-input-box>
+			</div>
+			<div class="slds-col">
+				<c-rooms-and-guests></c-rooms-and-guests>
+			</div>
+		</div>
+		<div class="slds-row">
+			<div class="slds-col">
+				<c-sell-options></c-sell-options>
+			</div>
+			<div class="slds-col">
+				<c-dest-input-box></c-dest-input-box>
+			</div>
+		</div>
+	</div>
 </template>
 
