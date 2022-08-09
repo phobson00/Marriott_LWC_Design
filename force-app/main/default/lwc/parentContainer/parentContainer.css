@@ -1,29 +1,15 @@
-.existing-button {
-	--slds-c-button-outline-brand-color-border: black;
-	--slds-c-button-text-color: black;
-	--slds-c-button-line-height: 50px;
-	font-size: large;
-	font-weight: 600;
-	margin-left: 70%;
-}
-
-.input-div {
-	display: inline-block !important;
-	margin: 10px;
-}
-
-lightning-button-menu {
-	--slds-c-button-color-border: black;
-	--slds-c-button-color-border-active: black;
-	--slds-c-button-color-border-hover: black;
-	--slds-c-button-color-background: white;
-	--slds-c-button-color-background-active: white;
-	--slds-c-button-color-background-hover: white;
-	--slds-c-button-spacing-block-end: 10px;
+.slds-button {
+	--slds-c-button-color-background: #444054;
+	--slds-c-button-color-background-hover: #444054;
 	--slds-c-button-spacing-block-start: 10px;
-	--slds-c-button-spacing-inline-end: 115px;
-	--slds-c-button-spacing-inline-start: 115px;
-	--slds-c-button-text-color: black;
-	--slds-c-button-text-color-hover: black;
-	--slds-c-button-text-color-active: black;
+	--slds-c-button-spacing-block-end: 10px;
+	--slds-c-button-spacing-inline-start: 160px;
+	--slds-c-button-spacing-inline-end: 160px;
 }
+
+.button-label {
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
