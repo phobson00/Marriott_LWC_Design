@@ -5,4 +5,5 @@ input {
 	--slds-c-input-color-border-focus: black;
 	--slds-c-input-color-background: white;
 	--slds-c-input-color-background-focus: white;
+	--slds-c-input-shadow-focus: 0px 0px 3px black;
 }

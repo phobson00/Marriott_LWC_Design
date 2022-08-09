@@ -1,4 +1,8 @@
 lightning-input {
 	--slds-c-checkbox-color-background-checked: black;
 	--slds-c-checkbox-mark-color-foreground: white;
+	--slds-c-checkbox-color-border: black;
+	--slds-c-checkbox-color-border-checked: black;
+	--slds-c-checkbox-color-border-focus: black;
+	--slds-c-checkbox-shadow-focus: 0px 0px 3px black;
 }
