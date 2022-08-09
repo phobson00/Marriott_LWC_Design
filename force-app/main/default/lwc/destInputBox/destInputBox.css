@@ -1,10 +1,3 @@
-/* lightning-input {
-	--slds-c-input-color-border: black;
-	--slds-c-input-color-border-focus: black;
-	--slds-c-input-color-background: white;
-	--slds-c-input-color-background-focus: white;
-} */
-
 input {
 	min-height: 52px;
 	width: 352px;
