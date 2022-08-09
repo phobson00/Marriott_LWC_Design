@@ -12,4 +12,5 @@ lightning-button-menu {
 	--slds-c-button-text-color: black;
 	--slds-c-button-text-color-hover: black;
 	--slds-c-button-text-color-active: black;
+	--slds-c-button-shadow-focus: 0px 0px 3px black;
 }
