@@ -5,9 +5,13 @@
 			<div class="slds-row">
 				<label>Destination</label>
 			</div>
-			<div class="slds-row">
-				<!-- <lightning-input type="text" placeholder="Enter Hotel Name"></lightning-input> -->
-				<input type="text" placeholder="Enter Hotel Name" class="slds-input"></input>
+			<div class="slds-row slds-form-element__control">
+				<input placeholder="Enter Hotel Name" class="slds-input" list="valueList" id="input"></input>
+				<datalist id="valueList">
+					<template for:each={values} for:item='item'>
+						<option key={item.key} value={item}>{item}</option>
+					</template>
+				</datalist>
 			</div>
 		</div>
 	</div>
