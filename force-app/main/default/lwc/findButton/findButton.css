@@ -1,0 +1,14 @@
+lightning-button {
+	--slds-c-button-brand-color-background: #444054;
+	--slds-c-button-brand-color-background-active: #444054;
+	--slds-c-button-brand-color-background-hover: #444054;
+	--slds-c-button-brand-color-border-background: #444054;
+	--slds-c-button-brand-color-border-background-active: #444054;
+	--slds-c-button-brand-color-border-background-hover: #444054;
+	--slds-c-button-shadow-focus: 0 0 3px black;
+	--slds-c-button-sizing-border: 0px;
+	--slds-c-button-spacing-block-start: 10px;
+	--slds-c-button-spacing-block-end: 10px;
+	--slds-c-button-brand-spacing-inline-start: 164px;
+	--slds-c-button-brand-spacing-inline-end: 164px;
+}
