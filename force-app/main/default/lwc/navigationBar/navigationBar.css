@@ -1,7 +1,33 @@
 :host{
-    --sds-c-button-text-color: #fff;
+    --slds-c-button-text-color: #fff;
+	--slds-c-button-text-color: #fff;
+	--slds-c-button-text-color-hover: #fff;
+	--slds-c-button-text-color-active: #fff;
+	--slds-c-button-shadow-focus: 0px 0px 0px #1c1c1c;
+	--slds-c-button-color-border: #1c1c1c;
+	--slds-c-button-color-border-active: #1c1c1c;
+	--slds-c-button-color-border-hover: #1c1c1c;
+	--slds-c-button-inverse-text-color-hover: #1c1c1c;
+	--slds-c-button-inverse-text-color-active: #1c1c1c;
 }
 
 .lg-width{
     min-width: 900px;
 }
+
+/* lightning-button-menu {
+	--slds-c-button-brand-color-border: black;
+	--slds-c-button-brand-color-border-active: black;
+	--slds-c-button-brand-color-border-hover: black;
+	--slds-c-button-brand-color-background: black;
+	--slds-c-button-brand-color-background-active: black;
+	--slds-c-button-brand-color-background-hover: white;
+	--slds-c-button-spacing-block-end: 10px;
+	--slds-c-button-spacing-block-start: 10px;
+	--slds-c-button-brand-spacing-inline-end: 112px;
+	--slds-c-button-brand-spacing-inline-start: 112px;
+	--slds-c-button-brand-text-color: black;
+	--slds-c-button-brand-text-color-hover: black;
+	--slds-c-button-brand-text-color-active: black;
+	--slds-c-button-brand-shadow-focus: 0px 0px 3px black;
+} */
