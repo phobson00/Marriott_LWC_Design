@@ -33,5 +33,23 @@
 	min-width: 230px;
 }
 
+.list-button-selected {
+	--slds-c-button-color-border: #1c1c1c;
+	--slds-c-button-color-border-active: #1c1c1c;
+	--slds-c-button-color-border-hover: #1c1c1c;
+	--slds-c-button-color-background: #1c1c1c;
+	--slds-c-button-color-background-active: #1c1c1c;
+	--slds-c-button-color-background-hover: ##1c1c1c;
+	--slds-c-button-text-color: white;
+	--slds-c-button-text-color-hover: white;
+	--slds-c-button-text-color-active: white;
+	--slds-c-button-shadow-focus: 0px 0px 3px #1c1c1c;
+
+	--slds-c-button-spacing-block-end: 3px;
+	--slds-c-button-spacing-block-start: 3px;
+
+	min-width: 230px;
+}
+
 
 
