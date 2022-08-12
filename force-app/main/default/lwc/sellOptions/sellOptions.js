@@ -14,5 +14,19 @@ export default class SellOptions extends LightningElement {
 		}
 	}
 
+	buttonSelect(event) {
+
+		const selectedBtn = event.currentTarget;
+		const prevBtn = this.template.querySelector('.list-button-selected');
+
+		if(prevBtn) {
+			prevBtn.classList.replace('list-button-selected', 'list-button');
+		}
+
+		if(selectedBtn) {
+			selectedBtn.classList.replace('list-button', 'list-button-selected');
+		}
+	}
+
 
 }
