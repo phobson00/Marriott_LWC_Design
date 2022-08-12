@@ -7,6 +7,7 @@ export default class destInputBox extends LightningElement {
 
 	values;
 
+	// Wires list of cities to values var for datalist autocomplete
 	@wire(getCities)
     wiredAcitvity({error,data}) {
         if (data) {
@@ -22,7 +23,7 @@ export default class destInputBox extends LightningElement {
         }
         this.initialized = true;
 
-		// Assigns ID of datalast to input in template
+		// Assigns ID of datalist to input in template
 		// IDs that you define in HTML templates may be transformed 
 		// into globally unique values when the template is rendered
         let listId = this.template.querySelector('datalist').id;
