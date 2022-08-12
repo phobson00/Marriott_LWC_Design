@@ -1,75 +1,81 @@
 <template>
 	<div class="slds-p-vertical_medium lgc-bg slds-grid">
 		<div class="slds-col">
-			<div class="slds-row">
+			<div>
 				<label>Rooms &amp; Guests</label>
 			</div>
-			<div class="slds-row">	
-				<lightning-button-menu 
-					alternative-text="Show menu" 
-					label="Rooms &amp; Guests" 
-					class="slds-dropdown_large slds-col" 
-					variant="container"
-					icon-name="utility:chevrondown">
-					<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-left slds-var-p-around_xx-small">
+			<div>	
+				<div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+					<lightning-button 
+						label="Rooms &amp; Guests" 
+						alternative-text="Show menu" 
+						icon-name="utility:chevrondown"
+						variant="brand"
+						class="dropdown-button"
+						onclick={dropMenu}
+						icon-position="right">
+					</lightning-button>
+					<div class="slds-dropdown slds-dropdown_medium slds-dropdown_length-10 dropdown slds-var-p-around_large slds-scrollable_none">
+						<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_xx-small">
 
-						<lightning-layout-item>
-							<lightning-input type=" text" label="Rooms" value="1 Room">
-							</lightning-input>
-						</lightning-layout-item>
-
-						<lightning-layout-item>
-							<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" class="slds-button">
-							</lightning-button-icon>
-						</lightning-layout-item>
-
-						<lightning-layout-item>
-							<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" class="slds-button">
-							</lightning-button-icon>
-						</lightning-layout-item>
-
-					</lightning-layout>
-
-					<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_xx-small">
-
-						<lightning-layout-item>
-							<!-- Adults (Maximum: 8 total guests/room) -->
-							<lightning-input type="text" label="Adults" value="1 Adult Per Room">
-							</lightning-input>
-						</lightning-layout-item>
-
-						<lightning-layout-item>
-							<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" class="slds-button">
-							</lightning-button-icon>
-						</lightning-layout-item>
-
-						<lightning-layout-item>
-							<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" class="slds-button">
-							</lightning-button-icon>
-						</lightning-layout-item>
-
-					</lightning-layout>
-
-					<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_xx-small">
-
-						<lightning-layout-item>
-							<!-- Children (Maximum: 8 total guests/room) -->
-							<lightning-input type="text" label="Children" value="0 Children Per Room">
-							</lightning-input>
-						</lightning-layout-item>
-
-						<lightning-layout-item>
-							<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" class="slds-button">
-							</lightning-button-icon>
-						</lightning-layout-item>
-
-						<lightning-layout-item>
-							<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" class="slds-button">
-							</lightning-button-icon>
-						</lightning-layout-item>
-
-					</lightning-layout>
-				</lightning-button-menu>
+							<lightning-layout-item>
+								<lightning-input type="text" label="Rooms" value="1 Room">
+								</lightning-input>
+							</lightning-layout-item>
+	
+							<lightning-layout-item>
+								<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" class="slds-button">
+								</lightning-button-icon>
+							</lightning-layout-item>
+	
+							<lightning-layout-item>
+								<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" class="slds-button">
+								</lightning-button-icon>
+							</lightning-layout-item>
+	
+						</lightning-layout>
+	
+						<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_xx-small">
+	
+							<lightning-layout-item>
+								<!-- Adults (Maximum: 8 total guests/room) -->
+								<lightning-input type="text" label="Adults" value="1 Adult Per Room">
+								</lightning-input>
+							</lightning-layout-item>
+	
+							<lightning-layout-item>
+								<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" class="slds-button">
+								</lightning-button-icon>
+							</lightning-layout-item>
+	
+							<lightning-layout-item>
+								<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" class="slds-button">
+								</lightning-button-icon>
+							</lightning-layout-item>
+	
+						</lightning-layout>
+	
+						<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_xx-small">
+	
+							<lightning-layout-item>
+								<!-- Children (Maximum: 8 total guests/room) -->
+								<lightning-input type="text" label="Children" value="0 Children Per Room">
+								</lightning-input>
+							</lightning-layout-item>
+	
+							<lightning-layout-item>
+								<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" class="slds-button">
+								</lightning-button-icon>
+							</lightning-layout-item>
+	
+							<lightning-layout-item>
+								<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" class="slds-button">
+								</lightning-button-icon>
+							</lightning-layout-item>
+	
+						</lightning-layout>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
