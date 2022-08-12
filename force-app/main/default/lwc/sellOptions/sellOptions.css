@@ -1,4 +1,4 @@
-lightning-button {
+.dropdown-button {
 	--slds-c-button-brand-color-border: black;
 	--slds-c-button-brand-color-border-active: black;
 	--slds-c-button-brand-color-border-hover: black;
@@ -7,17 +7,30 @@ lightning-button {
 	--slds-c-button-brand-color-background-hover: white;
 	--slds-c-button-spacing-block-end: 10px;
 	--slds-c-button-spacing-block-start: 10px;
-	--slds-c-button-spacing-inline-end: 112px;
-	--slds-c-button-spacing-inline-start: 112px;
-	--slds-c-button-text-color: black;
-	--slds-c-button-text-color-hover: black;
-	--slds-c-button-text-color-active: black;
-	--slds-c-button-shadow-focus: 0px 0px 3px black;
+	--slds-c-button-brand-spacing-inline-end: 112px;
+	--slds-c-button-brand-spacing-inline-start: 112px;
+	--slds-c-button-brand-text-color: black;
+	--slds-c-button-brand-text-color-hover: black;
+	--slds-c-button-brand-text-color-active: black;
+	--slds-c-button-brand-shadow-focus: 0px 0px 3px black;
 }
 
 .list-button {
-	--slds-c-button-spacing-block-end: 5px;
-	--slds-c-button-spacing-block-start: 5px;
+	--slds-c-button-color-border: #f4f4f4;
+	--slds-c-button-color-border-active: #f4f4f4;
+	--slds-c-button-color-border-hover: #f4f4f4;
+	--slds-c-button-color-background: #f4f4f4;
+	--slds-c-button-color-background-active: #f4f4f4;
+	--slds-c-button-color-background-hover: #f4f4f4;
+	--slds-c-button-text-color: black;
+	--slds-c-button-text-color-hover: black;
+	--slds-c-button-text-color-active: black;
+	--slds-c-button-shadow-focus: 0px 0px 3px #f4f4f4;
+
+	--slds-c-button-spacing-block-end: 3px;
+	--slds-c-button-spacing-block-start: 3px;
+
+	min-width: 230px;
 }
 
 
