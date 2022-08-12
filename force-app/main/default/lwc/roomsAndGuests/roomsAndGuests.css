@@ -12,7 +12,7 @@
 	--slds-c-button-brand-text-color: black;
 	--slds-c-button-brand-text-color-hover: black;
 	--slds-c-button-brand-text-color-active: black;
-	--slds-c-button-brand-shadow-focus: 0px 0px 3px black;
+	--slds-c-button-shadow-focus: 0px 0px 3px black;
 }
 
 lightning-input {
