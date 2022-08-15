@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForAllPageType " access="global">
+    <lightning:recordForm
+        recordId="0018c00002SfFG6AAN"
+        objectApiName="Account"
+        layoutType="Compact"
+        columns="2"/>
+</aura:component>
