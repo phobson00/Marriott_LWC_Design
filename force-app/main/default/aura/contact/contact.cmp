@@ -2,8 +2,9 @@
     <div class="slds-scrollable_y" style="height:20rem;width:24rem">
         <lightning:card>
             <lightning:recordForm
-            recordId="0018c00002SfFG6AAN"
-            objectApiName="Account"
+            mode="readonly"
+            recordId="0038c00002uN7I0AAK"
+            objectApiName="Contact"
             layoutType="Compact"
             columns="1"/>
         </lightning:card>
