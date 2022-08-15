@@ -1,20 +1,22 @@
 <template>
-	<div class="slds-p-vertical_medium lgc-bg slds-grid">
-		<div class="slds-size_1-of-2">
+	<lightning-layout class="slds-grid_vertical-align-end slds-gutters slds-var-p-vertical_medium">
+		<lightning-layout-item class="slds-var-p-around_xx-small">
 			<div>
 				<label>Check-In Date</label>
 			</div>
 			<div>
 				<input type="date" class="slds-input"></input>
 			</div>
-		</div>
-		<div class="slds-size_2-of-2">
+		</lightning-layout-item>
+
+		<lightning-layout-item class="slds-var-p-around_xx-small">
 			<div>
 				<label>Check-Out Date</label>
 			</div>
 			<div>
 				<input type="date" class="slds-input"></input>
 			</div>
-		</div>
-	</div>
+		</lightning-layout-item>
+
+	</lightning-layout>
 </template>
