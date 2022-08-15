@@ -1,3 +1,17 @@
-.asdf {
-  background-color: black;
+lightning-button {
+  --slds-c-button-brand-color-background: white;
+  --slds-c-button-brand-color-background-active: white;
+  --slds-c-button-brand-color-background-hover: white;
+  --slds-c-button-brand-shadow: black;
+  --slds-c-button-brand-shadow-focus: black;
+  --slds-c-button-brand-text-color: black;
+  --slds-c-button-brand-text-color-active: black;
+  --slds-c-button-brand-text-color-hover: black;
+  --slds-c-button-brand-color-border: black;
+  --slds-c-button-brand-color-border-active: black;
+  --slds-c-button-brand-color-border-hover: black;
+  --slds-c-button-brand-spacing-inline-end: 45px;
+  --slds-c-button-brand-spacing-inline-start: 45px;
+  --slds-c-button-spacing-block-start: 5px;
+  --slds-c-button-spacing-block-end: 5px;
 }
