@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <div class="slds-scrollable_y" style="height:20rem;width:24rem">
+        <lightning:card>
+            <lightning:recordForm
+            recordId="0018c00002SfFG6AAN"
+            objectApiName="Account"
+            layoutType="Compact"
+            columns="1"/>
+        </lightning:card>
+    </div>
+</aura:component>
