@@ -1,0 +1,43 @@
+<template>
+  <div
+    class="slds-dropdown-trigger slds-dropdown-trigger_click color-background-alt slds-var-p-around_medium"
+  >
+    <div class="slds-grid">
+      <div
+        class="slds-col slds-size_1-of-3 slds-var-p-right_large slds-border_bottom slds-var-p-bottom_medium"
+      >
+        <div class="slds-text-body_small">Destination</div>
+        <div class="slds-text-body_regular">New York, NY, USA</div>
+      </div>
+      <div
+        class="slds-col slds-size_2-of-4 slds-border_bottom slds-var-p-left_large slds-var-p-bottom_medium"
+      >
+        <div class="slds-text-body_small">Stay Dates</div>
+        <div class="slds-text-body_regular">
+          Mon, Aug 15, 2022 - Tue, Aug 16, 2022
+        </div>
+      </div>
+      <div
+        class="slds-col slds-size_3-of-6 slds-border_left slds-var-p-left_small slds-border_bottom slds-var-p-bottom_medium"
+      >
+        <div class="slds-grid">
+          <div class="slds-col slds-size_1-of-2 slds-var-m-right_x-large">
+            <div class="slds-text-body_small">Rooms &amp; Guests</div>
+            <div class="slds-text-body_regular">1 Room: 1 Adult /Room</div>
+          </div>
+          <div class="slds-col slds-size_2-of-2 slds-var-m-left_large">
+            <lightning-button
+              class="edit-button"
+              label="Edit"
+              variant="brand"
+              onclick={dropMenu}
+            ></lightning-button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-main slds-dropdown_left dropdown-closed">
+      <c-parent-with-tabs></c-parent-with-tabs>
+    </div>
+  </div>
+</template>
