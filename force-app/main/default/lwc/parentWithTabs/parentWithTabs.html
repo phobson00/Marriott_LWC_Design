@@ -1,47 +1,54 @@
 <template>
-  <div class="slds-theme_default slds-grid">
-    <div class="slds-col slds-size_1-of-3">
-      <c-contact-card></c-contact-card>
+  <div class="slds-theme_default">
+    <div>
+      <c-navigation-bar></c-navigation-bar>
     </div>
-    <div class="slds-col">
+    <div class="slds-grid">
       <div
-        class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small new-res"
+        class="slds-col slds-size_1-of-5 slds-var-m-right_medium slds-var-m-top_medium"
       >
-        New Reservation
+        <c-contact-card></c-contact-card>
       </div>
-      <lightning-tabset>
-        <lightning-tab
-          label="City, Airport or Address"
-          class="slds-var-p-around_x-small"
+      <div class="slds-col">
+        <div
+          class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small new-res"
         >
-          <div class="slds-grid">
-            <div class="slds-size_1-of-3">
-              <c-dest-input-box></c-dest-input-box>
-              <c-rooms-and-guests></c-rooms-and-guests>
-              <c-points-checkbox></c-points-checkbox>
+          New Reservation
+        </div>
+        <lightning-tabset>
+          <lightning-tab
+            label="City, Airport or Address"
+            class="slds-var-p-around_x-small"
+          >
+            <div class="slds-grid">
+              <div class="slds-size_1-of-3">
+                <c-dest-input-box></c-dest-input-box>
+                <c-rooms-and-guests></c-rooms-and-guests>
+                <c-points-checkbox></c-points-checkbox>
+              </div>
+              <div class="slds-size_2-of-3">
+                <c-sell-options></c-sell-options>
+                <c-date-input-box></c-date-input-box>
+                <c-find-button></c-find-button>
+              </div>
             </div>
-            <div class="slds-size_2-of-3">
-              <c-sell-options></c-sell-options>
-              <c-date-input-box></c-date-input-box>
-              <c-find-button></c-find-button>
+          </lightning-tab>
+          <lightning-tab label="Hotel Name" class="slds-var-p-around_x-small">
+            <div class="slds-grid">
+              <div class="slds-size_1-of-3">
+                <c-dest-input-box></c-dest-input-box>
+                <c-rooms-and-guests></c-rooms-and-guests>
+                <c-points-checkbox></c-points-checkbox>
+              </div>
+              <div class="slds-size_2-of-3">
+                <c-sell-options></c-sell-options>
+                <c-date-input-box></c-date-input-box>
+                <c-find-button></c-find-button>
+              </div>
             </div>
-          </div>
-        </lightning-tab>
-        <lightning-tab label="Hotel Name" class="slds-var-p-around_x-small">
-          <div class="slds-grid">
-            <div class="slds-size_1-of-3">
-              <c-dest-input-box></c-dest-input-box>
-              <c-rooms-and-guests></c-rooms-and-guests>
-              <c-points-checkbox></c-points-checkbox>
-            </div>
-            <div class="slds-size_2-of-3">
-              <c-sell-options></c-sell-options>
-              <c-date-input-box></c-date-input-box>
-              <c-find-button></c-find-button>
-            </div>
-          </div>
-        </lightning-tab>
-      </lightning-tabset>
+          </lightning-tab>
+        </lightning-tabset>
+      </div>
     </div>
   </div>
 </template>
