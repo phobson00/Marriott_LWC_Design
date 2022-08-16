@@ -15,27 +15,28 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
-lightning-input {
-  --slds-c-input-color-border: black;
-  --slds-c-input-color-border-focus: black;
-  --slds-c-input-color-background: white;
-  --slds-c-input-color-background-focus: white;
-  --slds-c-input-shadow-focus: 0px 0px 3px black;
+input {
+  --slds-c-input-color-border: transparent;
+  --slds-c-input-color-border-focus: #1c1c1c;
+  --slds-c-input-color-background: #ffffff;
+  --slds-c-input-color-background-focus: #ffffff;
+  --slds-c-input-shadow-focus: 0px 0px 0px;
 }
 
-lightning-layout {
-  --slds-c-button-spacing-block-end: 0px;
-  --slds-c-button-spacing-block-start: 0px;
-  --slds-c-button-spacing-inline-end: 0px;
-  --slds-c-button-spacing-inline-start: 0px;
-  --slds-c-button-color-border: black;
-  --slds-c-button-color-border-active: black;
-  --slds-c-button-color-border-hover: black;
-  --slds-c-button-color-background: white;
-  --slds-c-button-color-background-active: white;
-  --slds-c-button-color-background-hover: white;
-  --slds-c-button-text-color: black;
-  --slds-c-button-text-color-hover: black;
-  --slds-c-button-text-color-active: black;
-  --slds-c-button-shadow-focus: 0px 0px 3px black;
+lightning-button-icon {
+  --slds-c-button-spacing-block-end: 7px;
+  --slds-c-button-spacing-block-start: 7px;
+  --slds-c-button-spacing-inline-end: 7px;
+  --slds-c-button-spacing-inline-start: 7px;
+  --slds-c-button-color-background: #ffffff;
+  --slds-c-button-color-background-active: #ffffff;
+  --slds-c-button-color-background-hover: #ffffff;
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
+
+.gray-layout {
+  background-color: #f4f4f4;
 }
