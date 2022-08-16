@@ -15,86 +15,82 @@
 						onclick={dropMenu}
 						icon-position="right">
 					</lightning-button>
-					<div class="slds-dropdown slds-dropdown_medium slds-dropdown_length-10 dropdown slds-var-p-around_large slds-scrollable_none">
-						<lightning-layout class="slds-grid_vertical-align-end slds-var-p-bottom_xx-small">
-							<lightning-layout-item>
-								<label>Rooms</label>
-							</lightning-layout-item>
-						</lightning-layout>
-						<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_small gray-layout">
+					<div class="slds-dropdown slds-dropdown_medium dropdown slds-var-p-around_large slds-scrollable_y">
+								<lightning-layout class="slds-grid_vertical-align-end slds-var-p-bottom_xx-small slds-dropdown__item">
+									<lightning-layout-item>
+										<label>Rooms</label>
+									</lightning-layout-item>
+								</lightning-layout>
+								<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_small gray-layout slds-dropdown__item">
 
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<input type="text" value="1 Room" class="slds-input"></input>
-							</lightning-layout-item>
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" variant="bare">
-								</lightning-button-icon>
-							</lightning-layout-item>
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" variant="bare">
-								</lightning-button-icon>
-							</lightning-layout-item>
-	
-						</lightning-layout>
-	
-						<lightning-layout class="slds-grid_vertical-align-end slds-var-p-bottom_xx-small slds-var-p-top_medium">
-							<lightning-layout-item>
-								<label>Adults</label>
-							</lightning-layout-item>
-						</lightning-layout>
-						<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_small gray-layout">
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<input type="text" value="1 Adult Per Room" class="slds-input"></input>
-							</lightning-layout-item>
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" variant="bare">
-								</lightning-button-icon>
-							</lightning-layout-item>
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" variant="bare">
-								</lightning-button-icon>
-							</lightning-layout-item>
-	
-						</lightning-layout>
-	
-						<lightning-layout class="slds-grid_vertical-align-end slds-var-p-bottom_xx-small slds-var-p-top_medium">
-							<lightning-layout-item>
-								<label>Children</label>
-							</lightning-layout-item>
-						</lightning-layout>
-						<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_small gray-layout">
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<input type="text" value="1 Children Per Room" class="slds-input"></input>
-							</lightning-layout-item>
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" variant="bare">
-								</lightning-button-icon>
-							</lightning-layout-item>
-	
-							<lightning-layout-item class="slds-var-p-horizontal_x-small">
-								<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" variant="bare">
-								</lightning-button-icon>
-							</lightning-layout-item>
-	
-						</lightning-layout>
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<input type="text" value="1 Room" class="slds-input"></input>
+									</lightning-layout-item>
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" variant="bare">
+										</lightning-button-icon>
+									</lightning-layout-item>
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" variant="bare">
+										</lightning-button-icon>
+									</lightning-layout-item>
+			
+								</lightning-layout>
+								<lightning-layout class="slds-grid_vertical-align-end slds-var-p-bottom_xx-small slds-var-p-top_medium slds-dropdown__item">
+									<lightning-layout-item>
+										<label>Adults</label>
+									</lightning-layout-item>
+								</lightning-layout>
+								<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_small gray-layout slds-dropdown__item">
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<input type="text" value="1 Adult Per Room" class="slds-input"></input>
+									</lightning-layout-item>
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" variant="bare">
+										</lightning-button-icon>
+									</lightning-layout-item>
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" variant="bare">
+										</lightning-button-icon>
+									</lightning-layout-item>
+			
+								</lightning-layout>
+								<lightning-layout class="slds-grid_vertical-align-end slds-var-p-bottom_xx-small slds-var-p-top_medium slds-dropdown__item">
+									<lightning-layout-item>
+										<label>Children</label>
+									</lightning-layout-item>
+								</lightning-layout>
+								<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-p-around_small gray-layout slds-dropdown__item">
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<input type="text" value="1 Children Per Room" class="slds-input"></input>
+									</lightning-layout-item>
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<lightning-button-icon icon-name="utility:dash" alternative-text="Remove Room" title="Remove Room" variant="bare">
+										</lightning-button-icon>
+									</lightning-layout-item>
+			
+									<lightning-layout-item class="slds-var-p-horizontal_x-small">
+										<lightning-button-icon icon-name="utility:add" alternative-text="Add Room" title="Add Room" variant="bare">
+										</lightning-button-icon>
+									</lightning-layout-item>
+			
+								</lightning-layout>
+								<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-spread slds-var-p-around_xx-small">
+									<lightning-layout-item>
+										<lightning-button label="Done" variant="neutral"></lightning-button>
+									</lightning-layout-item>
 
-						<lightning-layout class="slds-grid_vertical-align-end slds-grid_align-spread slds-var-p-around_xx-small">
-							<lightning-layout-item>
-								<lightning-button label="Done" variant="neutral"></lightning-button>
-							</lightning-layout-item>
-
-							<lightning-layout-item>
-								<lightning-button label="Reset"></lightning-button>
-							</lightning-layout-item>
-
-						</lightning-layout>
+									<lightning-layout-item>
+										<lightning-button label="Reset"></lightning-button>
+									</lightning-layout-item>
+								</lightning-layout>
 					</div>
 				</div>
 			</div>

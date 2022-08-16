@@ -40,3 +40,7 @@ lightning-button-icon {
 .gray-layout {
   background-color: #f4f4f4;
 }
+
+.dropdown {
+  min-height: 200px;
+}
