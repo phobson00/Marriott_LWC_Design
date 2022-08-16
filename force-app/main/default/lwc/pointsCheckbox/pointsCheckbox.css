@@ -1,8 +1,8 @@
 lightning-input {
-	--slds-c-checkbox-color-background-checked: black;
-	--slds-c-checkbox-mark-color-foreground: white;
-	--slds-c-checkbox-color-border: black;
-	--slds-c-checkbox-color-border-checked: black;
-	--slds-c-checkbox-color-border-focus: black;
-	--slds-c-checkbox-shadow-focus: 0px 0px 3px black;
+  --slds-c-checkbox-color-background-checked: #1c1c1c;
+  --slds-c-checkbox-mark-color-foreground: #ffffff;
+  --slds-c-checkbox-color-border: #d2d2d2;
+  --slds-c-checkbox-color-border-checked: #1c1c1c;
+  --slds-c-checkbox-color-border-focus: #1c1c1c;
+  --slds-c-checkbox-shadow-focus: 0px 0px 0px;
 }

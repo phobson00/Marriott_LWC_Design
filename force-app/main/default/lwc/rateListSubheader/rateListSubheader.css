@@ -1,15 +1,15 @@
 .edit-button {
-  --slds-c-button-brand-color-background: white;
-  --slds-c-button-brand-color-background-active: white;
-  --slds-c-button-brand-color-background-hover: white;
-  --slds-c-button-shadow: black;
-  --slds-c-button-shadow-focus: 0px 0px 3px black;
-  --slds-c-button-brand-text-color: black;
-  --slds-c-button-brand-text-color-active: black;
-  --slds-c-button-brand-text-color-hover: black;
-  --slds-c-button-brand-color-border: black;
-  --slds-c-button-brand-color-border-active: black;
-  --slds-c-button-brand-color-border-hover: black;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-shadow: #1c1c1c;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+  --slds-c-button-brand-text-color: #1c1c1c;
+  --slds-c-button-brand-text-color-active: #1c1c1c;
+  --slds-c-button-brand-text-color-hover: #1c1c1c;
+  --slds-c-button-brand-color-border: #1c1c1c;
+  --slds-c-button-brand-color-border-active: #1c1c1c;
+  --slds-c-button-brand-color-border-hover: #1c1c1c;
   --slds-c-button-brand-spacing-inline-end: 45px;
   --slds-c-button-brand-spacing-inline-start: 45px;
   --slds-c-button-spacing-block-start: 5px;
