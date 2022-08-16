@@ -19,6 +19,7 @@
           <lightning-tab
             label="City, Airport or Address"
             class="slds-var-p-around_x-small"
+            onactive={cityTabHandler}
           >
             <div class="slds-grid">
               <div class="slds-size_1-of-3">
@@ -33,10 +34,14 @@
               </div>
             </div>
           </lightning-tab>
-          <lightning-tab label="Hotel Name" class="slds-var-p-around_x-small">
+          <lightning-tab
+            label="Hotel Name"
+            class="slds-var-p-around_x-small"
+            onactive={hotelTabHandler}
+          >
             <div class="slds-grid">
               <div class="slds-size_1-of-3">
-                <c-dest-input-box></c-dest-input-box>
+                <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
                 <c-rooms-and-guests></c-rooms-and-guests>
                 <c-points-checkbox></c-points-checkbox>
               </div>

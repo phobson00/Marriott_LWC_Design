@@ -5,7 +5,7 @@
 				<label>Destination</label>
 			</div>
 			<div>
-				<input placeholder="Enter Hotel Name" class="slds-input" list="valueList" id="input"></input>
+				<input placeholder={placeholder} class="slds-input" list="valueList"></input>
 				<datalist id="valueList">
 					<template for:each={values} for:item='item'>
 						<option key={item.key} value={item}>{item}</option>
