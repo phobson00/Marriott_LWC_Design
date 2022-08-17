@@ -1,9 +1,13 @@
 <template>
-  <div class="slds-grid">
+  <div class="slds-grid slds-var-m-left_medium">
     <div class="slds-col slds-size_1-of-12">
-      <span>Map</span>
+      <lightning-button
+        label="Map"
+        icon-name="utility:checkin"
+        class="map-button"
+      ></lightning-button>
     </div>
-    <div class="slds-col slds-size_2-of-12">
+    <div class="slds-col slds-size_1-of-12 slds-var-m-right_x-large">
       <div>
         <label>Sort By:</label>
       </div>
@@ -12,7 +16,7 @@
         <lightning-button-menu label="Distance"></lightning-button-menu>
       </div>
     </div>
-    <div class="slds-col slds-size_3-of-12">
+    <div class="slds-col slds-size_1-of-12 slds-var-m-right_x-large">
       <div>
         <label>Currency:</label>
       </div>
@@ -21,7 +25,7 @@
         <lightning-button-menu label="Default"></lightning-button-menu>
       </div>
     </div>
-    <div class="slds-col slds-size_4-of-12">
+    <div class="slds-col slds-size_1-of-12 slds-var-m-right_x-large">
       <div>
         <label>Show:</label>
       </div>
@@ -30,15 +34,30 @@
         <lightning-button-menu label="Available Hotels"></lightning-button-menu>
       </div>
     </div>
-    <div class="slds-col slds-float_left">
-      <label>Show:</label>
-      <!--Temporary placeholder-->
-      <lightning-button-menu label=""></lightning-button-menu>
+    <div class="slds-size_7-of-12">
+      <div class="slds-float_right slds-var-m-right_large">
+        <label>Show:</label>
+        <!--Temporary placeholder-->
+        <lightning-button-menu label=""></lightning-button-menu>
+      </div>
+      <div class="slds-float_right">
+        <label>Show:</label>
+        <!--Temporary placeholder-->
+        <lightning-button-menu label=""></lightning-button-menu>
+      </div>
     </div>
-    <div class="slds-col slds-float_left">
-      <label>Show:</label>
-      <!--Temporary placeholder-->
-      <lightning-button-menu label=""></lightning-button-menu>
+  </div>
+
+  <div class="slds-clearfix slds-var-m-left_x-large slds-var-m-top_xx-large">
+    <div class="slds-float_left">
+      <span>Showing </span><span>1 - 40</span><span> of </span><span>190 </span
+      ><span>hotels</span>
+    </div>
+    <div class="slds-float_right">
+      <lightning-input
+        type="checkbox"
+        label="Show rates with taxes and all fees"
+      ></lightning-input>
     </div>
   </div>
 </template>

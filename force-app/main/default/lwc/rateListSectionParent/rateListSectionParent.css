@@ -1,0 +1,15 @@
+.map-button {
+  --slds-c-button-color-background: #ffffff;
+  --slds-c-button-color-background-active: #ffffff;
+  --slds-c-button-color-background-hover: #ffffff;
+  --slds-c-button-color-border-background: #ffffff;
+  --slds-c-button-color-border-background-active: #ffffff;
+  --slds-c-button-color-border-background-hover: #ffffff;
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 0px;
+  --slds-c-button-spacing-block-start: 5px;
+  --slds-c-button-spacing-block-end: 5px;
+}
