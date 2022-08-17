@@ -13,3 +13,7 @@
   --slds-c-button-spacing-block-start: 5px;
   --slds-c-button-spacing-block-end: 5px;
 }
+
+.span-bold {
+  font-weight: 700;
+}
