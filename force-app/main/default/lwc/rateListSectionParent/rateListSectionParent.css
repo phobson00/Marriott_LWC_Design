@@ -17,3 +17,12 @@
 .span-bold {
   font-weight: 700;
 }
+
+.span-normal {
+  font-weight: 600;
+}
+
+.miles-col {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
