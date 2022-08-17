@@ -1,3 +1,7 @@
+lightning-button {
+    --slds-c-button-text-color: #b84c16;
+}
+
 @font-face {
     font-family: "Swiss";
     src: url("/resource/Swiss/Swiss.ttf") format("TrueType");
@@ -15,7 +19,7 @@
 .H1 {
     font-family: Swiss;
     font-size: xx-large;
-  }
+}
 
 .H2 {
     font-family: Swiss;
