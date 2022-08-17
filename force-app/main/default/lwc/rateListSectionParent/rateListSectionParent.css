@@ -81,6 +81,10 @@ img {
   font-size: large;
 }
 
+.swiss-font {
+  font-family: Swiss;
+}
+
 @font-face {
   font-family: "Swiss";
   src: url("/resource/Swiss/Swiss.ttf") format("TrueType");
