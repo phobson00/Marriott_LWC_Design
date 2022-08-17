@@ -11,12 +11,12 @@
       onactive={cityTabHandler}
     >
       <div class="slds-grid">
-        <div class="slds-col slds-size_1-of-3">
+        <div class={column1}>
           <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
           <c-rooms-and-guests></c-rooms-and-guests>
           <c-points-checkbox></c-points-checkbox>
         </div>
-        <div class="slds-col slds-size_2-of-3">
+        <div class={column2}>
           <c-sell-options></c-sell-options>
           <c-date-input-box></c-date-input-box>
           <c-find-button></c-find-button>
@@ -29,12 +29,12 @@
       onactive={hotelTabHandler}
     >
       <div class="slds-grid">
-        <div class="slds-col slds-size_1-of-3">
+        <div class={column1}>
           <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
           <c-rooms-and-guests></c-rooms-and-guests>
           <c-points-checkbox></c-points-checkbox>
         </div>
-        <div class="slds-col slds-size_2-of-3">
+        <div class={column2}>
           <c-sell-options></c-sell-options>
           <c-date-input-box></c-date-input-box>
           <c-find-button></c-find-button>
