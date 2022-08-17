@@ -45,3 +45,21 @@
   --slds-c-button-shadow-focus: 0 0 0px;
   max-height: 15px;
 }
+
+img {
+  min-height: 180px;
+}
+
+.why-courtyard-button {
+  --slds-c-button-color-background: #ffffff;
+  --slds-c-button-color-background-active: #ffffff;
+  --slds-c-button-color-background-hover: #ffffff;
+  --slds-c-button-color-border: #ffffff;
+  --slds-c-button-color-border-active: #ffffff;
+  --slds-c-button-color-border-hover: #ffffff;
+  --slds-c-button-text-color: #b84c16;
+  --slds-c-button-text-color-active: #b84c16;
+  --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 0px;
+}
