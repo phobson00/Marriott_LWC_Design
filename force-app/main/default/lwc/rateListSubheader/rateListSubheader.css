@@ -16,10 +16,6 @@
   --slds-c-button-spacing-block-end: 5px;
 }
 
-/* .dropdown-main {
-  min-width: 960px;
-} */
-
 .dropdown-open {
   display: block !important;
 }
