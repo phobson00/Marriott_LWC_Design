@@ -2,9 +2,9 @@
   --slds-c-button-color-background: #ffffff;
   --slds-c-button-color-background-active: #ffffff;
   --slds-c-button-color-background-hover: #ffffff;
-  --slds-c-button-color-border-background: #ffffff;
-  --slds-c-button-color-border-background-active: #ffffff;
-  --slds-c-button-color-border-background-hover: #ffffff;
+  --slds-c-button-color-border: #ffffff;
+  --slds-c-button-color-border-active: #ffffff;
+  --slds-c-button-color-border-hover: #ffffff;
   --slds-c-button-text-color: #1c1c1c;
   --slds-c-button-text-color-active: #1c1c1c;
   --slds-c-button-text-color-hover: #1c1c1c;
@@ -25,4 +25,81 @@
 .miles-col {
   background-color: #1c1c1c;
   color: #ffffff;
+}
+
+.review-button {
+  --slds-c-button-radius-border: 100%;
+  --slds-c-button-spacing-block-start: 0px;
+  --slds-c-button-spacing-block-end: 0px;
+  --slds-c-button-spacing-inline-start: 5px;
+  --slds-c-button-spacing-inline-end: 5px;
+  --slds-c-button-color-background: #ffffff;
+  --slds-c-button-color-background-active: #ffffff;
+  --slds-c-button-color-background-hover: #ffffff;
+  --slds-c-button-color-border: #d2d2d2;
+  --slds-c-button-color-border-active: #1c1c1c;
+  --slds-c-button-color-border-hover: #1c1c1c;
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  max-height: 15px;
+}
+
+img {
+  min-height: 180px;
+}
+
+.why-courtyard-button {
+  --slds-c-button-color-background: #ffffff;
+  --slds-c-button-color-background-active: #ffffff;
+  --slds-c-button-color-background-hover: #ffffff;
+  --slds-c-button-color-border: #ffffff;
+  --slds-c-button-color-border-active: #ffffff;
+  --slds-c-button-color-border-hover: #ffffff;
+  --slds-c-button-text-color: #b84c16;
+  --slds-c-button-text-color-active: #b84c16;
+  --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 0px;
+}
+
+.view-rates-button {
+  --slds-c-button-brand-color-background: #444054;
+  --slds-c-button-brand-color-background-active: #444054;
+  --slds-c-button-brand-color-background-hover: #444054;
+  --slds-c-button-brand-color-border-background: #444054;
+  --slds-c-button-brand-color-border-background-active: #444054;
+  --slds-c-button-brand-color-border-background-hover: #444054;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 0px;
+  --slds-c-button-spacing-block-start: 7px;
+  --slds-c-button-spacing-block-end: 7px;
+  --slds-c-button-brand-spacing-inline-start: 40px;
+  --slds-c-button-brand-spacing-inline-end: 40px;
+  font-family: Swiss;
+  font-size: large;
+}
+
+.swiss-font {
+  font-family: Swiss;
+}
+
+@font-face {
+  font-family: "Swiss";
+  src: url("/resource/Swiss/Swiss.ttf") format("TrueType");
+}
+
+.filter-button {
+  --slds-c-button-brand-text-color: #1c1c1c;
+  --slds-c-button-brand-text-color-active: #1c1c1c;
+  --slds-c-button-brand-text-color-hover: #1c1c1c;
+  --slds-c-button-brand-color-border: #ffffff;
+  --slds-c-button-brand-color-border-active: #ffffff;
+  --slds-c-button-brand-color-border-hover: #ffffff;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
 }

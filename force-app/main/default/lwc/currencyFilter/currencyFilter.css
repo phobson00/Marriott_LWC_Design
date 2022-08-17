@@ -1,0 +1,13 @@
+lightning-button-menu {
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-border-color: transparent;
+  --slds-c-button-border-color-active: transparent;
+  --slds-c-button-border-color-hover: transparent;
+  --slds-c-button-background-color: transparent;
+  --slds-c-button-background-color-active: transparent;
+  --slds-c-button-background-color-hover: transparent;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
