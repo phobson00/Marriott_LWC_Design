@@ -7,7 +7,27 @@
                     <lightning-button-icon icon-name="utility:close"   alternative-text="Close" class="slds-m-left_xx-small  slds-float_right" title="Close" 
                         onclick={hideModalBox} variant="bare">
                     </lightning-button-icon>
-                    
+                   
+                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1">
+                        Tax and Fee Property Detail
+                    </div>
+                    <div>
+                        <lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-m-bottom_large slds-var-p-around_small gray-layout slds-dropdown__item">
+                            <lightning-layout-item class="slds-var-p-horizontal_x-small">
+                                <div>
+                                    <label>Search for hotel</label>
+                                </div>
+                                <input placeholder="Hotel name or MARSHA code" class="slds-input slds-var-p-around_x-small" list="valueList"></input>
+                            </lightning-layout-item>
+    
+                            <lightning-layout-item class="slds-var-p-horizontal_x-small">
+                                <button class="slds-button slds-button_brand slds-float_right">Find</button>
+                            </lightning-layout-item>
+						</lightning-layout>
+                    </div>
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
