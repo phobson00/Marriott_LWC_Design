@@ -1,5 +1,5 @@
 <template >
-    <lightning-button variant="base" label="CANCELLATION POLICY" title="Open Rate Details" onclick={showModalBox} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="base" label="TAX/FEE DETAILS" title="Open tax and fee details" onclick={showModalBox} class="slds-m-left_x-small"></lightning-button>
     <template if:true={isShowModal}>
         <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Meaningful description of the modal content" class="slds-modal slds-fade-in-open">
             <div class="slds-modal__container">
@@ -7,7 +7,7 @@
                     <lightning-button-icon icon-name="utility:close"   alternative-text="Close" class="slds-m-left_xx-small  slds-float_right" title="Close" 
                         onclick={hideModalBox} variant="bare">
                     </lightning-button-icon>
-                 
+                    
                 </div>
             </div>
         </section>
