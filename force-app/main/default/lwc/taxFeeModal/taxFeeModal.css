@@ -4,6 +4,37 @@ lightning-button {
     --slds-c-button-text-color-hover: #b84c16;    
 }
 
+input {
+    min-height: 52px;
+    width: 400px;
+    --slds-c-input-color-border: #d2d2d2;
+    --slds-c-input-color-border-focus: #1c1c1c;
+    --slds-c-input-color-background: #ffffff;
+    --slds-c-input-color-background-focus: #ffffff;
+    --slds-c-input-shadow-focus: 0px 0px 0px;
+}
+
+button {
+    --slds-c-button-brand-color-background: #444054;
+    --slds-c-button-brand-color-background-active: #444054;
+    --slds-c-button-brand-color-background-hover: #444054;
+    --slds-c-button-brand-color-border-background: #444054;
+    --slds-c-button-brand-color-border-background-active: #444054;
+    --slds-c-button-brand-color-border-background-hover: #444054;
+    --slds-c-button-shadow-focus: 0 0 0px;
+    --slds-c-button-sizing-border: 0px;
+    --slds-c-button-spacing-block-start: 10px;
+    --slds-c-button-spacing-block-end: 10px;
+    --slds-c-button-brand-spacing-inline-start: 60px;
+    --slds-c-button-brand-spacing-inline-end: 60px;
+    font-family: Swiss;
+    font-size: large;
+  }
+
+.gray-layout {
+background-color: #f4f4f4;
+}
+
 @font-face {
     font-family: "Swiss";
     src: url("/resource/Swiss/Swiss.ttf") format("TrueType");
