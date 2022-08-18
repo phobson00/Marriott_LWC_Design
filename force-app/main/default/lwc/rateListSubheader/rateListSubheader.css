@@ -16,10 +16,6 @@
   --slds-c-button-spacing-block-end: 5px;
 }
 
-.dropdown-open {
-  display: block !important;
-}
-
-.dropdown-closed {
-  display: none !important;
+.dropdown-main {
+  transition: all 0.5s ease-out;
 }

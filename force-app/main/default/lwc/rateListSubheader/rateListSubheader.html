@@ -36,11 +36,13 @@
         </div>
       </div>
     </div>
-    <div class="dropdown-main slds-dropdown_left dropdown-closed">
-      <c-landing-page-main-section
-        column1="slds-size_1-of-2"
-        column2="slds-size_2-of-2"
-      ></c-landing-page-main-section>
-    </div>
+    <template if:true={showDropdown}>
+      <div class="dropdown-main slds-dropdown_left">
+        <c-landing-page-main-section
+          column1="slds-size_1-of-2"
+          column2="slds-size_2-of-2"
+        ></c-landing-page-main-section>
+      </div>
+    </template>
   </div>
 </template>
