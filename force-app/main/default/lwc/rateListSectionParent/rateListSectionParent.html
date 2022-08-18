@@ -72,9 +72,16 @@
   </div>
 
   <div class="slds-grid">
-    <div class="slds-col">
-      <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
-    </div>
+    <template if:false={showMap}>
+      <div class="slds-col">
+        <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
+      </div>
+    </template>
+    <template if:true={showMap}>
+      <div class="slds-col slds-size_1-of-3">
+        <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
+      </div>
+    </template>
 
     <div class="slds-col lightning-col" if:true={showMap}>
       <lightning-map></lightning-map>
