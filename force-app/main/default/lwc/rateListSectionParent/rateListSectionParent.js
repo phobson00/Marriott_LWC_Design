@@ -1,4 +1,4 @@
-import { LightningElement } from "lwc";
+import { LightningElement, track } from "lwc";
 import marriott_images from "@salesforce/resourceUrl/Marriott_Images";
 
 export default class RateListSectionParent extends LightningElement {
