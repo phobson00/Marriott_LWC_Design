@@ -1,6 +1,6 @@
 import { LightningElement, track } from 'lwc';
 
-export default class RateDetailsModal extends LightningElement {
+export default class CancellationModal extends LightningElement {
     @track isShowModal = false;
 
     showModalBox() {  
