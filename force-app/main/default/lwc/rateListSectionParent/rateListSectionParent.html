@@ -1,12 +1,22 @@
 <template>
   <div class="slds-grid slds-var-m-left_medium">
     <div class="slds-col slds-size_1-of-12">
-      <lightning-button
-        label="Map"
-        icon-name="utility:checkin"
-        class="map-button"
-        onclick={displayMap}
-      ></lightning-button>
+      <template if:false={showMap}>
+        <lightning-button
+          label="Map"
+          icon-name="utility:checkin"
+          class="map-button"
+          onclick={displayMap}
+        ></lightning-button>
+      </template>
+      <template if:true={showMap}>
+        <lightning-button
+          label="List"
+          icon-name="utility:list"
+          class="map-button"
+          onclick={displayMap}
+        ></lightning-button>
+      </template>
     </div>
     <div
       class="slds-col slds-size_1-of-12 slds-var-m-right_x-large slds-var-m-left_large"
