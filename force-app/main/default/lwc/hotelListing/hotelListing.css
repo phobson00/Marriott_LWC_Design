@@ -31,7 +31,8 @@
 }
 
 img {
-  min-height: 180px;
+  max-height: 120px;
+  min-width: 340px;
 }
 
 .orange-button {

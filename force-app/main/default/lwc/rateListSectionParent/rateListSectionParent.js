@@ -6,7 +6,7 @@ export default class RateListSectionParent extends LightningElement {
   image2 = marriott_images + "/images/marriott_image_2.jpg";
   image3 = marriott_images + "/images/marriott_image_3.jpg";
 
-  showMap = false;
+  showMap = true;
 
   displayMap() {
     if (this.showMap) {

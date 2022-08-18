@@ -86,14 +86,14 @@
     </div>
   </template>
   <template if:true={showMap}>
-    <div class="slds-grid">
-      <div class="slds-size_1-of-4 slds-var-m-left_large slds-var-m-top_large">
+    <div>
+      <div class="slds-var-m-left_large">
         <img src={image} />
       </div>
-      <div class="slds-col slds-var-m-left_large slds-var-m-top_xx-large">
+      <div class="slds-var-m-left_large slds-var-m-top_small">
         <div>
           <div
-            class="slds-float_left slds-text-heading_medium span-bold slds-var-m-right_small"
+            class="slds-text-heading_medium span-bold slds-var-m-right_small"
           >
             (NYCES)
           </div>
@@ -111,6 +111,8 @@
             0.1 miles
           </div>
           <div class="slds-var-m-left_x-small">from destination</div>
+        </div>
+        <div class="slds-grid">
           <div class="slds-var-m-left_medium">
             <button class="review-button slds-button">&nbsp;</button>
             <button class="review-button slds-button">&nbsp;</button>
