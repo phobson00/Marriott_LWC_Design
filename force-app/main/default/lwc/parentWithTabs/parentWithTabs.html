@@ -10,49 +10,10 @@
         <c-contact-card></c-contact-card>
       </div>
       <div class="slds-col">
-        <div
-          class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small new-res"
-        >
-          New Reservation
-        </div>
-        <lightning-tabset>
-          <lightning-tab
-            label="City, Airport or Address"
-            class="slds-var-p-around_x-small"
-            onactive={cityTabHandler}
-          >
-            <div class="slds-grid">
-              <div class="slds-size_1-of-3">
-                <c-dest-input-box></c-dest-input-box>
-                <c-rooms-and-guests></c-rooms-and-guests>
-                <c-points-checkbox></c-points-checkbox>
-              </div>
-              <div class="slds-size_2-of-3">
-                <c-sell-options></c-sell-options>
-                <c-date-input-box></c-date-input-box>
-                <c-find-button></c-find-button>
-              </div>
-            </div>
-          </lightning-tab>
-          <lightning-tab
-            label="Hotel Name"
-            class="slds-var-p-around_x-small"
-            onactive={hotelTabHandler}
-          >
-            <div class="slds-grid">
-              <div class="slds-size_1-of-3">
-                <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
-                <c-rooms-and-guests></c-rooms-and-guests>
-                <c-points-checkbox></c-points-checkbox>
-              </div>
-              <div class="slds-size_2-of-3">
-                <c-sell-options></c-sell-options>
-                <c-date-input-box></c-date-input-box>
-                <c-find-button></c-find-button>
-              </div>
-            </div>
-          </lightning-tab>
-        </lightning-tabset>
+        <c-landing-page-main-section
+          column1="slds-size_1-of-3"
+          column2="slds-size_2-of-3"
+        ></c-landing-page-main-section>
       </div>
     </div>
   </div>
