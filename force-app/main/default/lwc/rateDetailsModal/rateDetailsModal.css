@@ -1,5 +1,8 @@
 lightning-button {
     --slds-c-button-text-color: #b84c16;
+    --slds-c-button-text-color-active: #b84c16;
+    --slds-c-button-text-color-hover: #b84c16;
+    
 }
 
 @font-face {
