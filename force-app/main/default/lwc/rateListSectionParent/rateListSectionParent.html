@@ -75,6 +75,8 @@
     <template if:false={showMap}>
       <div class="slds-col">
         <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
+        <c-hotel-listing image={image2} show-map={showMap}></c-hotel-listing>
+        <c-hotel-listing image={image3} show-map={showMap}></c-hotel-listing>
       </div>
     </template>
     <template if:true={showMap}>
@@ -82,9 +84,23 @@
         class="slds-col slds-size_3-of-8 slds-scrollable_y"
         style="max-height: 450px"
       >
-        <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
-        <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
-        <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
+        <div>
+          <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
+        </div>
+        <div class="slds-var-m-top_medium">
+          <c-hotel-listing
+            image={image2}
+            show-map={showMap}
+            class="slds-var-m-top_medium"
+          ></c-hotel-listing>
+        </div>
+        <div class="slds-var-m-top_medium">
+          <c-hotel-listing
+            image={image3}
+            show-map={showMap}
+            class="slds-var-m-top_medium"
+          ></c-hotel-listing>
+        </div>
       </div>
     </template>
 
