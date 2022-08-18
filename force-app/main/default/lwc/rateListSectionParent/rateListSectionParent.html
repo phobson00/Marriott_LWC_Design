@@ -78,13 +78,18 @@
       </div>
     </template>
     <template if:true={showMap}>
-      <div class="slds-col slds-size_3-of-8">
+      <div
+        class="slds-col slds-size_3-of-8 slds-scrollable_y"
+        style="max-height: 450px"
+      >
+        <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
+        <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
         <c-hotel-listing image={image1} show-map={showMap}></c-hotel-listing>
       </div>
     </template>
 
     <div class="slds-col lightning-col" if:true={showMap}>
-      <lightning-map></lightning-map>
+      <lightning-map style="min-height: 450px"></lightning-map>
     </div>
   </div>
 </template>

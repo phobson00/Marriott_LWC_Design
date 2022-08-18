@@ -30,7 +30,11 @@
   max-height: 15px;
 }
 
-img {
+.img-wide {
+  min-height: 180px;
+}
+
+.img-skinny {
   max-height: 120px;
   min-width: 340px;
 }
