@@ -1,0 +1,168 @@
+<template>
+  <template if:false={showMap}>
+    <div class="slds-grid">
+      <div class="slds-size_1-of-4 slds-var-m-left_large slds-var-m-top_large">
+        <img src={image} class="img-wide" />
+      </div>
+      <div class="slds-col slds-var-m-left_large slds-var-m-top_xx-large">
+        <div>
+          <div
+            class="slds-float_left slds-text-heading_medium span-bold slds-var-m-right_small"
+          >
+            (NYCES)
+          </div>
+          <div class="slds-text-heading_small span-normal">
+            Courtyard New York Manhattan/Fifth Avenue
+          </div>
+        </div>
+        <div class="slds-grid slds-var-m-top_x-small">
+          <div class="slds-col">3 East Street New York, New York 10016</div>
+        </div>
+        <div class="slds-grid slds-var-m-top_small">
+          <div
+            class="slds-col slds-size_1-of-6 miles-col slds-text-align_center"
+          >
+            0.1 miles
+          </div>
+          <div class="slds-var-m-left_x-small">from destination</div>
+          <div class="slds-var-m-left_medium">
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+          </div>
+          <div class="slds-var-m-left_small">4 &nbsp;1115 Reviews</div>
+        </div>
+        <div class="slds-var-m-top_x-small">
+          <div class="slds-float_left slds-var-m-right_small">
+            Largest room holds:
+          </div>
+          <div class="span-bold">4 Guests</div>
+        </div>
+        <div class="slds-var-m-top_x-small slds-var-m-right_large">
+          <lightning-button
+            class="slds-float_right orange-button why-courtyard-button"
+            icon-name="utility:chevronup"
+            icon-position="right"
+            label="Why Courtyard"
+          ></lightning-button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="slds-clearfix slds-var-m-top_large slds-var-m-horizontal_large slds-border_bottom"
+    >
+      <div class="slds-float_left">
+        <lightning-button
+          class="slds-float_right orange-button"
+          label="Tax/Fee Details"
+        ></lightning-button>
+        <lightning-button
+          class="slds-float_right orange-button"
+          label="Hotel Facts Sheet"
+        ></lightning-button>
+      </div>
+    </div>
+    <div
+      class="slds-clearfix slds-var-m-horizontal_large slds-var-p-vertical_medium slds-border_bottom"
+    >
+      <div class="slds-float_right">
+        <div
+          class="slds-float_left slds-var-m-right_x-large slds-var-m-top_small"
+        >
+          <span class="swiss-font">From</span>
+          <span class="slds-text-heading_large span-bold swiss-font"
+            >&nbsp;255&nbsp;</span
+          >
+          <span class="swiss-font">USD / night</span>
+        </div>
+        <button
+          class="slds-button slds-button_brand view-rates-button slds-var-m-right_large"
+        >
+          View Rates
+        </button>
+      </div>
+    </div>
+  </template>
+  <template if:true={showMap}>
+    <div>
+      <div class="slds-var-m-left_large">
+        <img src={image} class="img-skinny" />
+      </div>
+      <div class="slds-var-m-left_xx-large slds-var-m-top_small">
+        <div>
+          <div
+            class="slds-text-heading_medium span-bold slds-var-m-right_small"
+          >
+            (NYCES)
+          </div>
+          <div class="slds-text-heading_small span-normal slds-var-m-top_small">
+            Courtyard New York Manhattan/Fifth Avenue
+          </div>
+        </div>
+        <div class="slds-grid slds-var-m-top_x-small">
+          <div class="slds-col">3 East Street New York, New York 10016</div>
+        </div>
+        <div class="slds-grid slds-var-m-top_small">
+          <div
+            class="slds-col slds-size_1-of-4 miles-col slds-text-align_center"
+          >
+            0.1 miles
+          </div>
+          <div class="slds-var-m-left_x-small">from destination</div>
+        </div>
+        <div class="slds-grid slds-var-m-top_small">
+          <div>
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+            <button class="review-button slds-button">&nbsp;</button>
+          </div>
+          <div class="slds-var-m-left_small">4 &nbsp;1115 Reviews</div>
+        </div>
+        <div class="slds-var-m-top_x-small">
+          <div class="slds-float_left slds-var-m-right_small">
+            Largest room holds:
+          </div>
+          <div class="span-bold">4 Guests</div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="slds-clearfix slds-var-m-top_large slds-var-m-horizontal_x-large slds-border_bottom"
+    >
+      <div class="slds-float_left">
+        <lightning-button
+          class="slds-float_right orange-button"
+          label="Tax/Fee Details"
+        ></lightning-button>
+        <lightning-button
+          class="slds-float_right orange-button"
+          label="Hotel Facts Sheet"
+        ></lightning-button>
+      </div>
+    </div>
+    <div
+      class="slds-clearfix slds-var-m-horizontal_large slds-var-p-vertical_medium slds-border_bottom"
+    >
+      <div class="slds-float_right">
+        <div class="slds-float_left slds-var-m-right_small">
+          <div>
+            <span class="swiss-font">From</span>
+          </div>
+          <span class="slds-text-heading_large span-bold swiss-font">
+            255&nbsp;
+          </span>
+          <span class="swiss-font">USD / night</span>
+        </div>
+        <button
+          class="slds-button slds-button_brand view-rates-button slds-var-m-top_xx-small"
+        >
+          View Rates
+        </button>
+      </div>
+    </div>
+  </template>
+</template>
