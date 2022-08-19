@@ -9,6 +9,8 @@
 .miles-col {
   background-color: #1c1c1c;
   color: #ffffff;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
 }
 
 .review-button {
@@ -51,6 +53,9 @@
   --slds-c-button-text-color-hover: #b84c16;
   --slds-c-button-shadow-focus: 0 0 0px;
   --slds-c-button-sizing-border: 0px;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+  font-weight: 10;
 }
 
 .view-rates-button {
@@ -66,15 +71,71 @@
   --slds-c-button-spacing-block-end: 7px;
   --slds-c-button-brand-spacing-inline-start: 40px;
   --slds-c-button-brand-spacing-inline-end: 40px;
-  font-family: Swiss;
-  font-size: large;
-}
-
-.swiss-font {
-  font-family: Swiss;
+  font-family: Swiss_Bold;
+  font-size: 16px;
 }
 
 @font-face {
-  font-family: "Swiss";
-  src: url("/resource/Swiss/Swiss.ttf") format("TrueType");
+  font-family: "Swiss_Bold";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Swiss_Regular";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf") format("TrueType");
+}
+
+.display {
+  font-family: Swiss_Bold;
+  font-size: 55px;
+  line-height: 66px;
+}
+.H1 {
+  font-family: Swiss_Bold;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.H2 {
+  font-family: Swiss_Bold;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.H3 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.H4 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bold-small-body{
+  font-family: Proxima_Nova_Bold;
+  font-size: 12px;
+}
+.small-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+  font-weight: 10;
 }
