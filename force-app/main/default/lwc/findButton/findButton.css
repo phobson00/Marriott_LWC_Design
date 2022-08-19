@@ -11,11 +11,13 @@ button {
   --slds-c-button-spacing-block-end: 10px;
   --slds-c-button-brand-spacing-inline-start: 146px;
   --slds-c-button-brand-spacing-inline-end: 146px;
-  font-family: Swiss;
-  font-size: large;
+  font-family: Proxima_Nova_Regular;
+  font-size: 14px;
+  line-height: 18pt;
 }
 
+
 @font-face {
-  font-family: "Swiss";
-  src: url("/resource/Swiss/Swiss.ttf") format("TrueType");
+  font-family: "Proxima_Nova_Regular";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf") format("TrueType");
 }
