@@ -10,4 +10,16 @@ lightning-button-menu {
   --slds-c-button-background-color-hover: transparent;
   --slds-c-button-shadow: 0px 0px 0px;
   --slds-c-button-shadow-focus: 0px 0px 0px;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}
+
+lightning-menu-item{
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf") format("TrueType");
 }
