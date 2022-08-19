@@ -38,3 +38,6 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+
+#Contact Card
+force-app/main/default/lwc/contactCard/
