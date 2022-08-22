@@ -1,0 +1,54 @@
+<template >
+    <lightning-button variant="base" label="HOTEL FACT SHEET" title="Open tax and fee details" onclick={showModalBox} class="slds-m-left_x-small"></lightning-button>
+    <template if:true={isShowModal}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Meaningful description of the modal content" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless" id="modal-content-id-1">
+                    <lightning-button-icon icon-name="utility:close"   alternative-text="Close" class="slds-m-left_xx-small  slds-float_right" title="Close" 
+                        onclick={hideModalBox} variant="bare">
+                    </lightning-button-icon>
+                   
+                    <div class="slds-var-p-around_x-small H1">
+                        Hotel Facts Sheet
+                    </div>
+                    <div>
+                        <lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-m-bottom_large slds-var-p-around_small gray-layout slds-dropdown__item">
+                            <lightning-layout-item class="slds-var-p-horizontal_x-small">
+                                <div>
+                                    <label>Search for hotel</label>
+                                </div>
+                                <input placeholder="Hotel name or MARSHA code" class="slds-input slds-var-p-around_x-small" list="valueList"></input>
+                            </lightning-layout-item>
+    
+                            <lightning-layout-item class="slds-var-p-horizontal_x-small">
+                                <button class="slds-button slds-button_brand slds-float_right">FIND</button>
+                            </lightning-layout-item>
+						</lightning-layout>
+                    </div>
+                    <div class="H2">Fairfield Inn &amp; Suites Denver West/Federal Center</div>
+                    <br>
+                    <div class="body">140 South union Boulevard Lekwood, CO 80228 USA</div> 
+                    <div class="slds-grid"> 
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">Direct Toll Free</p>
+                            <p class="body">Main Fax</p>
+                            <p class="body">Main Phone</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">1111111111111</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">Sales Fax</p>
+                            <p class="body">Sales Phone</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">1111111111111</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop--open" id="backdrop"></div>
+    </template>
+</template>
