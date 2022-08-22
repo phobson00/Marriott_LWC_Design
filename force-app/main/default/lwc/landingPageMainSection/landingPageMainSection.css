@@ -8,17 +8,20 @@ lightning-tabset {
 
 @font-face {
   font-family: "Swiss_Bold";
-  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
 }
 
 @font-face {
   font-family: "Proxima_Nova_Bold";
-  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf") format("TrueType");
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf")
+    format("TrueType");
 }
 
 @font-face {
   font-family: "Proxima_Nova_Regular";
-  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf") format("TrueType");
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
+    format("TrueType");
 }
 
 .display {
@@ -61,3 +64,8 @@ lightning-tabset {
   font-size: 12px;
 }
 
+.error {
+  --slds-c-alert-color-background: #ffcccc;
+  --slds-c-alert-color-border: #cc0000;
+  --slds-c-alert-text-color: #cc0000;
+}
