@@ -1,6 +1,5 @@
 input {
   min-height: 52px;
-  width: 320px;
   --slds-c-input-color-border: #d2d2d2;
   --slds-c-input-color-border-focus: #1c1c1c;
   --slds-c-input-color-background: #ffffff;
