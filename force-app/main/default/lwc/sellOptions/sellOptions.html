@@ -4,18 +4,13 @@
 				<div>
 					<label>Sell Options</label>
 				</div>
-				<div>
-					<div class="slds-dropdown-trigger slds-dropdown-trigger_click">
-						<lightning-button 
-							label="Sell Strategy" 
-							alternative-text="Show menu" 
-							icon-name="utility:chevrondown"
-							variant="brand"
-							class="dropdown-button"
-							onclick={dropMenu}
-							icon-position="right">
-						</lightning-button>
-						<div class="slds-dropdown slds-dropdown_length-5 dropdown">
+				<div class="slds-var-m-top_xxx-small">
+					<div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large">
+						<button 
+						class="dropdown-button slds-button slds-button_brand slds-button_stretch slds-grid_align-spread"
+						onclick={dropMenu}><span>Sell Strategy</span><lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
+						</button>
+						<div class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left">
 							<ul class="slds-p-horizontal_x-large" aria-label="Show More">
 								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
 									<button class="slds-button list-button" onclick={buttonSelect}>

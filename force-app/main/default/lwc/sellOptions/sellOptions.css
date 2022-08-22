@@ -7,8 +7,6 @@
   --slds-c-button-brand-color-background-hover: #ffffff;
   --slds-c-button-spacing-block-end: 10px;
   --slds-c-button-spacing-block-start: 10px;
-  --slds-c-button-brand-spacing-inline-end: 112px;
-  --slds-c-button-brand-spacing-inline-start: 112px;
   --slds-c-button-brand-text-color: black;
   --slds-c-button-brand-text-color-hover: black;
   --slds-c-button-brand-text-color-active: black;
@@ -57,4 +55,9 @@ input {
   --slds-c-button-spacing-block-start: 3px;
 
   min-width: 230px;
+}
+
+lightning-icon {
+  --slds-c-icon-color-foreground: #1c1c1c;
+  --slds-c-icon-color-foreground-default: #1c1c1c;
 }
