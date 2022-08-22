@@ -9,7 +9,7 @@
                     </lightning-button-icon>
                    
                     <div class="slds-var-p-around_x-small H1">
-                        Tax and Fee Property Detail
+                        Hotel Facts Sheet
                     </div>
                     <div>
                         <lightning-layout class="slds-grid_vertical-align-end slds-grid_align-center slds-var-m-bottom_large slds-var-p-around_small gray-layout slds-dropdown__item">
@@ -25,29 +25,27 @@
                             </lightning-layout-item>
 						</lightning-layout>
                     </div>
-                    <div>
-                        <lightning-layout class="slds-grid_vertical-align-end">
-                            <lightning-layout-item>
-                                <div class="slds-var-p-around_x-small bold-body">
-                                    Tax and Fee Property Detail - SJCAC
-                                </div>
-                            </lightning-layout-item>
-                            <lightning-layout-item>
-                                <div class="slds-float_right slds-var-p-around_x-small body">
-                                    Property Currency: USD (US Dollar)
-                                </div>
-                            </lightning-layout-item>
-                        </lightning-layout>
-                       
+                    <div class="H2">Fairfield Inn &amp; Suites Denver West/Federal Center</div>
+                    <br>
+                    <div class="body">140 South union Boulevard Lekwood, CO 80228 USA</div> 
+                    <div class="slds-grid"> 
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">Direct Toll Free</p>
+                            <p class="body">Main Fax</p>
+                            <p class="body">Main Phone</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">1111111111111</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">Sales Fax</p>
+                            <p class="body">Sales Phone</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <p class="body">1111111111111</p>
+                        </div>
                     </div>
-                    <div>
-                        <lightning-datatable
-                                class="wrapped-header-datatable"
-                                key-field="id"
-                                data={data}
-                                columns={columns}>
-                        </lightning-datatable>
-                    </div>
+
                 </div>
             </div>
         </section>

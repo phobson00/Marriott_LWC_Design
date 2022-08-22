@@ -2,8 +2,8 @@ lightning-button {
     --slds-c-button-text-color: #b84c16;
     --slds-c-button-text-color-active: #b84c16;
     --slds-c-button-text-color-hover: #b84c16; 
-    font-family: Swiss_Regular;
-    font-size: 10px;
+    font-family: Proxima_Nova_Regular;
+    font-size: 12px;
 }
 
 .slds-modal__container {
