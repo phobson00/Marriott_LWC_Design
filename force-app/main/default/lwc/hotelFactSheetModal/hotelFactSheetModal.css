@@ -22,6 +22,7 @@ input {
 }
 
 button {
+    --slds-c-button-radius-border: 0%;
     --slds-c-button-brand-color-background: #444054;
     --slds-c-button-brand-color-background-active: #444054;
     --slds-c-button-brand-color-background-hover: #444054;

@@ -1,4 +1,5 @@
 button {
+  --slds-c-button-radius-border: 0%;
   --slds-c-button-brand-color-background: #444054;
   --slds-c-button-brand-color-background-active: #444054;
   --slds-c-button-brand-color-background-hover: #444054;
@@ -9,13 +10,12 @@ button {
   --slds-c-button-sizing-border: 0px;
   --slds-c-button-spacing-block-start: 13px;
   --slds-c-button-spacing-block-end: 13px;
-  font-family: Proxima_Nova_Regular;
+  font-family: Swiss_Bold;
   font-size: 14px;
   line-height: 18pt;
 }
 
 @font-face {
-  font-family: "Proxima_Nova_Regular";
-  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
-    format("TrueType");
+  font-family: "Swiss_Bold";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
 }

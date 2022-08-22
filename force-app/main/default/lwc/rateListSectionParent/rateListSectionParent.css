@@ -1,4 +1,5 @@
 .map-button {
+  --slds-c-button-radius-border: 0%;
   --slds-c-button-color-background: #ffffff;
   --slds-c-button-color-background-active: #ffffff;
   --slds-c-button-color-background-hover: #ffffff;

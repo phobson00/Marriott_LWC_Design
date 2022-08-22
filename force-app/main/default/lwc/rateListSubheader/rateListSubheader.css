@@ -1,4 +1,5 @@
 .edit-button {
+  --slds-c-button-radius-border: 0%;
   --slds-c-button-brand-color-background: #ffffff;
   --slds-c-button-brand-color-background-active: #1c1c1c;
   --slds-c-button-brand-color-background-hover: #1c1c1c;

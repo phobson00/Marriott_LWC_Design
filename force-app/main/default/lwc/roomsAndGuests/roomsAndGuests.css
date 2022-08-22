@@ -49,6 +49,7 @@ lightning-button-icon {
 }
 
 .done-button {
+  --slds-c-button-radius-border: 0%;
   --slds-c-button-brand-color-background: #ffffff;
   --slds-c-button-brand-color-background-active: #ffffff;
   --slds-c-button-brand-color-background-hover: #ffffff;
@@ -64,7 +65,7 @@ lightning-button-icon {
   --slds-c-button-brand-spacing-inline-start: 30px;
   --slds-c-button-spacing-block-start: 3px;
   --slds-c-button-spacing-block-end: 3px;
-  font-family: Swiss;
+  font-family: Swiss_Bold;
   font-size: medium;
 }
 
@@ -74,11 +75,11 @@ lightning-button-icon {
   --slds-c-button-text-color-hover: #1c1c1c;
   --slds-c-button-shadow: 0px 0px 0px;
   --slds-c-button-shadow-focus: 0px 0px 0px;
-  font-family: Swiss;
+  font-family: Swiss_Bold;
   font-size: small;
 }
 
 @font-face {
-  font-family: "Swiss";
-  src: url("/resource/Swiss/Swiss.ttf") format("TrueType");
+  font-family: "Swiss_Bold";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
 }
