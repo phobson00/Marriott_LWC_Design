@@ -19,9 +19,9 @@ mark {
   --slds-c-button-spacing-block-end: 0px;
   --slds-c-button-spacing-inline-start: 5px;
   --slds-c-button-spacing-inline-end: 5px;
-  --slds-c-button-color-background: #ffffff;
-  --slds-c-button-color-background-active: #ffffff;
-  --slds-c-button-color-background-hover: #ffffff;
+  --slds-c-button-color-background: #FFFFFF;
+  --slds-c-button-color-background-active: ##FF9662;
+  --slds-c-button-color-background-hover: #FF9662;
   --slds-c-button-color-border: #d2d2d2;
   --slds-c-button-color-border-active: #1c1c1c;
   --slds-c-button-color-border-hover: #1c1c1c;
@@ -31,6 +31,26 @@ mark {
   --slds-c-button-shadow-focus: 0 0 0px;
   max-height: 15px;
 }
+
+.review-button-selected {
+  --slds-c-button-radius-border: 100%;
+  --slds-c-button-spacing-block-start: 0px;
+  --slds-c-button-spacing-block-end: 0px;
+  --slds-c-button-spacing-inline-start: 5px;
+  --slds-c-button-spacing-inline-end: 5px;
+  --slds-c-button-color-background: #FF9662;
+  --slds-c-button-color-background-active: ##FF9662;
+  --slds-c-button-color-background-hover: #FF9662;
+  --slds-c-button-color-border: #d2d2d2;
+  --slds-c-button-color-border-active: #1c1c1c;
+  --slds-c-button-color-border-hover: #1c1c1c;
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  max-height: 15px;
+}
+
 
 .img-wide {
   min-height: 180px;

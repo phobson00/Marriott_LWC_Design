@@ -14,4 +14,19 @@ export default class HotelListing extends LightningElement {
   @api get showMap() {
     return this._showMap;
   }
+
+  buttonSelect(event) {
+
+		const selectedBtn = event.currentTarget;
+		const prevBtn = this.template.querySelector('.review-button-selected');
+
+		if(prevBtn) {
+			prevBtn.classList.replace('review-button-selected', 'review-button');
+		}
+
+		if(selectedBtn) {
+			selectedBtn.classList.replace('review-button', 'review-button-selected');
+		}
+	}
+
 }
