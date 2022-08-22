@@ -1,4 +1,5 @@
 .edit-button {
+  --slds-c-button-radius-border: 0%;
   --slds-c-button-brand-color-background: #ffffff;
   --slds-c-button-brand-color-background-active: #1c1c1c;
   --slds-c-button-brand-color-background-hover: #1c1c1c;
@@ -14,7 +15,7 @@
   --slds-c-button-brand-spacing-inline-start: 45px;
   --slds-c-button-spacing-block-start: 5px;
   --slds-c-button-spacing-block-end: 5px;
-  font-family: Swiss_Regular;
+  font-family: Swiss_Bold;
   font-size: 16px;
   font-weight: 5;
 }
