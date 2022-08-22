@@ -1,14 +1,29 @@
 <template>
   <div
     class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1"
+    onclick={errorHandler}
   >
     New Reservation
   </div>
-  <lightning-tabset>
+  <template if:true={error}>
+    <div
+      class="slds-notify slds-notify_alert slds-alert_error error"
+      role="alert"
+    >
+      <span class="slds-assistive-text">error</span>
+      <div class="H4">Correction Needed:</div>
+      <div class="body slds-var-m-left_x-small">
+        Your destination is unavailable for your selection. Try again using a
+        new search.
+      </div>
+    </div>
+  </template>
+  <lightning-tabset active-tab-value="hotel">
     <lightning-tab
       label="City, Airport or Address"
       class="slds-var-p-around_x-small slds-grid"
       onactive={cityTabHandler}
+      value="location"
     >
       <div class="slds-grid">
         <div class={column1}>
@@ -27,6 +42,7 @@
       label="Hotel Name"
       class="slds-var-p-around_x-small slds-grid"
       onactive={hotelTabHandler}
+      value="hotel"
     >
       <div class="slds-grid">
         <div class={column1}>

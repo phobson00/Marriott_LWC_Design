@@ -7,8 +7,8 @@ button {
   --slds-c-button-brand-color-border-background-hover: #444054;
   --slds-c-button-shadow-focus: 0 0 0px;
   --slds-c-button-sizing-border: 0px;
-  --slds-c-button-spacing-block-start: 10px;
-  --slds-c-button-spacing-block-end: 10px;
+  --slds-c-button-spacing-block-start: 13px;
+  --slds-c-button-spacing-block-end: 13px;
   font-family: Proxima_Nova_Regular;
   font-size: 14px;
   line-height: 18pt;
