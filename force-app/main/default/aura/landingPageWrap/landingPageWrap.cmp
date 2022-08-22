@@ -1,0 +1,4 @@
+<aura:component>
+  <lightning:workspaceAPI aura:id="workspace" />
+  <c:parentWithTabs></c:parentWithTabs>
+</aura:component>
