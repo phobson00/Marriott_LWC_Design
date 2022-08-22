@@ -13,6 +13,11 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
+lightning-icon {
+  --slds-c-icon-color-foreground: #1c1c1c;
+  --slds-c-icon-color-foreground-default: #1c1c1c;
+}
+
 input {
   --slds-c-input-color-border: transparent;
   --slds-c-input-color-border-focus: #1c1c1c;
