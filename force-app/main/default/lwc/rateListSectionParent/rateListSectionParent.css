@@ -112,6 +112,12 @@
   line-height: 24px;
 }
 
+.bold-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .bold-small-body{
   font-family: Proxima_Nova_Bold;
   font-size: 12px;
