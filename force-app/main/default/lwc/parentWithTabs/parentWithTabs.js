@@ -18,7 +18,7 @@ export default class ParentWithTabs extends LightningElement {
         this.invokeWorkspaceAPI("getFocusedTabInfo").then((focusedTab) => {
           this.invokeWorkspaceAPI("setTabLabel", {
             tabId: focusedTab.tabId,
-            label: "  Landing Page"
+            label: "ResApp"
           });
           this.invokeWorkspaceAPI("setTabIcon", {
             tabId: focusedTab.tabId,
