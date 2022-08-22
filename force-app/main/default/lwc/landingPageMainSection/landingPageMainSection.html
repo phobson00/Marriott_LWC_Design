@@ -4,11 +4,12 @@
   >
     New Reservation
   </div>
-  <lightning-tabset>
+  <lightning-tabset active-tab-value="hotel">
     <lightning-tab
       label="City, Airport or Address"
       class="slds-var-p-around_x-small slds-grid"
       onactive={cityTabHandler}
+      value="location"
     >
       <div class="slds-grid">
         <div class={column1}>
@@ -27,6 +28,7 @@
       label="Hotel Name"
       class="slds-var-p-around_x-small slds-grid"
       onactive={hotelTabHandler}
+      value="hotel"
     >
       <div class="slds-grid">
         <div class={column1}>
