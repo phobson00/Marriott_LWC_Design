@@ -8,7 +8,7 @@
                         onclick={hideModalBox} variant="bare">
                     </lightning-button-icon>
                    
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1">
+                    <div class="slds-var-p-around_x-small H1">
                         Tax and Fee Property Detail
                     </div>
                     <div>
@@ -21,14 +21,31 @@
                             </lightning-layout-item>
     
                             <lightning-layout-item class="slds-var-p-horizontal_x-small">
-                                <button class="slds-button slds-button_brand slds-float_right">Find</button>
+                                <button class="slds-button slds-button_brand slds-float_right">FIND</button>
                             </lightning-layout-item>
 						</lightning-layout>
                     </div>
                     <div>
-                        <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3">
-                            Member Rate Flexible
-                        </div>
+                        <lightning-layout class="slds-grid_vertical-align-end">
+                            <lightning-layout-item>
+                                <div class="slds-var-p-around_x-small bold-body">
+                                    Tax and Fee Property Detail - SJCAC
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item>
+                                <div class="slds-float_right slds-var-p-around_x-small body">
+                                    Property Currency: USD (US Dollar)
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                       
+                    </div>
+                    <div>
+                        <lightning-datatable
+                                key-field="id"
+                                data={data}
+                                columns={columns}>
+                        </lightning-datatable>
                     </div>
                 </div>
             </div>
