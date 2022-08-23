@@ -15,7 +15,7 @@
   --slds-c-button-brand-spacing-inline-start: 45px;
   --slds-c-button-spacing-block-start: 5px;
   --slds-c-button-spacing-block-end: 5px;
-  font-family: Swiss_Bold;
+  font-family: Swiss_Bold !important;
   font-size: 16px;
   font-weight: 5;
 }
@@ -26,7 +26,8 @@
 
 @font-face {
   font-family: "Swiss_Bold";
-  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
 }
 
 @font-face {
@@ -36,12 +37,14 @@
 
 @font-face {
   font-family: "Proxima_Nova_Bold";
-  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf") format("TrueType");
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf")
+    format("TrueType");
 }
 
 @font-face {
   font-family: "Proxima_Nova_Regular";
-  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf") format("TrueType");
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
+    format("TrueType");
 }
 
 .display {
