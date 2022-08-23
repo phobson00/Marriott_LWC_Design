@@ -4,10 +4,20 @@
 }
 
 .panel-body {
-  min-height: 200px;
+  min-height: 150px;
 }
 
 lightning-icon {
   --slds-c-icon-color-foreground: #ffffff;
   --slds-c-icon-color-foreground-default: #ffffff;
+}
+
+.why-button {
+  --slds-c-button-text-color: #ffffff;
+  --slds-c-button-text-color-active: #ffffff;
+  --slds-c-button-text-color-hover: #ffffff;
+  --slds-c-button-border-color-hover: transparent;
+  --slds-c-button-border-color-active: transparent;
+  --slds-c-button-border-color-active: transparent;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
 }

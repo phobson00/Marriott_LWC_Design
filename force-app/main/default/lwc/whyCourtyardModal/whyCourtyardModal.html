@@ -1,52 +1,45 @@
 <template>
-  <template if:false={showModal}>
-    <lightning-button
-      class="slds-float_right orange-button why-courtyard-button"
-      icon-name="utility:chevronup"
-      icon-position="right"
-      label="Why Courtyard"
-    ></lightning-button>
-  </template>
-  <template if:true={showModal}>
-    <div
-      class="slds-panel slds-size_medium slds-is-open panel slds-is-absolute"
-      aria-hidden="false"
+  <div
+    class="slds-panel slds-size_medium slds-is-open panel slds-is-absolute"
+    aria-hidden="false"
+  >
+    <lightning-layout
+      multiple-rows="true"
+      style="height: 100%"
+      class="slds-panel__body panel-body"
+      vertical-align="stretch"
     >
-      <lightning-layout
-        multiple-rows="true"
-        style="height: 100%"
-        class="slds-panel__body panel-body"
-        vertical-align="stretch"
+      <lightning-layout-item
+        class="slds-text-align_right slds-var-m-right_medium slds-size_full"
       >
-        <lightning-layout-item
-          class="slds-text-align_right slds-var-m-right_medium slds-size_full"
+        <button
+          onclick={closeModalHandler}
+          class="slds-button slds-button_bare why-button"
         >
-          <div>
-            Why Courtyard<lightning-icon
-              icon-name="utility:chevrondown"
-              size="x-small"
-              class="slds-var-m-left_x-small"
-            ></lightning-icon>
-          </div>
-        </lightning-layout-item>
+          Why Courtyard<lightning-icon
+            icon-name="utility:chevrondown"
+            size="x-small"
+            class="slds-var-m-left_x-small"
+          ></lightning-icon>
+        </button>
+      </lightning-layout-item>
 
-        <lightning-layout-item class="slds-text-align_left slds-grid_vertical">
-          <lightning-layout
-            multiple-rows="true"
-            vertical-align="end"
-            style="height: 100%"
+      <lightning-layout-item class="slds-text-align_left slds-grid_vertical">
+        <lightning-layout
+          multiple-rows="true"
+          vertical-align="end"
+          style="height: 100%"
+        >
+          <lightning-layout-item
+            ><div>
+              Spacious suites | West Elm decor |
+            </div></lightning-layout-item
           >
-            <lightning-layout-item
-              ><div>
-                Spacious suites | West Elm decor |
-              </div></lightning-layout-item
-            >
-            <lightning-layout-item
-              ><div>Complimentary Hot Breakfast</div></lightning-layout-item
-            >
-          </lightning-layout>
-        </lightning-layout-item>
-      </lightning-layout>
-    </div>
-  </template>
+          <lightning-layout-item
+            ><div>Complimentary Hot Breakfast</div></lightning-layout-item
+          >
+        </lightning-layout>
+      </lightning-layout-item>
+    </lightning-layout>
+  </div>
 </template>
