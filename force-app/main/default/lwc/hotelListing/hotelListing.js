@@ -7,6 +7,8 @@ export default class HotelListing extends LightningElement {
   @track
   _showMap;
 
+  showWhyModal = false;
+
   set showMap(value) {
     this._showMap = value;
   }
@@ -16,17 +18,15 @@ export default class HotelListing extends LightningElement {
   }
 
   buttonSelect(event) {
+    const selectedBtn = event.currentTarget;
+    const prevBtn = this.template.querySelector(".review-button-selected");
 
-		const selectedBtn = event.currentTarget;
-		const prevBtn = this.template.querySelector('.review-button-selected');
+    if (prevBtn) {
+      prevBtn.classList.replace("review-button-selected", "review-button");
+    }
 
-		if(prevBtn) {
-			prevBtn.classList.replace('review-button-selected', 'review-button');
-		}
-
-		if(selectedBtn) {
-			selectedBtn.classList.replace('review-button', 'review-button-selected');
-		}
-	}
-
+    if (selectedBtn) {
+      selectedBtn.classList.replace("review-button", "review-button-selected");
+    }
+  }
 }

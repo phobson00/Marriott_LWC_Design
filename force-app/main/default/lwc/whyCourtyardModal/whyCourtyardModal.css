@@ -1,5 +1,13 @@
 .panel {
   background-color: #444054;
-  min-height: 150px;
   color: #ffffff;
+}
+
+.panel-body {
+  min-height: 200px;
+}
+
+lightning-icon {
+  --slds-c-icon-color-foreground: #ffffff;
+  --slds-c-icon-color-foreground-default: #ffffff;
 }
