@@ -6,6 +6,13 @@
       </div>
       <div class="slds-col slds-var-m-left_large slds-var-m-top_xx-large">
         <div>
+          <template if:true={showWhyModal}>
+            <lightning-layout horizontal-align="center">
+              <c-why-courtyard-modal
+                onclosemodal={whyModalHandler}
+              ></c-why-courtyard-modal>
+            </lightning-layout>
+          </template>
           <div class="slds-float_left H3 span-bold slds-var-m-right_small">
             (NYCES)
           </div>
@@ -41,12 +48,15 @@
           <div class="bold-small-body">4 Guests</div>
         </div>
         <div class="slds-var-m-top_x-small slds-var-m-right_large">
-          <lightning-button
-            class="slds-float_right orange-button why-courtyard-button"
-            icon-name="utility:chevronup"
-            icon-position="right"
-            label="Why Courtyard"
-          ></lightning-button>
+          <template if:false={showWhyModal}>
+            <lightning-button
+              class="slds-float_right orange-button why-courtyard-button"
+              icon-name="utility:chevronup"
+              icon-position="right"
+              label="Why Courtyard"
+              onclick={whyModalHandler}
+            ></lightning-button>
+          </template>
         </div>
       </div>
     </div>
