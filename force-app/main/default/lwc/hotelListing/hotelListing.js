@@ -29,4 +29,10 @@ export default class HotelListing extends LightningElement {
       selectedBtn.classList.replace("review-button", "review-button-selected");
     }
   }
+
+  whyModalHandler() {
+    return this.showWhyModal
+      ? (this.showWhyModal = false)
+      : (this.showWhyModal = true);
+  }
 }

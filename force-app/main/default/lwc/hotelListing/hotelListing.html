@@ -7,8 +7,10 @@
       <div class="slds-col slds-var-m-left_large slds-var-m-top_xx-large">
         <div>
           <template if:true={showWhyModal}>
-            <div class="slds-align_absolute-center">
-              <c-why-courtyard-modal></c-why-courtyard-modal>
+            <div class="slds-align_absolute-center slds-var-m-bottom_large">
+              <c-why-courtyard-modal
+                onCloseModal={whyModalHandler}
+              ></c-why-courtyard-modal>
             </div>
           </template>
           <div class="slds-float_left H3 span-bold slds-var-m-right_small">
