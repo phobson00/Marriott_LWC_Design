@@ -15,7 +15,9 @@
   --slds-c-button-spacing-block-end: 5px;
   font-family: Proxima_Nova_Regular;
   font-size: 12px;
+  z-index: -1 !important;
 }
+
 
 .span-bold {
   font-weight: 700;

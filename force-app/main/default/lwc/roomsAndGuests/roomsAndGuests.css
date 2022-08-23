@@ -13,6 +13,10 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
+.z-index{
+  z-index: 100 !important;
+}
+
 lightning-icon {
   --slds-c-icon-color-foreground: #1c1c1c;
   --slds-c-icon-color-foreground-default: #1c1c1c;
