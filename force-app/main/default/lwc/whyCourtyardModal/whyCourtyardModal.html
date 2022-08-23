@@ -1,3 +1,41 @@
 <template>
-    
+  <template if:false={showModal}>
+    <lightning-button
+      class="slds-float_right orange-button why-courtyard-button"
+      icon-name="utility:chevronup"
+      icon-position="right"
+      label="Why Courtyard"
+    ></lightning-button>
+  </template>
+  <template if:true={showModal}>
+    <div
+      class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-right slds-is-open"
+      aria-hidden="false"
+    >
+      <div class="slds-panel__header slds-size_full">
+        <h2
+          class="slds-panel__header-title slds-float_right slds-truncate"
+          title="Panel Header"
+        >
+          Why Courtyard
+        </h2>
+        <div class="slds-panel__header-actions">
+          <button
+            class="slds-button slds-button_icon slds-button_icon-small slds-panel__close"
+            title="Collapse Panel Header"
+          >
+            <svg class="slds-button__icon" aria-hidden="true">
+              <use
+                xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"
+              ></use>
+            </svg>
+            <span class="slds-assistive-text">Collapse Panel Header</span>
+          </button>
+        </div>
+      </div>
+      <div class="slds-panel__body">
+        A panel body accepts any layout or component
+      </div>
+    </div>
+  </template>
 </template>
