@@ -25,12 +25,6 @@
   font-weight: 600;
 }
 
-.miles-col {
-  background-color: #1c1c1c;
-  color: #ffffff;
-}
-
-
 .filter-button {
   --slds-c-button-brand-text-color: #1c1c1c;
   --slds-c-button-brand-text-color-active: #1c1c1c;
@@ -60,22 +54,26 @@
 
 @font-face {
   font-family: "Swiss_Bold";
-  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
 }
 
 @font-face {
   font-family: "Swiss_Regular";
-  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf")
+    format("TrueType");
 }
 
 @font-face {
   font-family: "Proxima_Nova_Bold";
-  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf") format("TrueType");
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf")
+    format("TrueType");
 }
 
 @font-face {
   font-family: "Proxima_Nova_Regular";
-  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf") format("TrueType");
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
+    format("TrueType");
 }
 
 .display {
@@ -119,7 +117,7 @@
   line-height: 24px;
 }
 
-.bold-small-body{
+.bold-small-body {
   font-family: Proxima_Nova_Bold;
   font-size: 12px;
 }
