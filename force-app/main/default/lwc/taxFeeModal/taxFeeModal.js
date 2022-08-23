@@ -1,13 +1,13 @@
 import { LightningElement, track } from 'lwc';
 
 const columns = [
-    { label: 'ID', fieldName: 'id' },
-    { label: 'Tax/Fee Name', fieldName: 'taxFee'},
-    { label: 'Effective Date', fieldName: 'date'},
-    { label: 'Indicators', fieldName: 'indicators'},
-    { label: 'Amount', fieldName: 'amount'},
-    { label: 'Charge', fieldName: 'charge'},
-    { label: 'Frequency', fieldName: 'frequency'}
+    { label: 'ID', fieldName: 'id', wrapText: true },
+    { label: 'Tax/Fee Name', fieldName: 'taxFee', wrapText: true},
+    { label: 'Effective Date', fieldName: 'date', wrapText: true},
+    { label: 'Indicators', fieldName: 'indicators', wrapText: true},
+    { label: 'Amount', fieldName: 'amount', wrapText: true},
+    { label: 'Charge', fieldName: 'charge', wrapText: true},
+    { label: 'Frequency', fieldName: 'frequency', wrapText: true}
 ];
 
 const data = [
@@ -18,7 +18,8 @@ const data = [
         indicators: "E",
         amount: 2.5, 
         charge: "R",
-        frequecy: "N"
+        frequecy: "N",
+        wrapText: true
     }
 ];
 
