@@ -9,20 +9,24 @@
   </template>
   <template if:true={showModal}>
     <div
-      class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-right slds-is-open"
+      class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-right slds-is-open panel"
       aria-hidden="false"
     >
       <div class="slds-panel__body">
-        <div>
-          <div class="slds-text-align_right">
-            Why courtyard<lightning-icon
-              icon-name="utility:chevrondown"
-              size="x-small"
-              class="slds-var-m-left_x-small"
-            ></lightning-icon>
-          </div>
+        <div
+          class="slds-text-align_right slds-var-m-bottom_xx-large slds-var-m-right_medium"
+        >
+          Why Courtyard<lightning-icon
+            icon-name="utility:chevrondown"
+            size="x-small"
+            class="slds-var-m-left_x-small"
+          ></lightning-icon>
         </div>
-        <div>A panel body accepts any layout or component</div>
+
+        <div class="slds-text-align_left slds-var-m-top_xx-large">
+          <div>Spacious suites | West Elm decor |</div>
+          <div>Complimentary Hot Breakfast</div>
+        </div>
       </div>
     </div>
   </template>
