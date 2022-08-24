@@ -1,14 +1,8 @@
-import { track, LightningElement, api } from "lwc";
+import { track, LightningElement } from "lwc";
 
 export default class LandingPageMainSection extends LightningElement {
   @track
   placeholder;
-
-  @api
-  column1;
-
-  @api
-  column2;
 
   error = false;
 
