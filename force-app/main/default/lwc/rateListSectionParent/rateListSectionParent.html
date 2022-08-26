@@ -1,6 +1,6 @@
 <template>
-  <div class="slds-grid slds-var-m-left_medium">
-    <div class="slds-col slds-size_1-of-12">
+  <lightning-layout class="slds-grid slds-var-m-left_medium">
+    <lightning-layout-item size="1">
       <template if:false={showMap}>
         <lightning-button
           label="Map"
@@ -17,58 +17,77 @@
           onclick={displayMap}
         ></lightning-button>
       </template>
-    </div>
-    <div
-      class="slds-col slds-size_1-of-12 slds-var-m-right_x-large slds-var-m-left_large"
+    </lightning-layout-item>
+    <lightning-layout-item
+      size="1"
+      class="slds-var-m-right_x-large slds-var-m-left_large"
     >
-      <div>
-        <label class="small-body ">Sort By:</label>
-        <c-distance-filter></c-distance-filter>
-      </div>
-    </div>
-    <div class="slds-col slds-size_1-of-10 slds-var-m-right_x-large">
-      <div>
-        <label class="small-body">Currency:</label>
-      </div>
-      <div>
-        <c-currency-filter></c-currency-filter>
-      </div>
-    </div>
-    <div class="slds-col slds-size_1-of-10 slds-var-m-right_x-large">
-      <div>
-        <label class="small-body">Show:</label>
-      </div>
-      <div>
-        <c-show-filter></c-show-filter>
-      </div>
-    </div>
-    <div class="slds-size_6-of-12">
-      <div class="slds-float_right slds-var-m-top_x-small">
-        <lightning-button
-          label="Filters"
-          class="filter-button"
-          variant="brand"
-          icon-name="utility:filterList"
-        ></lightning-button>
-      </div>
-      <div class="slds-float_right slds-var-m-right_medium">
-        <div>
-          <label class="small-body">MI / KM:</label>
-        </div>
-        <div>
-          <c-distance-units-filter></c-distance-units-filter>
-        </div>
-      </div>
-    </div>
-  </div>
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+          <label class="small-body">Sort By:</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <c-distance-filter></c-distance-filter>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item size="1" class="slds-var-m-right_x-large">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+          <label class="small-body">Currency:</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <c-currency-filter></c-currency-filter>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item size="2" class="slds-var-m-right_x-large">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+          <label class="small-body">Show:</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <c-show-filter></c-show-filter>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+
+    <lightning-layout-item size="6">
+      <lightning-layout horizontal-align="end">
+        <lightning-layout-item size="2">
+          <lightning-layout multiple-rows>
+            <lightning-layout-item size="12">
+              <label class="small-body">MI / KM:</label>
+            </lightning-layout-item>
+            <lightning-layout-item size="12">
+              <c-distance-units-filter></c-distance-units-filter>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item
+          class="slds-var-m-top_x-small slds-var-m-right_xx-large"
+        >
+          <lightning-button
+            label="Filters"
+            class="filter-button"
+            variant="brand"
+            icon-name="utility:filterList"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
 
   <div
     class="slds-clearfix slds-var-m-left_x-large slds-var-m-top_x-large"
     if:false={showMap}
   >
     <div class="slds-float_left">
-      <span class="small-body">Showing </span><span class="small-body-bold">1 - 40</span><span class="small-body"> of </span
-      ><span class="small-body-bold">190 </span><span class="small-body">hotels</span>
+      <span class="small-body">Showing </span
+      ><span class="small-body-bold">1 - 40</span
+      ><span class="small-body"> of </span
+      ><span class="small-body-bold">190 </span
+      ><span class="small-body">hotels</span>
     </div>
     <div class="slds-float_right">
       <lightning-input
