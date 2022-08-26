@@ -1,16 +1,17 @@
 <template>
-	<div class="slds-p-vertical_medium lgc-bg slds-grid">
-		<div class="slds-col">
-			<div>
+	<lightning-layout class="slds-var-p-vertical_medium lgc-bg slds-grid">
+			<lightning-layout-item size="12">
 				<label>Rooms &amp; Guests</label>
-			</div>
-			<div class="slds-var-m-top_xxx-small">	
-				<div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large">
-					<button 
-						class="dropdown-button slds-button slds-button_brand slds-button_stretch slds-grid_align-spread"
-						onclick={dropMenu}><span>Rooms &amp; Guests</span><lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
-					</button>
-					<div class="slds-dropdown slds-dropdown_left dropdown slds-var-p-around_large slds-scrollable_y slds-size_full slds-button_stretch z-index">
+			</lightning-layout-item>
+			<lightning-layout-item size="12" class="slds-var-m-top_xxx-small">	
+				<lightning-layout multiple-rows class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large">
+					<lightning-layout-item size="12">
+						<button 
+							class="dropdown-button slds-button slds-button_brand slds-button_stretch slds-grid_align-spread"
+							onclick={dropMenu}><span>Rooms &amp; Guests</span><lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
+						</button>
+					</lightning-layout-item>
+					<lightning-layout-item size="12" class="slds-dropdown slds-dropdown_left dropdown slds-var-p-around_large slds-scrollable_y slds-size_full slds-button_stretch z-index">
 								<lightning-layout class="slds-grid_vertical-align-end slds-var-p-bottom_xx-small slds-dropdown__item">
 									<lightning-layout-item>
 										<label>Rooms</label>
@@ -91,9 +92,8 @@
 										<button class="slds-button reset-button">Reset</button>
 									</lightning-layout-item>
 								</lightning-layout>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+					</lightning-layout-item>
+				</lightning-layout>
+			</lightning-layout-item>
+	</lightning-layout>
 </template>
