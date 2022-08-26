@@ -91,8 +91,8 @@ mark {
   --slds-c-button-spacing-block-end: 7px;
   --slds-c-button-brand-spacing-inline-start: 40px;
   --slds-c-button-brand-spacing-inline-end: 40px;
-  font-family: Swiss_Bold;
-  font-size: 16px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px !important;
 }
 
 @font-face {

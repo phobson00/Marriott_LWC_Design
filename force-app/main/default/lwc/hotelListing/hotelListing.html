@@ -117,11 +117,12 @@
             <span class="small-body">USD / night</span>
           </lightning-layout-item>
           <lightning-layout-item>
-            <button
-              class="slds-button slds-button_brand view-rates-button slds-var-m-right_large"
+            <lightning-button
+              class="view-rates-button slds-var-m-top_xx-small"
+              variant="brand"
+              label="VIEW RATES"
             >
-              VIEW RATES
-            </button>
+            </lightning-button>
           </lightning-layout-item>
         </lightning-layout>
       </lightning-layout-item>
@@ -134,71 +135,90 @@
       <lightning-layout-item class="slds-var-m-left_large">
         <img src={image} class="img-skinny" />
       </lightning-layout-item>
-      <div class="slds-var-m-left_xx-large slds-var-m-top_small">
-        <div>
-          <div
+      <lightning-layout-item
+        class="slds-var-m-left_xx-large slds-var-m-top_small"
+      >
+        <lightning-layout multiple-rows="">
+          <lightning-layout-item
+            size="12"
             class="slds-text-heading_medium span-bold slds-var-m-right_small"
           >
             (NYCES)
-          </div>
-          <div class="slds-text-heading_small span-normal slds-var-m-top_small">
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="12"
+            class="slds-text-heading_small span-normal slds-var-m-top_small"
+          >
             Courtyard New York Manhattan/Fifth Avenue
-          </div>
-        </div>
-        <div class="slds-grid slds-var-m-top_xxx-small">
-          <div class="slds-col">3 East Street New York, New York 10016</div>
-        </div>
-        <div class="slds-grid slds-var-m-top_small">
-          <div>
+          </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout class="slds-var-m-top_xxx-small">
+          <lightning-layout-item
+            >3 East Street New York, New York 10016</lightning-layout-item
+          >
+        </lightning-layout>
+        <lightning-layout class="slds-grid slds-var-m-top_small">
+          <lightning-layout-item>
             <mark class="slds-var-p-around_xxx-small"> 0.1 miles </mark>
-          </div>
-          <div class="slds-var-m-left_x-small">from destination</div>
-        </div>
-        <div class="slds-grid slds-var-m-top_small">
-          <div>
+          </lightning-layout-item>
+          <lightning-layout-item class="slds-var-m-left_x-small"
+            >from destination</lightning-layout-item
+          >
+        </lightning-layout>
+        <lightning-layout class="slds-var-m-top_small">
+          <lightning-layout-item>
             <button class="review-button-selected slds-button">&nbsp;</button>
             <button class="review-button-selected slds-button">&nbsp;</button>
             <button class="review-button-selected slds-button">&nbsp;</button>
             <button class="review-button-selected slds-button">&nbsp;</button>
             <button class="review-button slds-button">&nbsp;</button>
-          </div>
-          <div class="slds-var-m-left_small">4 &nbsp;1115 Reviews</div>
-        </div>
-        <div class="slds-var-m-top_x-small">
-          <div class="slds-float_left slds-var-m-right_small">
+          </lightning-layout-item>
+          <lightning-layout-item class="slds-var-m-left_small"
+            >4 &nbsp;1115 Reviews</lightning-layout-item
+          >
+        </lightning-layout>
+        <lightning-layout class="slds-var-m-top_x-small">
+          <lightning-layout-item class="slds-float_left slds-var-m-right_small">
             Largest room holds:
-          </div>
-          <div class="span-bold">4 Guests</div>
-        </div>
-      </div>
+          </lightning-layout-item>
+          <lightning-layout-item class="span-bold"
+            >4 Guests</lightning-layout-item
+          >
+        </lightning-layout>
+      </lightning-layout-item>
     </lightning-layout>
-    <div
-      class="slds-clearfix slds-var-m-top_large slds-var-m-horizontal_x-large slds-border_bottom"
+    <lightning-layout
+      class="slds-var-m-top_large slds-var-m-horizontal_x-large slds-border_bottom"
     >
-      <div class="slds-float_left">
+      <lightning-layout-item class="slds-float_left">
         <c-hotel-fact-sheet-modal></c-hotel-fact-sheet-modal>
         <c-tax-fee-modal></c-tax-fee-modal>
-      </div>
-    </div>
-    <div
-      class="slds-clearfix slds-var-m-horizontal_large slds-var-p-vertical_medium slds-border_bottom"
+      </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout
+      class="slds-var-m-horizontal_large slds-var-p-vertical_medium slds-border_bottom"
     >
-      <div class="slds-float_right">
-        <div class="slds-float_left slds-var-m-right_small">
-          <div>
-            <span class="swiss-font">From</span>
-          </div>
-          <span class="slds-text-heading_large span-bold swiss-font">
-            255&nbsp;
-          </span>
-          <span class="swiss-font">USD / night</span>
-        </div>
-        <button
-          class="slds-button slds-button_brand view-rates-button slds-var-m-top_xx-small"
-        >
-          View Rates
-        </button>
-      </div>
-    </div>
+      <lightning-layout-item class="slds-float_right">
+        <lightning-layout>
+          <lightning-layout-item class="slds-float_left slds-var-m-right_small">
+            <div>
+              <span class="swiss-font">From</span>
+            </div>
+            <span class="slds-text-heading_large span-bold swiss-font">
+              255&nbsp;
+            </span>
+            <span class="swiss-font">USD / night</span>
+          </lightning-layout-item>
+          <lightning-layout-item>
+            <lightning-button
+              class="view-rates-button slds-var-m-top_xx-small"
+              variant="brand"
+              label="VIEW RATES"
+            >
+            </lightning-button>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+    </lightning-layout>
   </template>
 </template>
