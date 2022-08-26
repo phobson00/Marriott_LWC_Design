@@ -1,17 +1,15 @@
 <template>
-	<div class="slds-p-vertical_medium lgc-bg slds-grid">
-		<div class="slds-col slds-size_full slds-var-p-right_xx-large">
-			<div>
+	<lightning-layout mulitple-rows="true" class="slds-var-p-vertical_medium slds-var-p-right_xx-large">
+			<lightning-layout-item size="12">
 				<label>Destination</label>
-			</div>
-			<div class="slds-var-m-top_xxx-small">
+			</lightning-layout-item>
+			<lightning-layout-item size="12" class="slds-var-m-top_xxx-small">
 				<input placeholder={placeholder} class="slds-input slds-button_stretch" list="valueList"></input>
 				<datalist id="valueList">
 					<template for:each={values} for:item='item'>
 						<option key={item.key} value={item}>{item}</option>
 					</template>
 				</datalist>
-			</div>
-		</div>
-	</div>
+			</lightning-layout-item>
+	</lightning-layout>
 </template>
