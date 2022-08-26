@@ -13,10 +13,6 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
-.z-index{
-  z-index: 100 !important;
-}
-
 lightning-icon {
   --slds-c-icon-color-foreground: #1c1c1c;
   --slds-c-icon-color-foreground-default: #1c1c1c;
@@ -50,6 +46,7 @@ lightning-button-icon {
 
 .dropdown {
   min-height: 200px;
+  z-index: 100 !important;
 }
 
 .done-button {
@@ -85,5 +82,6 @@ lightning-button-icon {
 
 @font-face {
   font-family: "Swiss_Bold";
-  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
 }
