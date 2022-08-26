@@ -11,44 +11,44 @@
 							onclick={dropMenu}><span>Sell Strategy</span><lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
 							</button>
 						</lightning-layout-item>
-						<lightning-layout-item class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left">
-							<ul class="slds-p-horizontal_x-large" aria-label="Show More">
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+						<lightning-layout-item class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left slds-scrollable_y" style="min-height: 180px;">
+							<lightning-layout class="slds-var-p-horizontal_x-large" multiple-rows="true">
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<button class="slds-button list-button slds-button_stretch" onclick={buttonSelect}>
 										<span class="slds-align_absolute-center">Cluster</span>
 									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<button class="slds-button list-button slds-button_stretch" onclick={buttonSelect}>
 										<span class="slds-align_absolute-center" >Business</span>
 									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<button class="slds-button list-button slds-button_stretch" onclick={buttonSelect}>
 										<span class="slds-align_absolute-center">Packages</span>
 									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<button class="slds-button list-button slds-button_stretch" onclick={buttonSelect}>
 										<span class="slds-align_absolute-center">Discount</span>
 									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<button class="slds-button list-button slds-button_stretch" onclick={buttonSelect}>
 										<span class="slds-align_absolute-center">Wholesaler</span>
 									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<button class="slds-button list-button slds-button_stretch" onclick={buttonSelect}>
 										<span class="slds-align_absolute-center">Retail</span>
 									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<button class="slds-button list-button slds-button_stretch" onclick={buttonSelect}>
 										<span class="slds-align_absolute-center">Group</span>
 									</button>
-								</li>
-								<li class="slds-dropdown__item slds-grid slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" class="slds-dropdown__item slds-grid slds-var-p-top_x-small slds-var-p-horizontal_small" role="presentation">
 									<div class="slds-col">
 										<div>
 											<label>Enter Code</label>
@@ -57,8 +57,8 @@
 											<input placeholder="Code" class="slds-input"></input>
 										</div>
 									</div>
-								</li>
-							</ul>
+								</lightning-layout-item>
+							</lightning-layout>
 						</lightning-layout-item>
 					</lightning-layout>
 				</lightning-layout-item>
