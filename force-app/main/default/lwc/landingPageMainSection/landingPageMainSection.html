@@ -25,18 +25,26 @@
       onactive={cityTabHandler}
       value="location"
     >
-      <div class="slds-grid">
-        <div class="slds-size_1-of-2">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="6">
           <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
-          <c-rooms-and-guests></c-rooms-and-guests>
-          <c-points-checkbox></c-points-checkbox>
-        </div>
-        <div class="slds-size_1-of-2">
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
           <c-sell-options></c-sell-options>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+          <c-rooms-and-guests></c-rooms-and-guests>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
           <c-date-input-box></c-date-input-box>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+          <c-points-checkbox></c-points-checkbox>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
           <c-find-button></c-find-button>
-        </div>
-      </div>
+        </lightning-layout-item>
+      </lightning-layout>
     </lightning-tab>
     <lightning-tab
       label="Hotel Name"
@@ -44,18 +52,26 @@
       onactive={hotelTabHandler}
       value="hotel"
     >
-      <div class="slds-grid">
-        <div class="slds-size_1-of-2">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="6">
           <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
-          <c-rooms-and-guests></c-rooms-and-guests>
-          <c-points-checkbox></c-points-checkbox>
-        </div>
-        <div class="slds-size_1-of-2">
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
           <c-sell-options></c-sell-options>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+          <c-rooms-and-guests></c-rooms-and-guests>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
           <c-date-input-box></c-date-input-box>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+          <c-points-checkbox></c-points-checkbox>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
           <c-find-button></c-find-button>
-        </div>
-      </div>
+        </lightning-layout-item>
+      </lightning-layout>
     </lightning-tab>
   </lightning-tabset>
 </template>
