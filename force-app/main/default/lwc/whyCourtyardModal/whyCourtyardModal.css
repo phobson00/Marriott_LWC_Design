@@ -1,11 +1,11 @@
 .panel {
   background-color: #444054;
   color: #ffffff;
-  left: 51%;
+  left: 52%;
 }
 
 .panel-body {
-  min-height: 150px;
+  min-height: 155px;
 }
 
 lightning-icon {
