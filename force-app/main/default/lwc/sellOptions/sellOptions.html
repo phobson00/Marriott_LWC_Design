@@ -8,16 +8,16 @@
         class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large"
       >
         <lightning-layout-item size="12">
-          <lightning-button
-            class="dropdown-button"
-            icon-name="utility:chevrondown"
-            icon-position="right"
-            label="Sell Strategy"
+          <button
+            class="dropdown-button slds-button slds-button_brand slds-button_stretch slds-grid_align-spread"
             onclick={dropMenu}
-            variant="brand"
-            style="display: grid; width: 100%"
           >
-          </lightning-button>
+            <span>Sell Strategy</span
+            ><lightning-icon
+              icon-name="utility:chevrondown"
+              size="x-small"
+            ></lightning-icon>
+          </button>
         </lightning-layout-item>
         <lightning-layout-item
           class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left slds-scrollable_y"
