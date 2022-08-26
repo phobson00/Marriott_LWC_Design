@@ -1,10 +1,9 @@
 <template>
-		<div class="slds-var-p-vertical_medium lgc-bg slds-grid">
-			<div class="slds-col">
-				<div>
+		<lightning-layout class="slds-var-p-vertical_medium" multiple-rows="true">
+				<lightning-layout-item size="12">
 					<label>Sell Options</label>
-				</div>
-				<div class="slds-var-m-top_xxx-small">
+				</lightning-layout-item>
+				<lightning-layout-item class="slds-var-m-top_xxx-small" size="12">
 					<div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large">
 						<button 
 						class="dropdown-button slds-button slds-button_brand slds-button_stretch slds-grid_align-spread"
@@ -60,7 +59,6 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				</lightning-layout-item>
+		</lightning-layout>
 </template>
