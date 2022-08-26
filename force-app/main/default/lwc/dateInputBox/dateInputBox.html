@@ -1,44 +1,24 @@
 <template>
-	<div class="slds-var-p-vertical_medium lgc-bg slds-grid slds-var-p-right_xx-large">
-		<div class="slds-col slds-var-m-right_x-small">
-			<div>
-				<label>Check-In Date</label>
-			</div>
-			<div class="slds-var-m-top_xxx-small">
-				<input type="date" class="slds-input slds-button_stretch"></input>
-			</div>
-		</div>
-		<div class="slds-col slds-var-m-left_x-small">
-			<div>
-				<label>Check-Out Date</label>
-			</div>
-			<div class="slds-var-m-top_xxx-small">
-				<input type="date" class="slds-input slds-button_stretch"></input>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<!-- <div class="slds-grid_vertical-align-end slds-gutters slds-var-p-vertical_medium slds-var-p-left_small slds-grid_align-spread slds-size_full slds-var-p-right_xx-large">
-		<lightning-layout-item>
-			<div>
-				<label>Check-In Date</label>
-			</div>
-			<div class="slds-var-m-top_xxx-small">
-				<input type="date" class="slds-input slds-button_stretch"></input>
-			</div>
+	<lightning-layout class="slds-var-p-vertical_medium slds-var-p-right_xx-large" horizontal-align="spread">
+		<lightning-layout-item size="5">
+			<lightning-layout multiple-rows="true">
+				<lightning-layout-item size="12">
+					<label>Check-In Date</label>
+				</lightning-layout-item>
+				<lightning-layout-item class="slds-var-m-top_xxx-small" size="12">
+					<input type="date" class="slds-input slds-button_stretch"></input>
+				</lightning-layout-item>
+		    </lightning-layout>
 		</lightning-layout-item>
-
-		<lightning-layout-item>
-			<div>
-				<label>Check-Out Date</label>
-			</div>
-			<div class="slds-var-m-top_xxx-small">
-				<input type="date" class="slds-input slds-button_stretch"></input>
-			</div>
-		</lightning-layout-item>
-
-	</div> -->
+		<lightning-layout-item size="5">
+			<lightning-layout multiple-rows="true">
+				<lightning-layout-item size="12">
+					<label>Check-Out Date</label>
+				</lightning-layout-item>
+				<lightning-layout-item class="slds-var-m-top_xxx-small" size="12">
+					<input type="date" class="slds-input slds-button_stretch"></input>
+				</lightning-layout-item>
+		    </lightning-layout>
+		</lightning-layout-item >
+	</lightning-layout>
 </template>

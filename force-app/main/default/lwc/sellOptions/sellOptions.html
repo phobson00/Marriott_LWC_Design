@@ -1,66 +1,144 @@
 <template>
-		<div class="slds-var-p-vertical_medium lgc-bg slds-grid">
-			<div class="slds-col">
-				<div>
-					<label>Sell Options</label>
-				</div>
-				<div class="slds-var-m-top_xxx-small">
-					<div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large">
-						<button 
-						class="dropdown-button slds-button slds-button_brand slds-button_stretch slds-grid_align-spread"
-						onclick={dropMenu}><span>Sell Strategy</span><lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
-						</button>
-						<div class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left">
-							<ul class="slds-p-horizontal_x-large" aria-label="Show More">
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<button class="slds-button list-button" onclick={buttonSelect}>
-										<span class="slds-align_absolute-center">Cluster</span>
-									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<button class="slds-button list-button" onclick={buttonSelect}>
-										<span class="slds-align_absolute-center" >Business</span>
-									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<button class="slds-button list-button" onclick={buttonSelect}>
-										<span class="slds-align_absolute-center">Packages</span>
-									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<button class="slds-button list-button" onclick={buttonSelect}>
-										<span class="slds-align_absolute-center">Discount</span>
-									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<button class="slds-button list-button" onclick={buttonSelect}>
-										<span class="slds-align_absolute-center">Wholesaler</span>
-									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<button class="slds-button list-button" onclick={buttonSelect}>
-										<span class="slds-align_absolute-center">Retail</span>
-									</button>
-								</li>
-								<li class="slds-dropdown__item slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<button class="slds-button list-button" onclick={buttonSelect}>
-										<span class="slds-align_absolute-center">Group</span>
-									</button>
-								</li>
-								<li class="slds-dropdown__item slds-grid slds-p-top_x-small slds-p-horizontal_small slds-align_absolute-center" role="presentation">
-									<div class="slds-col">
-										<div>
-											<label>Enter Code</label>
-										</div>
-										<div>
-											<input placeholder="Code" class="slds-input"></input>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+  <lightning-layout class="slds-var-p-vertical_medium" multiple-rows="true">
+    <lightning-layout-item size="12">
+      <label>Sell Options</label>
+    </lightning-layout-item>
+    <lightning-layout-item class="slds-var-m-top_xxx-small" size="12">
+      <lightning-layout
+        class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large"
+      >
+        <lightning-layout-item size="12">
+          <button
+            class="dropdown-button slds-button slds-button_brand slds-button_stretch slds-grid_align-spread"
+            onclick={dropMenu}
+          >
+            <span>Sell Strategy</span
+            ><lightning-icon
+              icon-name="utility:chevrondown"
+              size="x-small"
+            ></lightning-icon>
+          </button>
+        </lightning-layout-item>
+        <lightning-layout-item
+          class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left slds-scrollable_y"
+          style="min-height: 180px"
+        >
+          <lightning-layout
+            class="slds-var-p-horizontal_x-large"
+            multiple-rows="true"
+          >
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-button
+                class="list-button"
+                style="display: grid; width: 100%"
+                variant="brand"
+                onclick={buttonSelect}
+                label="Cluster"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-button
+                class="list-button"
+                style="display: grid; width: 100%"
+                variant="brand"
+                onclick={buttonSelect}
+                label="Business"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-button
+                class="list-button"
+                style="display: grid; width: 100%"
+                variant="brand"
+                onclick={buttonSelect}
+                label="Packages"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-button
+                class="list-button"
+                style="display: grid; width: 100%"
+                variant="brand"
+                onclick={buttonSelect}
+                label="Discount"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-button
+                class="list-button"
+                style="display: grid; width: 100%"
+                variant="brand"
+                onclick={buttonSelect}
+                label="Wholesaler"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-button
+                class="list-button"
+                style="display: grid; width: 100%"
+                variant="brand"
+                onclick={buttonSelect}
+                label="Retail"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-button
+                class="list-button"
+                style="display: grid; width: 100%"
+                variant="brand"
+                onclick={buttonSelect}
+                label="Group"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="slds-dropdown__item slds-grid slds-var-p-top_x-small slds-var-p-horizontal_small"
+              role="presentation"
+            >
+              <lightning-input
+                placeholder="Code"
+                label="Enter Code"
+                style="display: grid; width: 100%"
+              ></lightning-input>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
 </template>

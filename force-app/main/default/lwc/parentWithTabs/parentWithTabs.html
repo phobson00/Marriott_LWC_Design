@@ -1,8 +1,10 @@
 <template>
-  <div class="slds-theme_default">
-    <div>
+  <lightning-layout multiple-rows class="slds-theme_default">
+    <lightning-layout-item size="12">
       <c-navigation-bar></c-navigation-bar>
-    </div>
-    <c-landing-page-main-section></c-landing-page-main-section>
-  </div>
+    </lightning-layout-item>
+    <lightning-layout-item size="12">
+      <c-landing-page-main-section></c-landing-page-main-section>
+    </lightning-layout-item>
+  </lightning-layout>
 </template>

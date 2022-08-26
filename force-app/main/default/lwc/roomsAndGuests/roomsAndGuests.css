@@ -13,16 +13,12 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
-.z-index{
-  z-index: 100 !important;
-}
-
 lightning-icon {
   --slds-c-icon-color-foreground: #1c1c1c;
   --slds-c-icon-color-foreground-default: #1c1c1c;
 }
 
-input {
+lightning-input {
   --slds-c-input-color-border: transparent;
   --slds-c-input-color-border-focus: #1c1c1c;
   --slds-c-input-color-background: #ffffff;
@@ -50,6 +46,7 @@ lightning-button-icon {
 
 .dropdown {
   min-height: 200px;
+  z-index: 100 !important;
 }
 
 .done-button {
@@ -77,6 +74,9 @@ lightning-button-icon {
   --slds-c-button-text-color: #1c1c1c;
   --slds-c-button-text-color-active: #1c1c1c;
   --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-neutral-color-border: #ffffff;
+  --slds-c-button-neutral-color-border-active: #ffffff;
+  --slds-c-button-neutral-color-border-hover: #ffffff;
   --slds-c-button-shadow: 0px 0px 0px;
   --slds-c-button-shadow-focus: 0px 0px 0px;
   font-family: Swiss_Bold;
@@ -85,5 +85,6 @@ lightning-button-icon {
 
 @font-face {
   font-family: "Swiss_Bold";
-  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
 }
