@@ -5,12 +5,17 @@
   --slds-c-button-brand-color-background: #ffffff;
   --slds-c-button-brand-color-background-active: #ffffff;
   --slds-c-button-brand-color-background-hover: #ffffff;
-  --slds-c-button-spacing-block-end: 10px;
-  --slds-c-button-spacing-block-start: 10px;
   --slds-c-button-brand-text-color: black;
   --slds-c-button-brand-text-color-hover: black;
   --slds-c-button-brand-text-color-active: black;
   --slds-c-button-shadow-focus: 0px 0px 0px;
+
+  --slds-c-button-spacing-block-end: 10px;
+  --slds-c-button-spacing-block-start: 10px;
+}
+
+.dropdown {
+  z-index: 50;
 }
 
 input {
@@ -32,11 +37,8 @@ input {
   --slds-c-button-text-color-hover: #1c1c1c;
   --slds-c-button-text-color-active: #1c1c1c;
   --slds-c-button-shadow-focus: 0px 0px 0px;
-
   --slds-c-button-spacing-block-end: 3px;
   --slds-c-button-spacing-block-start: 3px;
-
-  min-width: 230px;
 }
 
 .list-button-selected {
@@ -53,8 +55,6 @@ input {
 
   --slds-c-button-spacing-block-end: 3px;
   --slds-c-button-spacing-block-start: 3px;
-
-  min-width: 230px;
 }
 
 lightning-icon {
