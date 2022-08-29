@@ -7,8 +7,6 @@ export default class HotelListing extends LightningElement {
   @track
   _showMap;
 
-  showWhyModal = false;
-
   set showMap(value) {
     this._showMap = value;
   }
@@ -31,8 +29,15 @@ export default class HotelListing extends LightningElement {
   }
 
   whyModalHandler() {
-    return this.showWhyModal
-      ? (this.showWhyModal = false)
-      : (this.showWhyModal = true);
+    const dropdown = this.template.querySelector(".dropdown");
+    const whyButton = this.template.querySelector(".why-courtyard-button");
+
+    if (dropdown.classList.contains("slds-is-open")) {
+      dropdown.classList.remove("slds-is-open");
+      whyButton.hidden = false;
+    } else {
+      dropdown.classList.add("slds-is-open");
+      whyButton.hidden = true;
+    }
   }
 }
