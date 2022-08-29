@@ -1,5 +1,6 @@
 <template>
   <lightning-layout
+    multiple-rows
     class="slds-dropdown-trigger slds-dropdown-trigger_click color-background-alt slds-var-p-horizontal_medium slds-var-p-bottom_medium"
   >
     <lightning-layout-item size="3">
@@ -53,7 +54,7 @@
       ></lightning-button>
     </lightning-layout-item>
     <template if:true={showDropdown}>
-      <div class="dropdown-main slds-dropdown_left slds-is-relative">
+      <div class="dropdown-main">
         <c-landing-page-main-section></c-landing-page-main-section>
       </div>
     </template>
