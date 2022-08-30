@@ -36,6 +36,11 @@
   max-height: 15px;
 }
 
+lightning-icon {
+  --slds-c-icon-color-foreground: #1c1c1c;
+  --slds-c-icon-color-foreground-default: #1c1c1c;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
