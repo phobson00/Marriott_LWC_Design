@@ -1,3 +1,31 @@
 <template>
-    
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-around_x-small slds-border_bottom slds-border_top slds-border_right slds-border_left slds-var-m-around_small"
+  >
+    <lightning-layout-item size="2" class="slds-border_right">
+      <lightning-button
+        label="New Search"
+        class="slds-var-m-top_small slds-var-m-left_medium"
+        variant="bare"
+      ></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item size="6" class="slds-var-m-left_medium">
+      <div class="slds-float_left">wasty:</div>
+      <div class="slds-float_left">Local Property Time:</div>
+      <div class="slds-float_left">09:09</div>
+      <div class="slds-float_left">Date:</div>
+      <div>23Aug2022</div>
+    </lightning-layout-item>
+    <lightning-layout-item
+      size="3"
+      class="slds-float_right slds-var-m-left_large"
+    >
+      <lightning-button
+        class="force-button slds-float_right"
+        label="FORCE SELL"
+        variant="brand"
+      ></lightning-button>
+    </lightning-layout-item>
+  </lightning-layout>
 </template>

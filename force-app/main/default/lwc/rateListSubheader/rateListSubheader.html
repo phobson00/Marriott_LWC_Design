@@ -53,10 +53,12 @@
         onclick={dropMenu}
       ></lightning-button>
     </lightning-layout-item>
-    <template if:true={showDropdown}>
-      <div class="dropdown-main">
-        <c-landing-page-main-section></c-landing-page-main-section>
-      </div>
-    </template>
+    <lightning-layout-item>
+      <template if:true={showDropdown}>
+        <div class="dropdown-main">
+          <c-landing-page-main-section></c-landing-page-main-section>
+        </div>
+      </template>
+    </lightning-layout-item>
   </lightning-layout>
 </template>
