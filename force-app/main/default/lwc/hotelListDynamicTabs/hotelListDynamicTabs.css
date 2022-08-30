@@ -1,19 +1,19 @@
-.two-tab {
-  --slds-c-tabs-item-spacing-inline-end: 207px;
-  --slds-c-tabs-item-spacing-inline-start: 207px;
-}
-
-.three-tab {
-  --slds-c-tabs-item-spacing-inline-end: 123.4px;
-  --slds-c-tabs-item-spacing-inline-start: 123.4px;
-}
-
-.four-tab {
-  --slds-c-tabs-item-spacing-inline-end: 80.2px;
-  --slds-c-tabs-item-spacing-inline-start: 80.2px;
-}
-
-.five-tab {
-  --slds-c-tabs-item-spacing-inline-end: 52.5px;
-  --slds-c-tabs-item-spacing-inline-start: 52.5px;
+.tab-button {
+  --slds-c-button-spacing-block-start: 10px;
+  --slds-c-button-spacing-block-end: 10px;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-brand-color-border: #d2d2d2;
+  --slds-c-button-brand-color-border-active: #1c1c1c;
+  --slds-c-button-brand-color-border-hover: #1c1c1c;
+  --slds-c-button-brand-text-color: #1c1c1c;
+  --slds-c-button-brand-text-color-active: #1c1c1c;
+  --slds-c-button-brand-text-color-hover: #1c1c1c;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 1px;
+  --slds-c-button-radius-border: 0%;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+  font-weight: 10;
 }
