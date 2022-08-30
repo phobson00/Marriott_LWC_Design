@@ -1,0 +1,73 @@
+lightning-layout {
+  border-color: #006cc1;
+  background-color: #edf6ff;
+  border-radius: 1px;
+}
+
+lightning-layout-item {
+  color: #006cc1;
+}
+
+@font-face {
+  font-family: "Swiss_Bold";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Swiss_Regular";
+  src: url("/resource/Swiss/_MI_Swiss721BT-Medium.otf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
+    format("TrueType");
+}
+
+.display {
+  font-family: Swiss_Bold;
+  font-size: 55px;
+  line-height: 66px;
+}
+.H1 {
+  font-family: Swiss_Bold;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.H2 {
+  font-family: Swiss_Bold;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.H3 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.H4 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 15;
+}
+
+.small-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}
