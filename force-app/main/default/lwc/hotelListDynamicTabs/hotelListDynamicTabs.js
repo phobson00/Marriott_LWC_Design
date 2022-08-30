@@ -4,41 +4,60 @@ export default class HotelListDynamicTabs extends LightningElement {
   @api
   numberOfTabs;
 
-  tabs = [];
-
-  allTabs = [
-    {
+  tab = {
+    specialRates: {
       text: "Special Rates",
       value: "Rates",
       id: 1
     },
-    {
+    points: {
       text: "Use Points",
       value: "Rates",
       id: 2
     },
-    {
+    standardRates: {
       text: "Standard Rates",
       value: "Rates",
       id: 3
     },
-    {
+    prepay: {
       text: "Prepay and Save",
       value: "Rates",
       id: 4
     },
-    {
+    deals: {
       text: "Deals and Packages",
       value: "Rates",
       id: 5
     }
-  ];
+  };
+
+  tabClasses = ["one-tab", "two-tab", "three-tab", "four-tab", "five-tab"];
+  tabClass;
+
+  isOneTab = false;
+  isTwoTab = false;
+  isThreeTab = false;
+  isFourTab = false;
+  isFiveTab = false;
 
   connectedCallback() {
-    for (let i = 0; i < this.numberOfTabs; i++) {
-      this.tabs.push(this.allTabs[i]);
+    if (this.numberOfTabs >= 1) {
+      this.isOneTab = true;
     }
-
-    console.log(this.tabs[0].text);
+    if (this.numberOfTabs >= 2) {
+      this.isTwoTab = true;
+    }
+    if (this.numberOfTabs >= 3) {
+      this.isThreeTab = true;
+    }
+    if (this.numberOfTabs >= 4) {
+      this.isFourTab = true;
+    }
+    if (this.numberOfTabs === 5) {
+      this.isFiveTab = true;
+    }
   }
+
+  renderedCallback() {}
 }

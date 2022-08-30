@@ -1,13 +1,38 @@
 <template>
   <lightning-layout horizontal-align="center">
     <lightning-layout-item>
-      <lightning-tabset class="slds-size_full slds-align_absolute-center">
-        <template for:each={tabs} for:item="tab">
+      <lightning-tabset>
+        <template if:true={isOneTab}>
           <lightning-tab
-            key={tab.id}
-            label={tab.text}
-            class="slds-size_full"
-            value={tab.value}
+            label={tab.specialRates.text}
+            value={tab.specialRates.value}
+            class="three-tab"
+          ></lightning-tab>
+        </template>
+        <template if:true={isTwoTab}>
+          <lightning-tab
+            label={tab.points.text}
+            value={tab.points.value}
+            class="three-tab"
+          ></lightning-tab>
+        </template>
+        <template if:true={isThreeTab}>
+          <lightning-tab
+            label={tab.standardRates.text}
+            value={tab.standardRates.value}
+            class="three-tab"
+          ></lightning-tab>
+        </template>
+        <template if:true={isFourTab}>
+          <lightning-tab
+            label={tab.prepay.text}
+            value={tab.prepay.value}
+          ></lightning-tab>
+        </template>
+        <template if:true={isFiveTab}>
+          <lightning-tab
+            label={tab.deals.standardRates.text}
+            value={tab.deals.value}
           ></lightning-tab>
         </template>
       </lightning-tabset>

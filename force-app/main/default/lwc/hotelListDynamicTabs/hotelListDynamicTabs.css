@@ -1,3 +1,24 @@
-.fill {
-  color: aliceblue;
+.one-tab {
+  --slds-c-tabs-panel-spacing-inline-end: 20px;
+  --slds-c-tabs-panel-spacing-inline-start: 20px;
+}
+
+.two-tab {
+  --slds-c-tabs-panel-spacing-inline-end: 20px;
+  --slds-c-tabs-panel-spacing-inline-start: 20px;
+}
+
+.three-tab {
+  --slds-c-tabs-panel-spacing-inline-end: 200px;
+  --slds-c-tabs-panel-spacing-inline-start: 200px;
+}
+
+.four-tab {
+  --slds-c-tabs-panel-spacing-inline-end: 20px;
+  --slds-c-tabs-panel-spacing-inline-start: 20px;
+}
+
+.five-tab {
+  --slds-c-tabs-panel-spacing-inline-end: 20px;
+  --slds-c-tabs-panel-spacing-inline-start: 20px;
 }
