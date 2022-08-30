@@ -1,3 +1,16 @@
 <template>
-    
+  <lightning-layout horizontal-align="center">
+    <lightning-layout-item>
+      <lightning-tabset class="slds-size_full slds-align_absolute-center">
+        <template for:each={tabs} for:item="tab">
+          <lightning-tab
+            key={tab.id}
+            label={tab.text}
+            class="slds-size_full"
+            value={tab.value}
+          ></lightning-tab>
+        </template>
+      </lightning-tabset>
+    </lightning-layout-item>
+  </lightning-layout>
 </template>
