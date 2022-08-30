@@ -1,35 +1,34 @@
 <template>
   <lightning-layout multiple-rows>
     <lightning-layout-item
-      class="slds-float_left H3 span-bold slds-var-m-right_small"
+      class="H3 span-bold slds-var-m-right_small"
+      size="12"
     >
       (WASTY) The Ritz-Carlton, Tysons Corner
     </lightning-layout-item>
-    <lightning-layout-item>
-      <lightning-layout>
-        <lightning-layout-item>
-          <lightning-button-icon
-            icon-name="utility:checkin"
-          ></lightning-button-icon>
-          <div>1700 Tysons Boulevard McLean Virginia 22102 USA</div>
-        </lightning-layout-item>
-        <lightning-layout-item>
-          <lightning-button-icon></lightning-button-icon>
-          <div>+1 603-506-4300</div>
-        </lightning-layout-item>
-        <lightning-layout-item>
-          <button class="review-button-selected slds-button">&nbsp;</button>
-          <button class="review-button-selected slds-button">&nbsp;</button>
-          <button class="review-button-selected slds-button">&nbsp;</button>
-          <button class="review-button-selected slds-button">&nbsp;</button>
-          <button class="review-button slds-button">&nbsp;</button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          class="slds-var-m-left_small small-body slds-var-m-top_xx-small"
-        >
-          4 &nbsp;1115 Reviews
-        </lightning-layout-item>
-      </lightning-layout>
+    <lightning-layout-item size="12" class="slds-var-m-top_small">
+      <lightning-button-icon
+        icon-name="utility:checkin"
+        class="slds-float_left"
+      ></lightning-button-icon>
+
+      <div class="slds-float_left">
+        1700 Tysons Boulevard McLean Virginia 22102 USA
+      </div>
+
+      <lightning-button-icon class="slds-float_left"></lightning-button-icon>
+      <div class="slds-float_left">+1 603-506-4300</div>
+
+      <div class="slds-float_left">
+        <button class="review-button-selected slds-button">&nbsp;</button>
+        <button class="review-button-selected slds-button">&nbsp;</button>
+        <button class="review-button-selected slds-button">&nbsp;</button>
+        <button class="review-button-selected slds-button">&nbsp;</button>
+        <button class="review-button slds-button">&nbsp;</button>
+      </div>
+      <div class="slds-var-m-left_small small-body slds-var-m-top_xx-small">
+        4 &nbsp;1115 Reviews
+      </div>
     </lightning-layout-item>
   </lightning-layout>
 </template>
