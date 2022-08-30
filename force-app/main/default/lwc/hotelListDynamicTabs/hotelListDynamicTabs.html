@@ -1,21 +1,50 @@
 <template>
-  <lightning-layout>
-    <lightning-layout-item>
-      <lightning-button label="tab.specialRates.text"> </lightning-button>
+  <lightning-layout class="slds-grid">
+    <lightning-layout-item class="slds-size_1-of-5">
+      <lightning-button
+        label={tab.specialRates.text}
+        style="display: grid; width: 100%"
+      >
+      </lightning-button>
     </lightning-layout-item>
-    <lightning-layout-item>
-      <lightning-button label="tab.points.text"> </lightning-button>
-    </lightning-layout-item>
-    <lightning-layout-item>
-      <lightning-button label="tab.standardRates.text"> </lightning-button>
-    </lightning-layout-item>
-    <lightning-layout-item>
-      <lightning-button label="tab.prepay.text"> </lightning-button>
-    </lightning-layout-item>
-    <lightning-layout-item>
-      <lightning-button label="tab.deals.text"> </lightning-button>
-    </lightning-layout-item>
+    <template if:true={isTwoTab}>
+      <lightning-layout-item class="slds-size_1-of-5">
+        <lightning-button
+          label={tab.points.text}
+          style="display: grid; width: 100%"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+    </template>
+    <template if:true={isThreeTab}>
+      <lightning-layout-item class="slds-size_1-of-5">
+        <lightning-button
+          label={tab.standardRates.text}
+          style="display: grid; width: 100%"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+    </template>
+    <template if:true={isFourTab}>
+      <lightning-layout-item class="slds-size_1-of-5">
+        <lightning-button
+          label={tab.prepay.text}
+          style="display: grid; width: 100%"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+    </template>
+    <template if:true={isFiveTab}>
+      <lightning-layout-item class="slds-size_1-of-5">
+        <lightning-button
+          label={tab.deals.text}
+          style="display: grid; width: 100%"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+    </template>
   </lightning-layout>
+
   <!-- <lightning-tabset variant="scoped" class="slds-button_stretch">
     <lightning-tab
       label={tab.specialRates.text}
