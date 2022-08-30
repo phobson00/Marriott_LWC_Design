@@ -1,11 +1,6 @@
-.one-tab {
-  --slds-c-tabs-panel-spacing-inline-end: 20px;
-  --slds-c-tabs-panel-spacing-inline-start: 20px;
-}
-
 .two-tab {
-  --slds-c-tabs-panel-spacing-inline-end: 20px;
-  --slds-c-tabs-panel-spacing-inline-start: 20px;
+  --slds-c-tabs-item-spacing-inline-end: 207px;
+  --slds-c-tabs-item-spacing-inline-start: 207px;
 }
 
 .three-tab {
@@ -14,11 +9,11 @@
 }
 
 .four-tab {
-  --slds-c-tabs-panel-spacing-inline-end: 20px;
-  --slds-c-tabs-panel-spacing-inline-start: 20px;
+  --slds-c-tabs-item-spacing-inline-end: 80.2px;
+  --slds-c-tabs-item-spacing-inline-start: 80.2px;
 }
 
 .five-tab {
-  --slds-c-tabs-panel-spacing-inline-end: 20px;
-  --slds-c-tabs-panel-spacing-inline-start: 20px;
+  --slds-c-tabs-item-spacing-inline-end: 52.5px;
+  --slds-c-tabs-item-spacing-inline-start: 52.5px;
 }

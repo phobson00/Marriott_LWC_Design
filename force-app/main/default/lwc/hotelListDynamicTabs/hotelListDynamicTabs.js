@@ -32,7 +32,7 @@ export default class HotelListDynamicTabs extends LightningElement {
     }
   };
 
-  tabClasses = ["one-tab", "two-tab", "three-tab", "four-tab", "five-tab"];
+  tabClasses = ["two-tab", "three-tab", "four-tab", "five-tab"];
   tabClass;
 
   isTwoTab = false;
@@ -50,9 +50,11 @@ export default class HotelListDynamicTabs extends LightningElement {
     if (this.numberOfTabs >= 4) {
       this.isFourTab = true;
     }
-    if (this.numberOfTabs === 5) {
+    if (this.numberOfTabs == 5) {
       this.isFiveTab = true;
     }
+
+    this.tabClass = this.tabClasses[this.numberOfTabs - 2];
   }
 
   renderedCallback() {}

@@ -1,5 +1,22 @@
 <template>
-  <lightning-tabset class="three-tab">
+  <lightning-layout>
+    <lightning-layout-item>
+      <lightning-button label="tab.specialRates.text"> </lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <lightning-button label="tab.points.text"> </lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <lightning-button label="tab.standardRates.text"> </lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <lightning-button label="tab.prepay.text"> </lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <lightning-button label="tab.deals.text"> </lightning-button>
+    </lightning-layout-item>
+  </lightning-layout>
+  <!-- <lightning-tabset variant="scoped" class="slds-button_stretch">
     <lightning-tab
       label={tab.specialRates.text}
       value={tab.specialRates.value}
@@ -24,9 +41,9 @@
     </template>
     <template if:true={isFiveTab}>
       <lightning-tab
-        label={tab.deals.standardRates.text}
+        label={tab.deals.text}
         value={tab.deals.value}
       ></lightning-tab>
     </template>
-  </lightning-tabset>
+  </lightning-tabset> -->
 </template>
