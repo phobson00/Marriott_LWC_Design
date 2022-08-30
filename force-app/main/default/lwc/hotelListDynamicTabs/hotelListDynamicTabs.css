@@ -9,8 +9,8 @@
 }
 
 .three-tab {
-  --slds-c-tabs-panel-spacing-inline-end: 200px;
-  --slds-c-tabs-panel-spacing-inline-start: 200px;
+  --slds-c-tabs-item-spacing-inline-end: 123.4px;
+  --slds-c-tabs-item-spacing-inline-start: 123.4px;
 }
 
 .four-tab {

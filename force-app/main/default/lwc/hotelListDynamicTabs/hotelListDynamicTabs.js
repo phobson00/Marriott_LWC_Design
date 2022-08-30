@@ -35,16 +35,12 @@ export default class HotelListDynamicTabs extends LightningElement {
   tabClasses = ["one-tab", "two-tab", "three-tab", "four-tab", "five-tab"];
   tabClass;
 
-  isOneTab = false;
   isTwoTab = false;
   isThreeTab = false;
   isFourTab = false;
   isFiveTab = false;
 
   connectedCallback() {
-    if (this.numberOfTabs >= 1) {
-      this.isOneTab = true;
-    }
     if (this.numberOfTabs >= 2) {
       this.isTwoTab = true;
     }
