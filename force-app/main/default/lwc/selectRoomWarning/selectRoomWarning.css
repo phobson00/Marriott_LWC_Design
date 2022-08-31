@@ -8,6 +8,11 @@ lightning-layout-item {
   color: #006cc1;
 }
 
+lightning-icon {
+  --slds-c-icon-color-foreground: #006cc1;
+  --slds-c-icon-color-foreground-default: #006cc1;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")

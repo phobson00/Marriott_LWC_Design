@@ -18,9 +18,19 @@
       ></c-hotel-list-dynamic-tabs>
     </lightning-layout-item>
     <lightning-layout-item size="12" style="background-color: #f4f4f4">
-      <lightning-layout>
-        <lightning-layout-item>
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
           <c-please-note-warning></c-please-note-warning>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <c-select-room-warning></c-select-room-warning>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-var-m-vertical_medium">
+          <lightning-input
+            type="checkbox"
+            label="Show rates with taxes and all fees"
+            class="rates-checkbox slds-float_right slds-var-m-right_small"
+          ></lightning-input>
         </lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>

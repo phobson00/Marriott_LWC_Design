@@ -1,3 +1,14 @@
 .main-container {
   max-width: 970px;
 }
+
+.rates-checkbox {
+  --slds-c-checkbox-color-background-checked: #1c1c1c;
+  --slds-c-checkbox-mark-color-foreground: #ffffff;
+  --slds-c-checkbox-color-border: #d2d2d2;
+  --slds-c-checkbox-color-border-checked: #1c1c1c;
+  --slds-c-checkbox-color-border-focus: #1c1c1c;
+  --slds-c-checkbox-shadow-focus: 0px 0px 0px;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}
