@@ -1,6 +1,6 @@
 <template>
   <lightning-layout
-    class="slds-theme_default slds-var-m-around_medium"
+    class="slds-theme_default slds-var-m-horizontal_medium slds-var-m-bottom_large"
     multiple-rows
   >
     <lightning-layout-item size="12">
@@ -49,6 +49,59 @@
               <lightning-layout multiple-rows>
                 <lightning-layout-item size="12">
                   <div class="H2 slds-float_right">{memberRate}</div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" class="small-body">
+                  <div class="small-body slds-float_right">USD / night</div>
+                </lightning-layout-item>
+              </lightning-layout>
+            </lightning-layout-item>
+            <lightning-layout-item size="7">
+              <lightning-layout multiple-rows horizontal-align="right">
+                <lightning-layout-item
+                  size=""
+                  class="slds-align_absolute-center"
+                >
+                  <lightning-button
+                    class="select-button"
+                    variant="brand"
+                    label="SELECT"
+                  >
+                  </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item
+                  size="12"
+                  class="slds-align_absolute-center"
+                >
+                  <a class="add-cart-button small-body">Add to Cart</a>
+                </lightning-layout-item>
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item
+      size="12"
+      class="slds-border_bottom slds-var-p-bottom_large slds-var-m-top_x-large"
+    >
+      <lightning-layout>
+        <lightning-layout-item size="4" class="slds-var-m-left_medium">
+          <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" class="H4">
+              Flexible Rate
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-top_medium">
+              <c-rate-details-modal></c-rate-details-modal>
+              <c-cancellation-modal></c-cancellation-modal>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item size="8">
+          <lightning-layout class="slds-float_right slds-var-m-right_medium">
+            <lightning-layout-item>
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12">
+                  <div class="H2 slds-float_right">{flexibleRate}</div>
                 </lightning-layout-item>
                 <lightning-layout-item size="12" class="small-body">
                   <div class="small-body slds-float_right">USD / night</div>
