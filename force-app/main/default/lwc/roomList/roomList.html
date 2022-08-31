@@ -1,0 +1,82 @@
+<template>
+  <lightning-layout multiple-rows>
+    <lightning-layout-item
+      size="3"
+      class="slds-var-m-left_large slds-var-m-top_large"
+    >
+      <img src={image} />
+    </lightning-layout-item>
+    <lightning-layout-item
+      size="8"
+      class="slds-var-m-left_medium slds-var-m-top_xx-large"
+    >
+      <lightning-layout multiple-rows>
+        <lightning-layout-item
+          size="12"
+          class="slds-text-heading_medium span-bold"
+        >
+          {header}
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-var-m-top_x-small">
+          Room Details
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item size="4" class="slds-border_bottom">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+          Member Rate Flexible
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <c-rate-details-modal></c-rate-details-modal>
+          <c-cancellation-modal></c-cancellation-modal>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item class="slds-float_right">
+      <lightning-layout>
+        <lightning-layout-item class="slds-float_right slds-var-m-right_small">
+          <div>
+            <span class="swiss-font">From</span>
+          </div>
+          <span class="slds-text-heading_large span-bold swiss-font">
+            255&nbsp;
+          </span>
+          <span class="swiss-font">USD / night</span>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            class="view-rates-button slds-var-m-top_xx-small"
+            variant="brand"
+            label="VIEW RATES"
+          >
+          </lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+
+  <lightning-layout
+    class="slds-var-m-horizontal_large slds-var-p-vertical_medium slds-border_bottom"
+  >
+    <lightning-layout-item size="12" class="slds-float_right">
+      <lightning-layout class="slds-float_right">
+        <lightning-layout-item
+          class="slds-float_left slds-var-m-right_x-large slds-var-m-top_small"
+        >
+          <span class="small-body">From</span>
+          <span class="H3">&nbsp;255&nbsp;</span>
+          <span class="small-body">USD / night</span>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            class="view-rates-button slds-var-m-top_xx-small"
+            variant="brand"
+            label="VIEW RATES"
+          >
+          </lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

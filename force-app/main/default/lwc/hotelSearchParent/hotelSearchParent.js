@@ -1,6 +1,13 @@
 import { LightningElement } from "lwc";
+import marriott_images from "@salesforce/resourceUrl/Marriott_Images";
 
 export default class HotelSearchParent extends LightningElement {
+  image1 = marriott_images + "/images/marriott_image_1.jpg";
+  image2 = marriott_images + "/images/marriott_image_2.jpg";
+
+  header1 = "Deluxe Guest Room, 1 King - GENR";
+  header2 = "Deluxe Guest Room, 2 Double - DOUB";
+
   connectedCallback() {
     this.invokeWorkspaceAPI("isConsoleNavigation").then((isConsole) => {
       if (isConsole) {
