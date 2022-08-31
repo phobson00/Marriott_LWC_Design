@@ -1,55 +1,110 @@
-<template >
-    <lightning-button variant="base" label="RATE DETAILS" title="Open Rate Details" onclick={showModalBox} class="slds-m-left_x-small"></lightning-button>
-    <template if:true={isShowModal}>
-        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Meaningful description of the modal content" class="slds-modal slds-fade-in-open">
-            <div class="slds-modal__container">
-                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless" id="modal-content-id-1">
-                    <lightning-button-icon icon-name="utility:close"   alternative-text="Close" class="slds-m-left_xx-small  slds-float_right" title="Close" 
-                        onclick={hideModalBox} variant="bare">
-                    </lightning-button-icon>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1">
-                        Rate Details
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H2">
-                        Member Rate Flexible
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3">
-                        Additional Information
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body">
-                        <p>Commissionable Rate</p>
-                        <p>Marriott Rewards Member Only Retail Rates</p>
-                        <p>- 2 percent off Weekdays</p>
-                        <p>- 5 percent off Weekends</p>
-                        <p>Commissionable Rate</p>
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"> 
-                        Holding Your Reservation
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body">
-                        We will need a credit card number to reserve your room.
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"> 
-                        Cancelling Your Reservation
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body">
-                        <p>You may cancel your reservation for no charge before 11:59 PM local hotel time on August 14, 2022 (3 day[s] before arrival).</p>
-                        <p>Please note that we will assess a fee of 452.18 USD if you must cancel after this deadline. If you have made a prepayment, we will retain all or part of your prepayment. If not, we will charge your credit card.</p>
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"> 
-                        When You Check-in
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body">
-                        Please be prepared to show proof of eligibility for your rate (such as a membership card, corporate or government identification card, or proof of your age).  
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"> 
-                        Modifying Your Reservation
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body">
-                        Please note that a change in the length or dates of your reservation may result in a rate change.
-                    </div>
-                </div>
-            </div>
-        </section>
-    </template>
+<template>
+  <lightning-button
+    variant="base"
+    label="RATE DETAILS"
+    title="Open Rate Details"
+    onclick={showModalBox}
+  ></lightning-button>
+  <template if:true={isShowModal}>
+    <section
+      role="dialog"
+      tabindex="-1"
+      aria-modal="true"
+      aria-label="Meaningful description of the modal content"
+      class="slds-modal slds-fade-in-open"
+    >
+      <div class="slds-modal__container">
+        <div
+          class="slds-modal__content slds-p-around_medium slds-modal__content_headless"
+          id="modal-content-id-1"
+        >
+          <lightning-button-icon
+            icon-name="utility:close"
+            alternative-text="Close"
+            class="slds-m-left_xx-small slds-float_right"
+            title="Close"
+            onclick={hideModalBox}
+            variant="bare"
+          >
+          </lightning-button-icon>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1"
+          >
+            Rate Details
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H2"
+          >
+            Member Rate Flexible
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"
+          >
+            Additional Information
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body"
+          >
+            <p>Commissionable Rate</p>
+            <p>Marriott Rewards Member Only Retail Rates</p>
+            <p>- 2 percent off Weekdays</p>
+            <p>- 5 percent off Weekends</p>
+            <p>Commissionable Rate</p>
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"
+          >
+            Holding Your Reservation
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body"
+          >
+            We will need a credit card number to reserve your room.
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"
+          >
+            Cancelling Your Reservation
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body"
+          >
+            <p>
+              You may cancel your reservation for no charge before 11:59 PM
+              local hotel time on August 14, 2022 (3 day[s] before arrival).
+            </p>
+            <p>
+              Please note that we will assess a fee of 452.18 USD if you must
+              cancel after this deadline. If you have made a prepayment, we will
+              retain all or part of your prepayment. If not, we will charge your
+              credit card.
+            </p>
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"
+          >
+            When You Check-in
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body"
+          >
+            Please be prepared to show proof of eligibility for your rate (such
+            as a membership card, corporate or government identification card,
+            or proof of your age).
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"
+          >
+            Modifying Your Reservation
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body"
+          >
+            Please note that a change in the length or dates of your reservation
+            may result in a rate change.
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
 </template>
