@@ -66,3 +66,11 @@
   font-size: 12px;
   font-weight: 10;
 }
+
+.span-bold {
+  font-weight: 700;
+}
+
+.span-normal {
+  font-weight: 600;
+}
