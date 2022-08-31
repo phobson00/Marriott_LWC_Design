@@ -1,8 +1,10 @@
+<!-- sldsValidatorIgnore -->
 <template>
   <lightning-layout class="slds-grid">
     <lightning-layout-item class={columnClass}>
       <button
         class="tab-button slds-button slds-button_brand slds-button_stretch"
+        onclick={addButton}
       >
         <lightning-layout multiple-rows horizontal-align="center">
           <lightning-layout-item
@@ -22,32 +24,31 @@
         </lightning-layout>
       </button>
     </lightning-layout-item>
-    <template if:true={isTwoTab}>
-      <lightning-layout-item class="slds-size_1-of-5">
-        <button
-          class="tab-button slds-button slds-button_brand slds-button_stretch"
-        >
-          <lightning-layout multiple-rows horizontal-align="center">
-            <lightning-layout-item
-              size="12"
-              style="max-height: 15px"
-              class="body-bold"
-            >
-              Use Points
-            </lightning-layout-item>
-            <lightning-layout-item
-              size="12"
-              style="max-height: 20px"
-              class="small-body"
-            >
-              From 68,000 pts / stay
-            </lightning-layout-item>
-          </lightning-layout>
-        </button>
-      </lightning-layout-item>
-    </template>
+    <lightning-layout-item class={columnClass}>
+      <button
+        class="tab-button slds-button slds-button_brand slds-button_stretch"
+        onclick={removeButton}
+      >
+        <lightning-layout multiple-rows horizontal-align="center">
+          <lightning-layout-item
+            size="12"
+            style="max-height: 15px"
+            class="body-bold"
+          >
+            Use Points
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="12"
+            style="max-height: 20px"
+            class="small-body"
+          >
+            From 68,000 pts / stay
+          </lightning-layout-item>
+        </lightning-layout>
+      </button>
+    </lightning-layout-item>
     <template if:true={isThreeTab}>
-      <lightning-layout-item class="slds-size_1-of-5">
+      <lightning-layout-item class={columnClass}>
         <button
           class="tab-button slds-button slds-button_brand slds-button_stretch"
         >
@@ -71,7 +72,7 @@
       </lightning-layout-item>
     </template>
     <template if:true={isFourTab}>
-      <lightning-layout-item class="slds-size_1-of-5">
+      <lightning-layout-item class={columnClass}>
         <button
           class="tab-button slds-button slds-button_brand slds-button_stretch"
         >
@@ -95,7 +96,7 @@
       </lightning-layout-item>
     </template>
     <template if:true={isFiveTab}>
-      <lightning-layout-item class="slds-size_1-of-5">
+      <lightning-layout-item class={columnClass}>
         <button
           class="tab-button slds-button slds-button_brand slds-button_stretch"
         >
