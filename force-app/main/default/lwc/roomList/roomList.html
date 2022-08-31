@@ -29,13 +29,10 @@
     </lightning-layout-item>
     <lightning-layout-item
       size="12"
-      class="slds-border_bottom slds-var-p-bottom_large"
+      class="slds-border_bottom slds-var-p-bottom_large slds-var-m-top_x-large"
     >
       <lightning-layout>
-        <lightning-layout-item
-          size="4"
-          class="slds-var-m-top_x-large slds-var-m-left_medium"
-        >
+        <lightning-layout-item size="4" class="slds-var-m-left_medium">
           <lightning-layout multiple-rows>
             <lightning-layout-item size="12" class="H4">
               Member Rate Flexible
@@ -46,52 +43,40 @@
             </lightning-layout-item>
           </lightning-layout>
         </lightning-layout-item>
-        <lightning-layout-item class="slds-float_right">
-          <lightning-layout>
-            <lightning-layout-item
-              class="slds-float_right slds-var-m-right_small"
-            >
-              <div>
-                <span class="swiss-font">From</span>
-              </div>
-              <span class="slds-text-heading_large span-bold swiss-font">
-                255&nbsp;
-              </span>
-              <span class="swiss-font">USD / night</span>
-            </lightning-layout-item>
+        <lightning-layout-item size="8">
+          <lightning-layout class="slds-float_right slds-var-m-right_medium">
             <lightning-layout-item>
-              <lightning-button
-                class="view-rates-button slds-var-m-top_xx-small"
-                variant="brand"
-                label="VIEW RATES"
-              >
-              </lightning-button>
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12">
+                  <div class="H2 slds-float_right">{memberRate}</div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" class="small-body">
+                  <div class="small-body slds-float_right">USD / night</div>
+                </lightning-layout-item>
+              </lightning-layout>
+            </lightning-layout-item>
+            <lightning-layout-item size="7">
+              <lightning-layout multiple-rows horizontal-align="right">
+                <lightning-layout-item
+                  size=""
+                  class="slds-align_absolute-center"
+                >
+                  <lightning-button
+                    class="select-button"
+                    variant="brand"
+                    label="SELECT"
+                  >
+                  </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item
+                  size="12"
+                  class="slds-align_absolute-center"
+                >
+                  <a class="add-cart-button small-body">Add to Cart</a>
+                </lightning-layout-item>
+              </lightning-layout>
             </lightning-layout-item>
           </lightning-layout>
-        </lightning-layout-item>
-      </lightning-layout>
-    </lightning-layout-item>
-  </lightning-layout>
-
-  <lightning-layout
-    class="slds-var-m-horizontal_large slds-var-p-vertical_medium slds-border_bottom"
-  >
-    <lightning-layout-item size="12" class="slds-float_right">
-      <lightning-layout class="slds-float_right">
-        <lightning-layout-item
-          class="slds-float_left slds-var-m-right_x-large slds-var-m-top_small"
-        >
-          <span class="small-body">From</span>
-          <span class="H3">&nbsp;255&nbsp;</span>
-          <span class="small-body">USD / night</span>
-        </lightning-layout-item>
-        <lightning-layout-item>
-          <lightning-button
-            class="view-rates-button slds-var-m-top_xx-small"
-            variant="brand"
-            label="VIEW RATES"
-          >
-          </lightning-button>
         </lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>
