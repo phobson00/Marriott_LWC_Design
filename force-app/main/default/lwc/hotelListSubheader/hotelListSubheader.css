@@ -24,6 +24,10 @@
   z-index: 100;
 }
 
+.add-more-rates {
+  color: #006cc1;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")

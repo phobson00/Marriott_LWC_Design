@@ -1,25 +1,59 @@
-<template >
-    <lightning-button variant="base" label="CANCELLATION POLICY" title="Open Cancellation Policy" onclick={showModalBox} class="slds-m-left_x-small"></lightning-button>
-    <template if:true={isShowModal}>
-        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Meaningful description of the modal content" class="slds-modal slds-fade-in-open">
-            <div class="slds-modal__container">
-                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless" id="modal-content-id-1">
-                    <lightning-button-icon icon-name="utility:close"   alternative-text="Close" class="slds-m-left_xx-small  slds-float_right" title="Close" 
-                        onclick={hideModalBox} variant="bare">
-                    </lightning-button-icon>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1">
-                        Cancellation Policy
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3">
-                        Member Rate Flexible
-                    </div>
-                    <div class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body">
-                        <p>You may cancel your reservation for no charge before 11:59 PM local hotel time on August 12, 2022 (3 day[s] before arrival)</p>
-                        <br>
-                        <p>Please note that we will assess a fee of 946.74 USD if you must cancel after this deadline. if you have made a prepayment, we will charge your credit card.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </template>
+<template>
+  <lightning-button
+    variant="base"
+    label="CANCELLATION POLICY"
+    title="Open Cancellation Policy"
+    onclick={showModalBox}
+    class="slds-m-left_medium small-body-bold"
+  ></lightning-button>
+  <template if:true={isShowModal}>
+    <section
+      role="dialog"
+      tabindex="-1"
+      aria-modal="true"
+      aria-label="Meaningful description of the modal content"
+      class="slds-modal slds-fade-in-open"
+    >
+      <div class="slds-modal__container">
+        <div
+          class="slds-modal__content slds-p-around_medium slds-modal__content_headless"
+          id="modal-content-id-1"
+        >
+          <lightning-button-icon
+            icon-name="utility:close"
+            alternative-text="Close"
+            class="slds-m-left_xx-small slds-float_right"
+            title="Close"
+            onclick={hideModalBox}
+            variant="bare"
+          >
+          </lightning-button-icon>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1"
+          >
+            Cancellation Policy
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H3"
+          >
+            Member Rate Flexible
+          </div>
+          <div
+            class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small body"
+          >
+            <p>
+              You may cancel your reservation for no charge before 11:59 PM
+              local hotel time on August 12, 2022 (3 day[s] before arrival)
+            </p>
+            <br />
+            <p>
+              Please note that we will assess a fee of 946.74 USD if you must
+              cancel after this deadline. if you have made a prepayment, we will
+              charge your credit card.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
 </template>
