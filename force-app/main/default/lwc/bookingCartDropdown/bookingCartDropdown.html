@@ -6,127 +6,57 @@
         variant="inverse"
         icon-name="utility:cart"
         class="slds-p-around_small"
+        onclick={dropMenu}
       >
       </lightning-button>
     </div>
-    <div
-      class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left slds-scrollable_y"
-      style="min-height: 180px"
-    >
-      <lightning-layout
-        class="slds-var-p-horizontal_x-large"
-        multiple-rows="true"
+    <template if:true={emptyCart}>
+      <div
+        class="slds-dropdown slds-dropdown_length-5 slds-dropdown_large slds-p-vertical_none slds-m-vertical_none"
       >
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-button
-            class="list-button"
-            style="display: grid; width: 100%"
-            variant="brand"
-            onclick={buttonSelect}
-            label="Cluster"
+        <ul class="slds-dropdown__list">
+          <li
+            class="slds-dropdown__header slds-truncate slds-var-p-around_medium"
           >
-          </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-button
-            class="list-button"
-            style="display: grid; width: 100%"
-            variant="brand"
-            onclick={buttonSelect}
-            label="Business"
+            <span class="H3">Booking Cart Summary</span>
+          </li>
+          <li
+            class="slds-dropdown__item slds-var-p-around_medium"
+            role="presentation"
+            style="background-color: #f4f4f4"
           >
-          </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-button
-            class="list-button"
-            style="display: grid; width: 100%"
-            variant="brand"
-            onclick={buttonSelect}
-            label="Packages"
+            <div
+              class="slds-theme_default slds-var-p-around_medium medium-body"
+            >
+              Your cart is currently empty
+            </div>
+          </li>
+        </ul>
+      </div>
+    </template>
+    <template if:false={emptyCart}>
+      <div
+        class="slds-dropdown slds-dropdown_length-5 slds-dropdown_large slds-p-vertical_none slds-m-vertical_none"
+      >
+        <ul class="slds-dropdown__list">
+          <li
+            class="slds-dropdown__header slds-truncate slds-var-p-around_medium"
           >
-          </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-button
-            class="list-button"
-            style="display: grid; width: 100%"
-            variant="brand"
-            onclick={buttonSelect}
-            label="Discount"
+            <span class="H3">Booking Cart Summary</span>
+          </li>
+          <li
+            class="slds-dropdown__item slds-var-p-around_medium"
+            role="presentation"
+            style="background-color: #f4f4f4"
           >
-          </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-button
-            class="list-button"
-            style="display: grid; width: 100%"
-            variant="brand"
-            onclick={buttonSelect}
-            label="Wholesaler"
-          >
-          </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-button
-            class="list-button"
-            style="display: grid; width: 100%"
-            variant="brand"
-            onclick={buttonSelect}
-            label="Retail"
-          >
-          </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-button
-            class="list-button"
-            style="display: grid; width: 100%"
-            variant="brand"
-            onclick={buttonSelect}
-            label="Group"
-          >
-          </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item
-          size="12"
-          class="slds-dropdown__item slds-grid slds-var-p-top_x-small slds-var-p-horizontal_small"
-          role="presentation"
-        >
-          <lightning-input
-            placeholder="Code"
-            label="Enter Code"
-            style="display: grid; width: 100%"
-          ></lightning-input>
-        </lightning-layout-item>
-      </lightning-layout>
-    </div>
+            <div
+              class="slds-theme_default slds-var-p-around_medium medium-body"
+            >
+              Your cart is currently empty
+            </div>
+          </li>
+        </ul>
+      </div>
+    </template>
   </div>
 </template>
