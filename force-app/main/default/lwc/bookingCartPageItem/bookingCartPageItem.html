@@ -1,16 +1,24 @@
 <template>
   <lightning-layout
     multiple-rows
-    class="slds-theme_default slds-var-p-around_medium slds-var-m-bottom_medium"
+    class="slds-theme_default slds-var-p-around_large slds-var-m-bottom_medium slds-var-m-right_large"
   >
-    <lightning-layout-item size="12" class="slds-var-m-bottom_medium">
+    <lightning-layout-item
+      size="12"
+      class="slds-var-m-bottom_medium"
+      vertical-align="center"
+    >
       <lightning-layout>
-        <lightning-layout-item class="H2"
+        <lightning-layout-item class="H2" size="10"
           >(WASTY) The Ritz-Carlton, Tysons Corner</lightning-layout-item
         >
-        <lightning-layout-item class="small-body"
-          >REMOVE ROOM</lightning-layout-item
-        >
+        <lightning-layout-item class="slds-var-m-left_xx-large"
+          ><lightning-button
+            variant="base"
+            label="REMOVE ROOM"
+            class="orange-button bold-small-body"
+          ></lightning-button
+        ></lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>
     <lightning-layout-item size="12" class="medium-body"
@@ -31,35 +39,53 @@
         ></lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>
-    <lightning-layout-item size="12" class="slds-border_top">
-      <lightning-layout>
+    <lightning-layout-item
+      size="12"
+      class="slds-border_top slds-border_bottom slds-var-p-bottom_large"
+    >
+      <lightning-layout vertical-align="end">
         <lightning-layout-item
           ><img src={image} class="hotel-image"
         /></lightning-layout-item>
-        <lightning-layout-item>
+        <lightning-layout-item
+          class="slds-var-m-top_medium slds-var-m-left_x-large"
+        >
           <lightning-layout multiple-rows>
-            <lightning-layout-item size="12"
+            <lightning-layout-item size="12" class="H4"
               >Deluxe Guest Room, 1 King - GENR</lightning-layout-item
             >
-            <lightning-layout-item size="12"
+            <lightning-layout-item
+              size="12"
+              class="small-body slds-var-m-top_medium"
+              style="text-decoration: underline"
               >ROOM DETAILS</lightning-layout-item
             >
-            <lightning-layout-item size="12">Total</lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              class="small-body slds-var-m-top_medium"
+              >Total</lightning-layout-item
+            >
             <lightning-layout-item size="12"
-              ><span>539</span><span>USD</span></lightning-layout-item
+              ><span class="H3">539</span
+              ><span class="small-body">USD</span></lightning-layout-item
             >
           </lightning-layout></lightning-layout-item
         >
-        <lightning-layout-item>
+        <lightning-layout-item class="slds-var-m-left_medium">
           <lightning-button
-            class="select-button"
+            class="select-button slds-float_right slds-var-m-left_small"
             variant="brand"
             label="SELECT"
           >
           </lightning-button>
         </lightning-layout-item> </lightning-layout
     ></lightning-layout-item>
-    <lightning-layout-item size="12"></lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-m-vertical_medium">
+      <button class="H4">
+        <lightning-icon icon-name="utility:chevrondown"></lightning-icon> Room
+        Total Summary
+      </button>
+    </lightning-layout-item>
     <lightning-layout-item size="12">
       <lightning-layout>
         <lightning-layout-item></lightning-layout-item>
