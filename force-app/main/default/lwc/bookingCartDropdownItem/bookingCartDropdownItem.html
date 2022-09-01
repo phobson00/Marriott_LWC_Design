@@ -1,27 +1,49 @@
 <template>
-  <lightning-layout multiple-rows>
-    <lightning-layout-item size="12">
+  <lightning-layout
+    multiple-rows
+    class="slds-theme_default slds-var-p-around_medium"
+  >
+    <lightning-layout-item size="12" class="slds-var-m-bottom_large">
       <lightning-layout multiple-rows>
-        <lightning-layout-item size="12"
+        <lightning-layout-item
+          size="12"
+          class="bold-medium-body slds-var-m-bottom_small"
           >BNEDT Brisbane Marriott Hotel</lightning-layout-item
         >
-        <lightning-layout-item size="12"
+        <lightning-layout-item size="12" class="small-body"
           >Guest room, 1 King, City view - GENR</lightning-layout-item
         >
-        <lightning-layout-item size="12">ROOM DETAILS</lightning-layout-item>
+        <lightning-layout-item size="12" class="small-body"
+          ><a class="small-body">ROOM DETAILS</a></lightning-layout-item
+        >
       </lightning-layout>
     </lightning-layout-item>
     <lightning-layout-item size="12">
       <lightning-layout>
         <lightning-layout-item>
           <lightning-layout multiple-rows>
-            <lightning-layout-item>334</lightning-layout-item>
-            <lightning-layout-item>AUD/ night 334 Total</lightning-layout-item>
-            <lightning-layout-item>RATE DETAILS</lightning-layout-item>
+            <lightning-layout-item class="H3">334</lightning-layout-item>
+            <lightning-layout-item
+              class="slds-var-m-top_xx-small slds-var-m-left_xx-small"
+            >
+              <lightning-layout multiple-rows>
+                <lightning-layout-item
+                  size="12"
+                  class="small-body small-line-height"
+                  >AUD/ night</lightning-layout-item
+                >
+                <lightning-layout-item size="12" class="bold-small-body"
+                  >334 Total</lightning-layout-item
+                >
+              </lightning-layout>
+            </lightning-layout-item>
+            <lightning-layout-item class="small-body" size="12"
+              ><a class="small-body">RATE DETAILS</a></lightning-layout-item
+            >
           </lightning-layout>
         </lightning-layout-item>
         <lightning-layout-item>
-          <lightning-layout multiple-rows>
+          <lightning-layout multiple-rows horizontal-align="center">
             <lightning-layout-item
               ><lightning-button
                 class="select-button"
@@ -30,7 +52,9 @@
               >
               </lightning-button
             ></lightning-layout-item>
-            <lightning-layout-item>REMOVE ROOM</lightning-layout-item>
+            <lightning-layout-item class="small-body"
+              ><a class="small-body">REMOVE ROOM</a></lightning-layout-item
+            >
           </lightning-layout>
         </lightning-layout-item>
       </lightning-layout>
