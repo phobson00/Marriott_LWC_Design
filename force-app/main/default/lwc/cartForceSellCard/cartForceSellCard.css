@@ -21,6 +21,11 @@
   text-decoration: underline !important;
 }
 
+.link {
+  color: #1c1c1c;
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
