@@ -25,10 +25,10 @@
           class="slds-var-m-vertical_medium slds-var-m-left_small"
           size="12"
         >
-          <template if:true={emptyCart}
-            ><c-other-options-card></c-other-options-card
+          <template if:false={emptyCart}
+            ><c-booking-cart-page-item></c-booking-cart-page-item
           ></template>
-          <template if:false={emptyCart}></template>
+          <c-other-options-card></c-other-options-card>
         </lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>

@@ -1,27 +1,5 @@
-lightning-button {
-  --slds-c-button-text-color: #b84c16;
-  --slds-c-button-text-color-active: #b84c16;
-  --slds-c-button-text-color-hover: #b84c16;
-  font-family: Proxima_Nova_Bold;
-  font-size: 12px;
-}
-
-.slds-modal__container {
-  max-width: 50rem !important;
-  width: 50% !important;
-}
-
-input {
-  min-height: 52px;
-  width: 400px;
-  --slds-c-input-color-border: #d2d2d2;
-  --slds-c-input-color-border-focus: #1c1c1c;
-  --slds-c-input-color-background: #ffffff;
-  --slds-c-input-color-background-focus: #ffffff;
-  --slds-c-input-shadow-focus: 0px 0px 0px;
-}
-
-button {
+.select-button {
+  --slds-c-button-radius-border: 0%;
   --slds-c-button-brand-color-background: #444054;
   --slds-c-button-brand-color-background-active: #444054;
   --slds-c-button-brand-color-background-hover: #444054;
@@ -30,16 +8,23 @@ button {
   --slds-c-button-brand-color-border-background-hover: #444054;
   --slds-c-button-shadow-focus: 0 0 0px;
   --slds-c-button-sizing-border: 0px;
-  --slds-c-button-spacing-block-start: 10px;
-  --slds-c-button-spacing-block-end: 10px;
-  --slds-c-button-brand-spacing-inline-start: 60px;
-  --slds-c-button-brand-spacing-inline-end: 60px;
-  font-family: Swiss_Bold;
-  font-size: 14px;
+  --slds-c-button-spacing-block-start: 7px;
+  --slds-c-button-spacing-block-end: 7px;
+  --slds-c-button-brand-spacing-inline-start: 32px;
+  --slds-c-button-brand-spacing-inline-end: 32px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px !important;
 }
 
-.gray-layout {
-  background-color: #f4f4f4;
+.hotel-image {
+  width: 210px;
+  height: 135px;
+}
+
+.orange-button {
+  --slds-c-button-text-color: #b84c16;
+  --slds-c-button-text-color-active: #b84c16;
+  --slds-c-button-text-color-hover: #b84c16;
 }
 
 @font-face {
@@ -50,7 +35,8 @@ button {
 
 @font-face {
   font-family: "Swiss_Regular";
-  src: url("/resource/Swiss/_MI_Swiss721BT-Regular.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf")
+    format("TrueType");
 }
 
 @font-face {
@@ -84,7 +70,7 @@ button {
 
 .H3 {
   font-family: Proxima_Nova_Bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 26px;
 }
 
@@ -100,18 +86,29 @@ button {
   line-height: 24px;
 }
 
-.bold-body {
+.medium-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bold-medium-body {
   font-family: Proxima_Nova_Bold;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .bold-small-body {
   font-family: Proxima_Nova_Bold;
   font-size: 12px;
 }
+
 .small-body {
   font-family: Proxima_Nova_Regular;
   font-size: 12px;
   font-weight: 10;
+}
+
+.small-line-height {
+  line-height: 5px;
 }

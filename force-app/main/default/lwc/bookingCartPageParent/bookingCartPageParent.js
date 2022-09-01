@@ -1,7 +1,7 @@
 import { LightningElement } from "lwc";
 
 export default class BookingCartPageParent extends LightningElement {
-  emptyCart = true;
+  emptyCart = false;
 
   connectedCallback() {
     this.invokeWorkspaceAPI("isConsoleNavigation").then((isConsole) => {

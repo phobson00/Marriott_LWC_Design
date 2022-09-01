@@ -1,24 +1,41 @@
 <template>
-  <lightning-layout multiple-rows class="slds-theme_default">
-    <lightning-layout-item size="12">
+  <lightning-layout
+    multiple-rows
+    class="slds-theme_default slds-var-p-around_medium slds-var-m-bottom_medium"
+  >
+    <lightning-layout-item size="12" class="slds-var-m-bottom_medium">
       <lightning-layout>
-        <lightning-layout-item
+        <lightning-layout-item class="H2"
           >(WASTY) The Ritz-Carlton, Tysons Corner</lightning-layout-item
         >
-        <lightning-layout-item>REMOVE ROOM</lightning-layout-item>
+        <lightning-layout-item class="small-body"
+          >REMOVE ROOM</lightning-layout-item
+        >
       </lightning-layout>
     </lightning-layout-item>
-    <lightning-layout-item size="12"
+    <lightning-layout-item size="12" class="medium-body"
       >1733 N Street NW Washington, District Of Columbia
       20036</lightning-layout-item
     >
-    <lightning-layout-item size="12"
+    <lightning-layout-item size="12" class="slds-var-m-vertical_small"
       ><lightning-layout>
-        <lightning-layout-item>HOTEL PHOTOS</lightning-layout-item>
-        <lightning-layout-item>HOTEL FACTS SHEET</lightning-layout-item>
+        <lightning-layout-item class="bold-small-body"
+          ><lightning-button
+            variant="base"
+            label="HOTEL PHOTOS"
+            class="orange-button bold-small-body"
+          ></lightning-button
+        ></lightning-layout-item>
+        <lightning-layout-item class="bold-small-body"
+          ><c-hotel-fact-sheet-modal></c-hotel-fact-sheet-modal
+        ></lightning-layout-item>
       </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-border_top">
       <lightning-layout>
-        <lightning-layout-item><img src={image} /></lightning-layout-item>
+        <lightning-layout-item
+          ><img src={image} class="hotel-image"
+        /></lightning-layout-item>
         <lightning-layout-item>
           <lightning-layout multiple-rows>
             <lightning-layout-item size="12"
