@@ -27,6 +27,10 @@
   --slds-c-button-text-color-hover: #b84c16;
 }
 
+lightning-icon {
+  --slds-c-icon-color-foreground-default: #b84c16;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
