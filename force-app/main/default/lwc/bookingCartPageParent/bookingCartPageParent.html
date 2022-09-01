@@ -23,8 +23,12 @@
         </lightning-layout-item>
         <lightning-layout-item
           size="12"
-          class="slds-var-m-vertical_medium slds-var-m-left_small"
+          class="slds-var-m-vertical_medium slds-var-m-horizontal_small"
         >
+          <template if:true={emptyCart}
+            ><c-other-options-card></c-other-options-card
+          ></template>
+          <template if:false={emptyCart}></template>
         </lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>
