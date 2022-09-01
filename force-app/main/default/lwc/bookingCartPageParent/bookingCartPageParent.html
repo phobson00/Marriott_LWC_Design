@@ -25,6 +25,17 @@
           class="slds-var-m-vertical_medium slds-var-m-left_small"
           size="12"
         >
+          <lightning-layout
+            horizontal-align="end"
+            class="slds-var-m-right_large slds-var-m-bottom_small"
+          >
+            <lightning-layout-item class="bold-small-body"
+              >Saturday, Aug 12, 2022&nbsp;</lightning-layout-item
+            >
+            <lightning-layout-item class="small-body"
+              >Is the last day of inventory</lightning-layout-item
+            >
+          </lightning-layout>
           <template if:false={emptyCart}
             ><c-booking-cart-page-item></c-booking-cart-page-item
           ></template>
