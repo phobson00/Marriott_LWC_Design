@@ -5,54 +5,41 @@
         label="Cart"
         variant="inverse"
         icon-name="utility:cart"
-        class="slds-p-around_small"
+        class="slds-var-p-around_small"
         onclick={dropMenu}
       >
       </lightning-button>
     </div>
-    <template if:true={emptyCart}>
-      <div
-        class="slds-dropdown slds-dropdown_length-5 slds-dropdown_large slds-p-vertical_none slds-m-vertical_none"
-      >
-        <ul class="slds-dropdown__list">
-          <li
-            class="slds-dropdown__header slds-truncate slds-var-p-around_medium"
+    <div
+      class="slds-dropdown slds-dropdown_length-7 slds-dropdown_large slds-p-vertical_none slds-m-vertical_none"
+    >
+      <ul class="slds-dropdown__list">
+        <li
+          class="slds-dropdown__header slds-truncate slds-var-p-around_medium"
+        >
+          <span class="H3" onclick={emptyCartHandler}
+            >Booking Cart Summary</span
           >
-            <span class="H3">Booking Cart Summary</span>
-          </li>
-          <li
-            class="slds-dropdown__item slds-var-p-around_medium"
-            role="presentation"
-            style="background-color: #f4f4f4"
-          >
+        </li>
+        <li
+          class="slds-dropdown__item slds-var-p-around_medium"
+          role="presentation"
+          style="background-color: #f4f4f4"
+        >
+          <template if:true={emptyCart}>
             <div
               class="slds-theme_default slds-var-p-around_medium medium-body"
             >
               Your cart is currently empty
             </div>
-          </li>
-        </ul>
-      </div>
-    </template>
-    <template if:false={emptyCart}>
-      <div
-        class="slds-dropdown slds-dropdown_length-3 slds-dropdown_large slds-p-vertical_none slds-m-vertical_none"
-      >
-        <ul class="slds-dropdown__list">
-          <li
-            class="slds-dropdown__header slds-truncate slds-var-p-around_medium"
-          >
-            <span class="H3">Booking Cart Summary</span>
-          </li>
-          <li
-            class="slds-dropdown__item slds-var-p-around_medium"
-            role="presentation"
-            style="background-color: #f4f4f4"
-          >
+          </template>
+          <template if:false={emptyCart}>
             <c-booking-cart-dropdown-item></c-booking-cart-dropdown-item>
-          </li>
-        </ul>
-      </div>
-    </template>
+            <c-booking-cart-dropdown-item></c-booking-cart-dropdown-item>
+            <c-booking-cart-dropdown-item></c-booking-cart-dropdown-item>
+          </template>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
