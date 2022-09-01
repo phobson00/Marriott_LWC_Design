@@ -1,8 +1,6 @@
 <template>
-  <lightning-layout
-    class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full slds-var-p-right_xx-large"
-  >
-    <lightning-layout-item size="12">
+  <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+    <div>
       <lightning-button
         label="Cart"
         variant="inverse"
@@ -10,8 +8,8 @@
         class="slds-p-around_small"
       >
       </lightning-button>
-    </lightning-layout-item>
-    <lightning-layout-item
+    </div>
+    <div
       class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full slds-dropdown_left slds-scrollable_y"
       style="min-height: 180px"
     >
@@ -129,6 +127,6 @@
           ></lightning-input>
         </lightning-layout-item>
       </lightning-layout>
-    </lightning-layout-item>
-  </lightning-layout>
+    </div>
+  </div>
 </template>
