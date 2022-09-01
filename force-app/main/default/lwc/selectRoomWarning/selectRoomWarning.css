@@ -1,13 +1,27 @@
-lightning-button {
-  --slds-c-button-text-color: #b84c16;
-  --slds-c-button-text-color-active: #b84c16;
-  --slds-c-button-text-color-hover: #b84c16;
+lightning-layout {
+  border-color: #006cc1;
+  background-color: #edf6ff;
+  border-radius: 1px;
+}
+
+lightning-layout-item {
+  color: #006cc1;
+}
+
+lightning-icon {
+  --slds-c-icon-color-foreground: #006cc1;
+  --slds-c-icon-color-foreground-default: #006cc1;
 }
 
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
     format("TrueType");
+}
+
+@font-face {
+  font-family: "Swiss_Regular";
+  src: url("/resource/Swiss/_MI_Swiss721BT-Medium.otf") format("TrueType");
 }
 
 @font-face {
@@ -55,14 +69,10 @@ lightning-button {
   font-family: Proxima_Nova_Regular;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 15;
 }
 
 .small-body {
   font-family: Proxima_Nova_Regular;
-  font-size: 12px;
-}
-
-.small-body-bold {
-  font-family: Proxima_Nova_Bold;
   font-size: 12px;
 }

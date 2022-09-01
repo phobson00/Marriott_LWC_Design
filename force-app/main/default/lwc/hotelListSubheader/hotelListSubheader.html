@@ -3,36 +3,26 @@
     multiple-rows
     class="slds-dropdown-trigger slds-dropdown-trigger_click color-background-alt slds-var-p-horizontal_medium slds-var-p-bottom_medium"
   >
-    <lightning-layout-item size="3">
+    <lightning-layout-item size="3" class="slds-border_right">
       <lightning-layout
         multiple-rows
-        class="slds-var-p-right_large slds-border_bottom slds-var-p-bottom_medium slds-var-m-left_medium"
-      >
-        <lightning-layout-item class="small-body" size="12"
-          >Destination</lightning-layout-item
-        >
-        <lightning-layout-item class="body" size="12"
-          >New York, NY, USA</lightning-layout-item
-        >
-      </lightning-layout>
-    </lightning-layout-item>
-    <lightning-layout-item size="4">
-      <lightning-layout
-        multiple-rows
-        class="slds-border_bottom slds-var-p-left_large slds-var-p-bottom_medium"
+        class="slds-var-p-left_large slds-var-p-bottom_medium"
       >
         <lightning-layout-item class="small-body" size="12"
           >Stay Dates</lightning-layout-item
         >
         <lightning-layout-item class="body" size="12"
-          >Mon, Aug 15, 2022 - Tue, Aug 16, 2022</lightning-layout-item
+          >Mon, Aug 15, 2022 -
+        </lightning-layout-item>
+        <lightning-layout-item class="body" size="12">
+          Tue, Aug 16, 2022</lightning-layout-item
         >
       </lightning-layout>
     </lightning-layout-item>
     <lightning-layout-item size="3">
       <lightning-layout
         multiple-rows
-        class="slds-border_left slds-var-p-left_small slds-border_bottom slds-var-p-bottom_medium"
+        class="slds-var-p-left_large slds-var-p-bottom_medium"
       >
         <lightning-layout-item class="small-body" size="12"
           >Rooms &amp; Guests</lightning-layout-item
@@ -42,12 +32,25 @@
         >
       </lightning-layout>
     </lightning-layout-item>
-    <lightning-layout-item
-      size="2"
-      class="slds-border_bottom slds-var-p-bottom_medium"
-    >
+    <lightning-layout-item size="3" class="slds-border_left">
+      <lightning-layout
+        multiple-rows
+        class="slds-var-p-left_small slds-var-p-bottom_medium"
+      >
+        <lightning-layout-item class="small-body" size="12"
+          >Sell Options</lightning-layout-item
+        >
+        <lightning-layout-item class="body" size="12"
+          >Sell Strategy</lightning-layout-item
+        >
+        <lightning-layout-item class="small-body add-more-rates" size="12"
+          >ADD MORE RATES</lightning-layout-item
+        >
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item size="3" class="slds-var-p-bottom_medium">
       <lightning-button
-        class="edit-button"
+        class="edit-button slds-float_right slds-var-m-right_medium slds-var-p-right_xxx-small"
         label="EDIT"
         variant="brand"
         onclick={dropMenu}

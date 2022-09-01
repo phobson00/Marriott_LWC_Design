@@ -1,0 +1,50 @@
+<template>
+  <lightning-layout multiple-rows class="slds-theme_default main-container">
+    <lightning-layout-item size="12"
+      ><c-navigation-bar></c-navigation-bar
+    ></lightning-layout-item>
+    <lightning-layout-item size="12"
+      ><c-hotel-info-header></c-hotel-info-header
+    ></lightning-layout-item>
+    <lightning-layout-item size="12"
+      ><c-new-search-card></c-new-search-card
+    ></lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-border_bottom"
+      ><c-hotel-list-subheader></c-hotel-list-subheader
+    ></lightning-layout-item>
+    <lightning-layout-item size="12"
+      ><c-hotel-list-dynamic-tabs></c-hotel-list-dynamic-tabs>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" style="background-color: #f4f4f4">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+          <c-please-note-warning></c-please-note-warning>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <c-select-room-warning></c-select-room-warning>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-var-m-vertical_medium">
+          <lightning-input
+            type="checkbox"
+            label="Show rates with taxes and all fees"
+            class="rates-checkbox slds-float_right slds-var-m-right_small"
+          ></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <c-room-list
+            image={image1}
+            header={header1}
+            member-rate="430"
+            flexible-rate="439"
+          ></c-room-list>
+          <c-room-list
+            image={image2}
+            header={header2}
+            member-rate="430"
+            flexible-rate="439"
+          ></c-room-list>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

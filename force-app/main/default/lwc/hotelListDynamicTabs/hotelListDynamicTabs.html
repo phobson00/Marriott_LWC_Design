@@ -1,0 +1,123 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-layout class="slds-grid">
+    <lightning-layout-item class={columnClass}>
+      <button
+        class="tab-button slds-button slds-button_brand slds-button_stretch"
+        onclick={addButton}
+      >
+        <lightning-layout multiple-rows horizontal-align="center">
+          <lightning-layout-item
+            size="12"
+            style="max-height: 15px"
+            class="body-bold"
+          >
+            Special Rates
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="12"
+            style="max-height: 20px"
+            class="small-body"
+          >
+            From 431 USD / night
+          </lightning-layout-item>
+        </lightning-layout>
+      </button>
+    </lightning-layout-item>
+    <lightning-layout-item class={columnClass}>
+      <button
+        class="tab-button slds-button slds-button_brand slds-button_stretch"
+        onclick={removeButton}
+      >
+        <lightning-layout multiple-rows horizontal-align="center">
+          <lightning-layout-item
+            size="12"
+            style="max-height: 15px"
+            class="body-bold"
+          >
+            Use Points
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="12"
+            style="max-height: 20px"
+            class="small-body"
+          >
+            From 68,000 pts / stay
+          </lightning-layout-item>
+        </lightning-layout>
+      </button>
+    </lightning-layout-item>
+    <template if:true={isThreeTab}>
+      <lightning-layout-item class={columnClass}>
+        <button
+          class="tab-button slds-button slds-button_brand slds-button_stretch"
+        >
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold"
+            >
+              Standard Rates
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body"
+            >
+              From 454 USD / night
+            </lightning-layout-item>
+          </lightning-layout>
+        </button>
+      </lightning-layout-item>
+    </template>
+    <template if:true={isFourTab}>
+      <lightning-layout-item class={columnClass}>
+        <button
+          class="tab-button slds-button slds-button_brand slds-button_stretch"
+        >
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold"
+            >
+              Prepay and Save
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body"
+            >
+              From 409 USD / night
+            </lightning-layout-item>
+          </lightning-layout>
+        </button>
+      </lightning-layout-item>
+    </template>
+    <template if:true={isFiveTab}>
+      <lightning-layout-item class={columnClass}>
+        <button
+          class="tab-button slds-button slds-button_brand slds-button_stretch"
+        >
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold"
+            >
+              Deals and Packages
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body"
+            >
+              From 514 USD / night
+            </lightning-layout-item>
+          </lightning-layout>
+        </button>
+      </lightning-layout-item>
+    </template>
+  </lightning-layout>
+</template>

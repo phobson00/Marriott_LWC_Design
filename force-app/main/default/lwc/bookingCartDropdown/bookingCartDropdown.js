@@ -1,6 +1,8 @@
 import { LightningElement } from "lwc";
 
-export default class ButtonMenuBasic extends LightningElement {
+export default class BookingCartDropdown extends LightningElement {
+  emptyCart = true;
+
   dropMenu() {
     const dropTrigger = this.template.querySelector(
       ".slds-dropdown-trigger_click"
@@ -11,5 +13,9 @@ export default class ButtonMenuBasic extends LightningElement {
     } else {
       dropTrigger.classList.add("slds-is-open");
     }
+  }
+
+  emptyCartHandler() {
+    return this.emptyCart ? (this.emptyCart = false) : (this.emptyCart = true);
   }
 }

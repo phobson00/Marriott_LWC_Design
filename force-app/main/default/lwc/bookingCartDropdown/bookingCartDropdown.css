@@ -1,12 +1,12 @@
-lightning-button {
-  --slds-c-button-text-color: #b84c16;
-  --slds-c-button-text-color-active: #b84c16;
-  --slds-c-button-text-color-hover: #b84c16;
-}
-
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Swiss_Regular";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf")
     format("TrueType");
 }
 
@@ -41,7 +41,7 @@ lightning-button {
 
 .H3 {
   font-family: Proxima_Nova_Bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 26px;
 }
 
@@ -57,12 +57,18 @@ lightning-button {
   line-height: 24px;
 }
 
+.medium-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bold-small-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 12px;
+}
 .small-body {
   font-family: Proxima_Nova_Regular;
   font-size: 12px;
-}
-
-.small-body-bold {
-  font-family: Proxima_Nova_Bold;
-  font-size: 12px;
+  font-weight: 10;
 }
