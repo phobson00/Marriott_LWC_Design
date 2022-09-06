@@ -1,0 +1,84 @@
+<template>
+  <lightning-button-menu
+    label="Contact [Name]"
+    alternative-text="Show menu"
+    variant="bare-inverse"
+    class="slds-p-around_small"
+    menu-alignment="center"
+  >
+    <lightning-layout
+      multiple-rows
+      horizontal-align="center"
+      class="slds-var-p-around_small"
+    >
+      <lightning-layout-item size="12" class="slds-grid">
+        <div class="slds-tabs_default slds-tabs_medium">
+          <ul class="slds-tabs_default__nav tab-container" role="tablist">
+            <li
+              class="slds-tabs_default__item slds-is-active slds-var-m-horizontal_medium"
+              title="Item One"
+              role="presentation"
+              onclick={tabClick}
+            >
+              <a
+                class="slds-tabs_default__link body"
+                role="tab"
+                tabindex="0"
+                aria-selected="true"
+                aria-controls="tab-default-1"
+                id="tab-default-1__item"
+                >Self</a
+              >
+            </li>
+            <li
+              class="slds-tabs_default__item slds-var-m-horizontal_medium"
+              title="Item Two"
+              role="presentation"
+              onclick={tabClick}
+            >
+              <a
+                class="slds-tabs_default__link body"
+                role="tab"
+                tabindex="-1"
+                aria-selected="false"
+                aria-controls="tab-default-2"
+                id="tab-default-2__item"
+                >Other</a
+              >
+            </li>
+          </ul>
+          <template if:false={showInput}>
+            <div
+              id="tab-default-1"
+              class="slds-tabs_default__content slds-show"
+              role="tabpanel"
+              aria-labelledby="tab-default-1__item"
+            ></div>
+          </template>
+          <template if:true={showInput}>
+            <div
+              id="tab-default-2"
+              class="slds-tabs_default__content"
+              role="tabpanel"
+              aria-labelledby="tab-default-2__item"
+            >
+              <lightning-input
+                class="body"
+                label="Contact Name"
+                placeholder="Form Hint"
+              ></lightning-input>
+            </div>
+          </template>
+        </div>
+      </lightning-layout-item>
+      <lightning-layout-item size="12">
+        <lightning-button
+          label="Continue"
+          style="display: grid; width: 100%"
+          class="continue-button"
+          variant="brand"
+        ></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-button-menu>
+</template>

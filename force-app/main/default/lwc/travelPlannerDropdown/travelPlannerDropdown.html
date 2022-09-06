@@ -1,0 +1,68 @@
+<template>
+  <lightning-button-menu
+    label="Travel Planner"
+    alternative-text="Show menu"
+    variant="bare-inverse"
+    class="slds-p-around_small"
+    menu-alignment="center"
+  >
+    <lightning-layout
+      multiple-rows
+      horizontal-align="center"
+      class="slds-var-m-around_small inner-layout"
+    >
+      <lightning-layout-item size="12">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="12" class="slds-var-m-bottom_xxx-small">
+            <label class="body">Type</label>
+          </lightning-layout-item>
+          <lightning-layout-item size="12">
+            <lightning-layout
+              class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full"
+            >
+              <lightning-layout-item size="12">
+                <button
+                  class="dropdown-button slds-button slds-button_brand select-button slds-button_stretch slds-grid_align-spread slds-var-p-horizontal_x-small"
+                  onclick={dropMenu}
+                >
+                  <span style="color: #707070" class="body">Select</span
+                  ><lightning-icon
+                    icon-name="utility:chevrondown"
+                    size="xx-small"
+                  ></lightning-icon>
+                </button>
+              </lightning-layout-item>
+              <template if:true={showMenu}>
+                <lightning-layout-item
+                  class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full"
+                >
+                  <lightning-menu-item label="Option 1"></lightning-menu-item>
+                  <lightning-menu-item label="Option 2"></lightning-menu-item>
+                  <lightning-menu-item label="Option 3"></lightning-menu-item>
+                </lightning-layout-item>
+              </template>
+            </lightning-layout>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-vertical_small">
+		<lightning-layout multiple-rows>
+			<lightning-layout-item size="12" class="slds-var-m-bottom_xxx-small">
+			  <label class="body">Number</label>
+			</lightning-layout-item>
+			<lightning-layout-item size="12">
+			  <input class="slds-input"></input>
+			</lightning-layout-item>
+		  </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12">
+        <lightning-button
+          label="Continue"
+          style="display: grid; width: 100%"
+          class="continue-button"
+          variant="brand"
+        ></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-button-menu>
+</template>
