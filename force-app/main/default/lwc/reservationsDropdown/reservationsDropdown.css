@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
+    format("TrueType");
+}
+
+.small-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+  font-weight: 10;
+}
