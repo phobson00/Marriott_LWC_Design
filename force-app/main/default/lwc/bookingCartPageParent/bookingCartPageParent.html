@@ -1,0 +1,48 @@
+<template>
+  <lightning-layout multiple-rows class="slds-theme_default main-container">
+    <lightning-layout-item size="12"
+      ><c-navigation-bar></c-navigation-bar
+    ></lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-border_bottom"
+      ><c-hotel-list-subheader></c-hotel-list-subheader
+    ></lightning-layout-item>
+    <lightning-layout-item
+      size="12"
+      style="background-color: #f4f4f4"
+      class="slds-var-p-around_medium"
+    >
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+          <c-cart-force-sell-card></c-cart-force-sell-card>
+        </lightning-layout-item>
+        <lightning-layout-item
+          size="12"
+          class="H1 slds-var-m-vertical_large slds-var-m-left_small"
+          onclick={emptyCartHandler}
+        >
+          Booking Cart
+        </lightning-layout-item>
+        <lightning-layout-item
+          class="slds-var-m-vertical_medium slds-var-m-left_small"
+          size="12"
+        >
+          <template if:false={emptyCart}>
+            <lightning-layout
+              horizontal-align="end"
+              class="slds-var-m-right_large slds-var-m-bottom_small"
+            >
+              <lightning-layout-item class="bold-small-body"
+                >Saturday, Aug 12, 2022&nbsp;</lightning-layout-item
+              >
+              <lightning-layout-item class="small-body"
+                >Is the last day of inventory</lightning-layout-item
+              >
+            </lightning-layout>
+            <c-booking-cart-page-item></c-booking-cart-page-item
+          ></template>
+          <c-other-options-card></c-other-options-card>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

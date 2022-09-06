@@ -1,0 +1,92 @@
+.force-button {
+  --slds-c-button-radius-border: 0%;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #1c1c1c;
+  --slds-c-button-brand-color-background-hover: #1c1c1c;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+  --slds-c-button-brand-text-color: #1c1c1c;
+  --slds-c-button-brand-text-color-active: #ffffff;
+  --slds-c-button-brand-text-color-hover: #ffffff;
+  --slds-c-button-brand-color-border: #1c1c1c;
+  --slds-c-button-brand-color-border-active: #1c1c1c;
+  --slds-c-button-brand-color-border-hover: #1c1c1c;
+  --slds-c-button-brand-spacing-inline-end: 30px;
+  --slds-c-button-brand-spacing-inline-start: 30px;
+  --slds-c-button-spacing-block-start: 5px;
+  --slds-c-button-spacing-block-end: 5px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px;
+  font-weight: 5;
+  text-decoration: underline !important;
+}
+
+.link {
+  color: #1c1c1c;
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: "Swiss_Bold";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Swiss_Regular";
+  src: url("/resource/Swiss/_MI_Swiss721BT-Medium.otf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
+    format("TrueType");
+}
+
+.display {
+  font-family: Swiss_Bold;
+  font-size: 55px;
+  line-height: 66px;
+}
+
+.H1 {
+  font-family: Swiss_Bold;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.H2 {
+  font-family: Swiss_Bold;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.H3 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.H4 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 15;
+}
+
+.small-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}

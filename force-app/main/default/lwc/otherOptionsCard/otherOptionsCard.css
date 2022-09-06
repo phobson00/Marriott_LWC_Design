@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf")
+    format("TrueType");
+}
+
+.H3 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.bold-small-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 12px;
+}
+
+lightning-button {
+  --slds-c-button-text-color: #b84c16;
+  --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-text-color-active: #b84c16;
+}

@@ -1,3 +1,7 @@
+.main-container {
+  max-width: 970px;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
@@ -6,8 +10,7 @@
 
 @font-face {
   font-family: "Swiss_Regular";
-  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf")
-    format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-Medium.otf") format("TrueType");
 }
 
 @font-face {
@@ -27,6 +30,7 @@
   font-size: 55px;
   line-height: 66px;
 }
+
 .H1 {
   font-family: Swiss_Bold;
   font-size: 44px;
@@ -41,7 +45,7 @@
 
 .H3 {
   font-family: Proxima_Nova_Bold;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 26px;
 }
 
@@ -55,12 +59,7 @@
   font-family: Proxima_Nova_Regular;
   font-size: 16px;
   line-height: 24px;
-}
-
-.medium-body {
-  font-family: Proxima_Nova_Regular;
-  font-size: 14px;
-  line-height: 20px;
+  font-weight: 15;
 }
 
 .bold-small-body {
@@ -71,5 +70,4 @@
 .small-body {
   font-family: Proxima_Nova_Regular;
   font-size: 12px;
-  font-weight: 10;
 }
