@@ -1,55 +1,11 @@
 <template>
   <div class="slds-m-top_medium slds-m-bottom_x-large lg-width">
     <div class="slds-p-around_medium lgc-bg" style="background-color: #1c1c1c">
-      <c-reservations-dropdown></c-reservations-dropdown>
-
-      <lightning-button-menu
+      <c-reservations-dropdown label="Reservations"></c-reservations-dropdown>
+      <c-reservations-dropdown
         label="Marriott Bonvoy"
-        alternative-text="Show menu"
-        variant="bare-inverse"
-        class="slds-p-around_small"
-      >
-        <lightning-menu-item
-          value="MenuItemOne"
-          label="Menu Item One"
-        ></lightning-menu-item>
-        <lightning-menu-item
-          value="MenuItemTwo"
-          label="Menu Item Two"
-        ></lightning-menu-item>
-        <lightning-menu-item
-          value="MenuItemThree"
-          label="Menu Item Three"
-        ></lightning-menu-item>
-        <lightning-menu-item
-          value="MenuItemFour"
-          label="Menu Item Four"
-        ></lightning-menu-item>
-      </lightning-button-menu>
-
-      <lightning-button-menu
-        label="Tools"
-        alternative-text="Show menu"
-        variant="bare-inverse"
-        class="slds-p-around_small"
-      >
-        <lightning-menu-item
-          value="MenuItemOne"
-          label="Menu Item One"
-        ></lightning-menu-item>
-        <lightning-menu-item
-          value="MenuItemTwo"
-          label="Menu Item Two"
-        ></lightning-menu-item>
-        <lightning-menu-item
-          value="MenuItemThree"
-          label="Menu Item Three"
-        ></lightning-menu-item>
-        <lightning-menu-item
-          value="MenuItemFour"
-          label="Menu Item Four"
-        ></lightning-menu-item>
-      </lightning-button-menu>
+      ></c-reservations-dropdown>
+      <c-reservations-dropdown label="tools"></c-reservations-dropdown>
 
       <c-contact-dropdown></c-contact-dropdown>
 
