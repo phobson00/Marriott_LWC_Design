@@ -5,13 +5,16 @@
     variant="bare-inverse"
     class="slds-p-around_small"
   >
-    <lightning-layout>
-      <lightning-layout-item>
-        <a>Make a new reservation</a>
-      </lightning-layout-item>
-      <lightning-layout-item>
-        <a>Find a Reservation</a>
-      </lightning-layout-item>
-    </lightning-layout>
+    <lightning-menu-item
+      value="Make a new reservation"
+      label="Make a new reservation"
+    >
+    </lightning-menu-item>
+    <lightning-menu-item
+      style="--slds-c-button-text-color: blue"
+      value="Find a Reservation"
+      label="Find a Reservation"
+    >
+    </lightning-menu-item>
   </lightning-button-menu>
 </template>
