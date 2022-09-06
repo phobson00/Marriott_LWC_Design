@@ -1,16 +1,30 @@
-.tab-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  --slds-c-tabs-item-color-border-active: #1c1c1c;
-  --slds-c-tabs-item-color-border-hover: #1c1c1c;
-  --slds-c-tabs-item-text-color: #1c1c1c;
-  --slds-c-tabs-item-text-color-active: #1c1c1c;
-  --slds-c-tabs-item-text-color-hover: #1c1c1c;
+.select-button {
+  --slds-c-button-brand-text-color: #d2d2d2;
+  --slds-c-button-brand-text-color-active: #d2d2d2;
+  --slds-c-button-brand-text-color-hover: #d2d2d2;
+  --slds-c-button-brand-color-border: #d2d2d2;
+  --slds-c-button-brand-color-border-active: #d2d2d2;
+  --slds-c-button-brand-color-border-hover: #d2d2d2;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-spacing-block-start: 4px;
+  --slds-c-button-spacing-block-end: 4px;
 }
 
-.tab-container li {
-  align-self: center;
+.inner-layout {
+  min-width: 180px;
+}
+
+lightning-icon {
+  --slds-c-icon-color-foreground-default: #d2d2d2;
+}
+
+input {
+  --slds-c-input-shadow-focus: 0 0 0px;
+  --slds-c-input-color-border: #d2d2d2;
+  --slds-c-input-color-border-focus: #d2d2d2;
 }
 
 .continue-button {
@@ -27,6 +41,11 @@
   --slds-c-button-sizing-border: 0px;
   font-family: Swiss_Bold !important;
   font-size: 16px !important;
+}
+
+lightning-input {
+  font-family: Swiss_Regular !important;
+  font-size: 14px !important;
 }
 
 @font-face {

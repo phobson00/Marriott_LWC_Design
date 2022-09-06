@@ -9,66 +9,51 @@
     <lightning-layout
       multiple-rows
       horizontal-align="center"
-      class="slds-var-p-around_small"
+      class="slds-var-m-around_small inner-layout"
     >
-      <lightning-layout-item size="12" class="slds-grid">
-        <div class="slds-tabs_default slds-tabs_medium">
-          <ul class="slds-tabs_default__nav tab-container" role="tablist">
-            <li
-              class="slds-tabs_default__item slds-is-active slds-var-m-horizontal_medium"
-              title="Item One"
-              role="presentation"
-              onclick={tabClick}
+      <lightning-layout-item size="12">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="12" class="slds-var-m-bottom_xxx-small">
+            <label class="body">Type</label>
+          </lightning-layout-item>
+          <lightning-layout-item size="12">
+            <lightning-layout
+              class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full"
             >
-              <a
-                class="slds-tabs_default__link body"
-                role="tab"
-                tabindex="0"
-                aria-selected="true"
-                aria-controls="tab-default-1"
-                id="tab-default-1__item"
-                >Self</a
-              >
-            </li>
-            <li
-              class="slds-tabs_default__item slds-var-m-horizontal_medium"
-              title="Item Two"
-              role="presentation"
-              onclick={tabClick}
-            >
-              <a
-                class="slds-tabs_default__link body"
-                role="tab"
-                tabindex="-1"
-                aria-selected="false"
-                aria-controls="tab-default-2"
-                id="tab-default-2__item"
-                >Other</a
-              >
-            </li>
-          </ul>
-          <template if:false={showInput}>
-            <div
-              id="tab-default-1"
-              class="slds-tabs_default__content slds-show"
-              role="tabpanel"
-              aria-labelledby="tab-default-1__item"
-            ></div>
-          </template>
-          <template if:true={showInput}>
-            <div
-              id="tab-default-2"
-              class="slds-tabs_default__content"
-              role="tabpanel"
-              aria-labelledby="tab-default-2__item"
-            >
-              <lightning-input
-                class="body"
-                label="Contact Name"
-              ></lightning-input>
-            </div>
-          </template>
-        </div>
+              <lightning-layout-item size="12">
+                <button
+                  class="dropdown-button slds-button slds-button_brand select-button slds-button_stretch slds-grid_align-spread slds-var-p-horizontal_x-small"
+                  onclick={dropMenu}
+                >
+                  <span style="color: #707070" class="body">Select</span
+                  ><lightning-icon
+                    icon-name="utility:chevrondown"
+                    size="xx-small"
+                  ></lightning-icon>
+                </button>
+              </lightning-layout-item>
+              <template if:true={showMenu}>
+                <lightning-layout-item
+                  class="slds-dropdown slds-dropdown_length-5 dropdown slds-size_full"
+                >
+                  <lightning-menu-item label="Option 1"></lightning-menu-item>
+                  <lightning-menu-item label="Option 2"></lightning-menu-item>
+                  <lightning-menu-item label="Option 3"></lightning-menu-item>
+                </lightning-layout-item>
+              </template>
+            </lightning-layout>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-vertical_small">
+		<lightning-layout multiple-rows>
+			<lightning-layout-item size="12" class="slds-var-m-bottom_xxx-small">
+			  <label class="body">Number</label>
+			</lightning-layout-item>
+			<lightning-layout-item size="12">
+			  <input class="slds-input"></input>
+			</lightning-layout-item>
+		  </lightning-layout>
       </lightning-layout-item>
       <lightning-layout-item size="12">
         <lightning-button
