@@ -1,3 +1,20 @@
 <template>
-    
+  <lightning-button-menu
+    label="Contact [Name]"
+    alternative-text="Show menu"
+    variant="bare-inverse"
+    class="slds-p-around_small"
+  >
+    <lightning-layout>
+      <lightning-tabset>
+        <lightning-tab label="Self">
+          <lightning-input label="Contact Name"></lightning-input>
+        </lightning-tab>
+        <lightning-tab label="Other">
+          <lightning-input label="Contact Name"></lightning-input>
+        </lightning-tab>
+      </lightning-tabset>
+      <lightning-button label="Continue"></lightning-button>
+    </lightning-layout>
+  </lightning-button-menu>
 </template>
