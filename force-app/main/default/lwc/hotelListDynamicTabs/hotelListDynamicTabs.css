@@ -1,18 +1,12 @@
-.tab-button {
-  --slds-c-button-spacing-block-start: 12px;
-  --slds-c-button-spacing-block-end: 16px;
-  --slds-c-button-brand-color-background: #ffffff;
-  --slds-c-button-brand-color-background-active: #ffffff;
-  --slds-c-button-brand-color-background-hover: #ffffff;
-  --slds-c-button-brand-color-border: #d2d2d2;
-  --slds-c-button-brand-color-border-active: #1c1c1c;
-  --slds-c-button-brand-color-border-hover: #1c1c1c;
-  --slds-c-button-brand-text-color: #1c1c1c;
-  --slds-c-button-brand-text-color-active: #1c1c1c;
-  --slds-c-button-brand-text-color-hover: #1c1c1c;
-  --slds-c-button-shadow-focus: 0 0 0px;
-  --slds-c-button-sizing-border: 1px;
-  --slds-c-button-radius-border: 0%;
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --slds-c-tabs-item-color-border: #1c1c1c;
+  --slds-c-tabs-item-color-border-active: #1c1c1c;
+  --slds-c-tabs-item-color-border-hover: #1c1c1c;
+  --slds-c-tabs-item-spacing-block-end: 1.5%;
+  --slds-c-tabs-item-spacing-block-start: 1.5%;
 }
 
 @font-face {
