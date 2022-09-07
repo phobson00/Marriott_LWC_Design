@@ -1,16 +1,16 @@
-:host{
-    --slds-c-button-text-color: #fff;
-	--slds-c-button-text-color: #fff;
-	--slds-c-button-text-color-hover: #fff;
-	--slds-c-button-text-color-active: #fff;
-	--slds-c-button-shadow-focus: 0px 0px 0px #1c1c1c;
-	--slds-c-button-color-border: #1c1c1c;
-	--slds-c-button-color-border-active: #1c1c1c;
-	--slds-c-button-color-border-hover: #1c1c1c;
-	--slds-c-button-inverse-text-color-hover: #1c1c1c;
-	--slds-c-button-inverse-text-color-active: #1c1c1c;
+:host {
+  --slds-c-button-text-color: #fff;
+  --slds-c-button-text-color: #fff;
+  --slds-c-button-text-color-hover: #fff;
+  --slds-c-button-text-color-active: #fff;
+  --slds-c-button-shadow-focus: 0px 0px 0px #1c1c1c;
+  --slds-c-button-color-border: #1c1c1c;
+  --slds-c-button-color-border-active: #1c1c1c;
+  --slds-c-button-color-border-hover: #1c1c1c;
+  --slds-c-button-inverse-text-color-hover: #1c1c1c;
+  --slds-c-button-inverse-text-color-active: #1c1c1c;
 }
 
-.lg-width{
+/* .lg-width{
     min-width: 900px;
-}
+} */
