@@ -1,5 +1,7 @@
 <template>
-  <lightning-layout class="slds-grid slds-var-m-left_medium">
+  <lightning-layout
+    class="slds-grid slds-var-m-left_medium slds-var-m-top_small"
+  >
     <lightning-layout-item size="1">
       <template if:false={showMap}>
         <lightning-button
@@ -41,7 +43,7 @@
         </lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>
-    <lightning-layout-item size="2" class="slds-var-m-right_x-large">
+    <lightning-layout-item size="2" class="slds-var-m-right_large">
       <lightning-layout multiple-rows>
         <lightning-layout-item size="12">
           <label class="small-body">Show:</label>
