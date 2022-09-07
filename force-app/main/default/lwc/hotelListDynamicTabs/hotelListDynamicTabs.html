@@ -3,66 +3,104 @@
   <lightning-layout>
     <div class="slds-tabs_default slds-tabs_medium">
       <ul class="slds-tabs_default__nav tab-container" role="tablist">
-        <li
-          class="slds-tabs_default__item slds-is-active slds-var-m-horizontal_medium slds-align_absolute-center"
-          onclick={addTab}
-        >
+        <li class="slds-tabs_default__item slds-is-active" onclick={addTab}>
           <lightning-layout
             multiple-rows
             horizontal-align="center"
             vertical-align="center"
           >
-            <lightning-layout-item size="12">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold slds-align_absolute-center"
+            >
               Special Rates
             </lightning-layout-item>
-            <lightning-layout-item size="12">
-              From 409 USD / night
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body slds-align_absolute-center"
+            >
+              From 431 USD / night
             </lightning-layout-item>
           </lightning-layout>
         </li>
         <li
-          class="slds-tabs_default__item slds-var-m-horizontal_medium"
+          class="slds-tabs_default__item"
           title="Item Two"
           role="presentation"
           onclick={removeTab}
         >
-          <a
-            class="slds-tabs_default__link body"
-            tabindex="-1"
-            id="tab-default-2__item"
-            ><div>Use Points</div>
-            <div>From 68,000 pts / stay</div></a
-          >
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold slds-align_absolute-center"
+            >
+              Use Points
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body slds-align_absolute-center"
+            >
+              From 68,000 pts / stay
+            </lightning-layout-item>
+          </lightning-layout>
         </li>
-        <li class="slds-tabs_default__item slds-var-m-horizontal_medium">
-          <a
-            class="slds-tabs_default__link body"
-            tabindex="-1"
-            id="tab-default-3__item"
-            ><div>Standard Rates</div>
-            <div>From 454 USD / night</div></a
-          >
+        <li class="slds-tabs_default__item">
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold slds-align_absolute-center"
+            >
+              Standard Rates
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body slds-align_absolute-center"
+            >
+              From 454 USD / night
+            </lightning-layout-item>
+          </lightning-layout>
         </li>
-        <li class="slds-tabs_default__item slds-var-m-horizontal_medium">
-          <a
-            class="slds-tabs_default__link body"
-            tabindex="-1"
-            id="tab-default-4__item"
-            ><div>Prepay and Save</div>
-            <div>From 409 USD / night</div></a
-          >
+        <li class="slds-tabs_default__item">
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold slds-align_absolute-center"
+            >
+              Prepay and Save
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body slds-align_absolute-center"
+            >
+              From 409 USD / night
+            </lightning-layout-item>
+          </lightning-layout>
         </li>
-        <li
-          class="slds-tabs_default__item slds-var-m-horizontal_medium"
-          role="presentation"
-        >
-          <a
-            class="slds-tabs_default__link body"
-            tabindex="-1"
-            id="tab-default-5__item"
-            ><div>Deals and Packages</div>
-            <div>From 514 USD / night</div></a
-          >
+        <li class="slds-tabs_default__item" role="presentation">
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item
+              size="12"
+              style="max-height: 15px"
+              class="body-bold slds-align_absolute-center"
+            >
+              Deals and Packages
+            </lightning-layout-item>
+            <lightning-layout-item
+              size="12"
+              style="max-height: 20px"
+              class="small-body slds-align_absolute-center"
+            >
+              From 514 USD / night
+            </lightning-layout-item>
+          </lightning-layout>
         </li>
       </ul>
     </div>
