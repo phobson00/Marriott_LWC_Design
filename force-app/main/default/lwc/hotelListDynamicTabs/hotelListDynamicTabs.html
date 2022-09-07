@@ -4,16 +4,21 @@
     <div class="slds-tabs_default slds-tabs_medium">
       <ul class="slds-tabs_default__nav tab-container" role="tablist">
         <li
-          class="slds-tabs_default__item slds-is-active slds-var-m-horizontal_medium"
+          class="slds-tabs_default__item slds-is-active slds-var-m-horizontal_medium slds-align_absolute-center"
           onclick={addTab}
         >
-          <a
-            class="slds-tabs_default__link body"
-            tabindex="0"
-            id="tab-default-1__item"
-            ><div>Special Rates</div>
-            <div>From 431 USD / night</div></a
+          <lightning-layout
+            multiple-rows
+            horizontal-align="center"
+            vertical-align="center"
           >
+            <lightning-layout-item size="12">
+              Special Rates
+            </lightning-layout-item>
+            <lightning-layout-item size="12">
+              From 409 USD / night
+            </lightning-layout-item>
+          </lightning-layout>
         </li>
         <li
           class="slds-tabs_default__item slds-var-m-horizontal_medium"
