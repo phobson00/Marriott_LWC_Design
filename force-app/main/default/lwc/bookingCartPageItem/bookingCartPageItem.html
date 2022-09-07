@@ -1,18 +1,18 @@
 <template>
   <lightning-layout
     multiple-rows
-    class="slds-theme_default slds-var-p-around_large slds-var-m-bottom_large slds-var-m-right_large"
+    class="slds-theme_default slds-var-p-around_large slds-var-m-bottom_large"
   >
     <lightning-layout-item
       size="12"
       class="slds-var-m-bottom_medium"
       vertical-align="center"
     >
-      <lightning-layout>
-        <lightning-layout-item class="H2" size="10"
+      <lightning-layout horizontal-align="spread">
+        <lightning-layout-item class="H2"
           >(WASTY) The Ritz-Carlton, Tysons Corner</lightning-layout-item
         >
-        <lightning-layout-item class="slds-var-m-left_xx-large"
+        <lightning-layout-item
           ><lightning-button
             variant="base"
             label="REMOVE ROOM"
@@ -43,34 +43,36 @@
       size="12"
       class="slds-border_top slds-border_bottom slds-var-p-bottom_large"
     >
-      <lightning-layout vertical-align="end">
-        <lightning-layout-item
-          ><img src={image} class="hotel-image"
-        /></lightning-layout-item>
-        <lightning-layout-item
-          class="slds-var-m-top_medium slds-var-m-left_x-large"
-        >
-          <lightning-layout multiple-rows>
-            <lightning-layout-item size="12" class="H4"
-              >Deluxe Guest Room, 1 King - GENR</lightning-layout-item
-            >
-            <lightning-layout-item
-              size="12"
-              class="small-body slds-var-m-top_medium"
-              style="text-decoration: underline"
-              >ROOM DETAILS</lightning-layout-item
-            >
-            <lightning-layout-item
-              size="12"
-              class="small-body slds-var-m-top_medium"
-              >Total</lightning-layout-item
-            >
-            <lightning-layout-item size="12"
-              ><span class="H3">539</span
-              ><span class="small-body">USD</span></lightning-layout-item
-            >
-          </lightning-layout></lightning-layout-item
-        >
+      <lightning-layout vertical-align="end" horizontal-align="spread">
+        <lightning-layout-item>
+          <lightning-layout vertical-align="end">
+            <lightning-layout-item>
+              <img src={image} class="hotel-image" />
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_medium">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" class="H4"
+                  >Deluxe Guest Room, 1 King - GENR</lightning-layout-item
+                >
+                <lightning-layout-item
+                  size="12"
+                  class="small-body slds-var-m-top_medium"
+                  style="text-decoration: underline"
+                  >ROOM DETAILS</lightning-layout-item
+                >
+                <lightning-layout-item
+                  size="12"
+                  class="small-body slds-var-m-top_medium"
+                  >Total</lightning-layout-item
+                >
+                <lightning-layout-item size="12"
+                  ><span class="H3">539</span
+                  ><span class="small-body">USD</span></lightning-layout-item
+                >
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
         <lightning-layout-item class="slds-var-m-left_medium">
           <lightning-button
             class="select-button slds-float_right slds-var-m-left_small"
@@ -97,35 +99,37 @@
             style="background-color: #f4f4f4"
             class="slds-var-p-around_medium"
           >
-            <div class="small-body slds-var-m-top_x-small slds-float_left">
-              1 room(s) for 1 night(s): Member Rate Prepared Non-Refundable
-            </div>
-            <div class="slds-float_right">
-              <lightning-button
-                variant="base"
-                label="RATE DETAILS"
-                class="orange-button bold-small-body slds-var-m-horizontal_x-small"
-              ></lightning-button
-              ><lightning-button
-                variant="base"
-                label="CHANGE"
-                class="orange-button bold-small-body slds-var-m-horizontal_x-small"
-              ></lightning-button
-              ><lightning-button
-                variant="base"
-                label="ADD"
-                class="orange-button bold-small-body slds-var-m-horizontal_x-small"
-              ></lightning-button
-              ><lightning-button
-                variant="base"
-                label="REMOVE"
-                class="orange-button bold-small-body slds-var-m-horizontal_x-small"
-              ></lightning-button
-              ><lightning-button
-                variant="base"
-                label="CANCELLATION POLICY"
-                class="orange-button bold-small-body slds-var-m-horizontal_small"
-              ></lightning-button></div
+            <lightning-layout horizontal-align="spread" vertical-align="center">
+              <lightning-layout-item class="small-body slds-var-m-top_x-small">
+                1 room(s) for 1 night(s): Member Rate Prepared Non-Refundable
+              </lightning-layout-item>
+              <lightning-layout-item>
+                <lightning-button
+                  variant="base"
+                  label="RATE DETAILS"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="CHANGE"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="ADD"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="REMOVE"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="CANCELLATION POLICY"
+                  class="orange-button bold-small-body slds-var-m-horizontal_small"
+                ></lightning-button
+              ></lightning-layout-item> </lightning-layout
           ></lightning-layout-item>
           <lightning-layout-item size="12" class="slds-var-m-vertical_small">
             <div class="slds-float_left small-body">Thursday, Aug 25, 2022</div>
