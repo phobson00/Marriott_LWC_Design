@@ -17,19 +17,16 @@
         </lightning-layout-item>
         <lightning-layout-item
           size="12"
-          class="H1 slds-var-m-vertical_large slds-var-m-left_small"
+          class="H1 slds-var-m-vertical_large"
           onclick={emptyCartHandler}
         >
           Booking Cart
         </lightning-layout-item>
-        <lightning-layout-item
-          class="slds-var-m-vertical_medium slds-var-m-left_small"
-          size="12"
-        >
+        <lightning-layout-item class="slds-var-m-vertical_medium" size="12">
           <template if:false={emptyCart}>
             <lightning-layout
               horizontal-align="end"
-              class="slds-var-m-right_large slds-var-m-bottom_small"
+              class="slds-var-m-bottom_small"
             >
               <lightning-layout-item class="bold-small-body"
                 >Saturday, Aug 12, 2022&nbsp;</lightning-layout-item

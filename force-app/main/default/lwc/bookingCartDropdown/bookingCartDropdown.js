@@ -2,6 +2,7 @@ import { LightningElement } from "lwc";
 
 export default class BookingCartDropdown extends LightningElement {
   emptyCart = true;
+  cartLabel = "Cart (0)";
 
   dropMenu() {
     const dropTrigger = this.template.querySelector(
@@ -16,6 +17,12 @@ export default class BookingCartDropdown extends LightningElement {
   }
 
   emptyCartHandler() {
-    return this.emptyCart ? (this.emptyCart = false) : (this.emptyCart = true);
+    if (this.emptyCart) {
+      this.emptyCart = false;
+      this.cartLabel = "Cart (3)";
+    } else {
+      this.emptyCart = true;
+      this.cartLabel = "Cart (0)";
+    }
   }
 }
