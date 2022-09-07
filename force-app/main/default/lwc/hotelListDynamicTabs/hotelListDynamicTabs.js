@@ -3,18 +3,6 @@ import { LightningElement } from "lwc";
 export default class HotelListDynamicTabs extends LightningElement {
   numberOfTabs = 2;
 
-  columnClasses = [
-    "slds-size_1-of-2",
-    "slds-size_1-of-3",
-    "slds-size_1-of-4",
-    "slds-size_1-of-5"
-  ];
-  columnClass = this.columnClasses[0];
-
-  isThreeTab = false;
-  isFourTab = false;
-  isFiveTab = false;
-
   addButton() {
     if (this.numberOfTabs < 5) {
       this.numberOfTabs++;
