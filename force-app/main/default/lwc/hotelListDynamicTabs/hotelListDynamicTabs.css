@@ -1,4 +1,4 @@
-.tab-container {
+.tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,8 +6,6 @@
   --slds-c-tabs-item-color-border-hover: #1c1c1c;
   --slds-c-tabs-item-spacing-block-end: 1.5%;
   --slds-c-tabs-item-spacing-block-start: 1.5%;
-  --slds-c-tabs-item-spacing-inline-end: 5%;
-  --slds-c-tabs-item-spacing-inline-start: 5%;
 }
 
 @font-face {
