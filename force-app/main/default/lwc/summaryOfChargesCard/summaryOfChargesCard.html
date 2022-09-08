@@ -1,3 +1,35 @@
 <template>
-    
+  <lightning-layout
+    class="slds-theme_default"
+    horizontal-align="spread"
+    vertical-align="center"
+  >
+    <lightning-layout-item>
+      <lightning-button
+        class="H4 summary-button"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        label="Summary of Charges"
+        variant="base"
+      >
+      </lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item size="4">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+          <span class="bold-small-body">Not Guaranteed:</span>
+          <span class="small-body"
+            >&nbsp;Extra towels, Refrigerator, Extra feather pillows, Near
+            elevator, Non-commissionable rate</span
+          >
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <span class="bold-small-body">Unavailable:</span>
+          <span class="small-body"
+            >&nbsp;Mobility Accessible Room with Tub</span
+          >
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
 </template>
