@@ -1,13 +1,14 @@
 <template>
-  <lightning-layout multiple-rows>
-    <lightning-layout-item size="12">
-      <c-navigation-bar></c-navigation-bar>
-    </lightning-layout-item>
-    <lightning-layout-item size="12">
+  <c-navigation-bar></c-navigation-bar>
+  <lightning-layout
+    multiple-rows
+    class="slds-theme_default slds-var-p-horizontal_large"
+  >
+    <lightning-layout-item size="12" class="slds-var-m-vertical_large">
       <c-hotel-info-header></c-hotel-info-header>
     </lightning-layout-item>
     <lightning-layout-item size="12">
-      <c-hotel-info-header></c-hotel-info-header>
+      <c-review-new-search-section></c-review-new-search-section>
     </lightning-layout-item>
   </lightning-layout>
 </template>
