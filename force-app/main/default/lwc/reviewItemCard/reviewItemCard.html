@@ -1,3 +1,138 @@
 <template>
-    
+  <lightning-layout
+    multiple-rows
+    class="slds-theme_default slds-var-p-around_large slds-var-m-bottom_large"
+  >
+    <lightning-layout-item
+      size="12"
+      class="slds-border_top slds-border_bottom slds-var-p-bottom_large"
+    >
+      <lightning-layout vertical-align="end" horizontal-align="spread">
+        <lightning-layout-item>
+          <lightning-layout vertical-align="end">
+            <lightning-layout-item>
+              <img src={image} class="hotel-image" />
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_medium">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" class="H4"
+                  >Guest room, 1 Queen - QUEN</lightning-layout-item
+                >
+                <lightning-layout-item size="12" class="slds-var-m-top_medium"
+                  ><lightning-button
+                    variant="base"
+                    label="REMOVE ROOM"
+                    class="orange-button bold-small-body"
+                  ></lightning-button
+                ></lightning-layout-item>
+                <lightning-layout-item size="12" class="slds-var-m-top_medium"
+                  ><span class="bold-small-body">Check in:</span>
+                  <span class="small-body">
+                    Thursday, Aug 25 2022
+                  </span></lightning-layout-item
+                >
+                <lightning-layout-item size="12" class="slds-var-m-top_medium"
+                  ><span class="bold-small-body">Check out:</span>
+                  <span class="small-body">
+                    Friday, Aug 26 2022
+                  </span></lightning-layout-item
+                >
+                <lightning-layout-item size="12" class="slds-var-m-top_medium"
+                  ><span class="bold-small-body">Room(s):</span>
+                  <span class="small-body"> &nbsp;1 </span>
+                  <span class="bold-small-body">Guest(s) per room:</span>
+                  <span class="small-body"> &nbsp;1 </span>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" class="slds-var-m-top_medium"
+                  ><lightning-button
+                    variant="base"
+                    label="EDIT"
+                    icon-name="utility:chevronright"
+                    icon-position="right"
+                    class="orange-button bold-small-body"
+                  ></lightning-button
+                ></lightning-layout-item>
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item> </lightning-layout
+    ></lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-m-vertical_large">
+      <button class="H4 slds-button summary-button" onclick={summaryHandler}>
+        <lightning-icon
+          size="x-small"
+          icon-name="utility:chevrondown"
+        ></lightning-icon>
+        <span class="H4 slds-var-m-left_medium" style="color: #1c1c1c"
+          >Room Total Summary</span
+        >
+      </button>
+      <template if:true={showSummary}>
+        <lightning-layout multiple-rows class="slds-var-m-top_medium">
+          <lightning-layout-item
+            size="12"
+            style="background-color: #f4f4f4"
+            class="slds-var-p-around_medium"
+          >
+            <lightning-layout horizontal-align="spread" vertical-align="center">
+              <lightning-layout-item class="small-body slds-var-m-top_x-small">
+                1 room(s) for 1 night(s): Member Rate Prepared Non-Refundable
+              </lightning-layout-item>
+              <lightning-layout-item>
+                <lightning-button
+                  variant="base"
+                  label="RATE DETAILS"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="CHANGE"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="ADD"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="REMOVE"
+                  class="orange-button bold-small-body slds-var-m-horizontal_x-small"
+                ></lightning-button
+                ><lightning-button
+                  variant="base"
+                  label="CANCELLATION POLICY"
+                  class="orange-button bold-small-body slds-var-m-horizontal_small"
+                ></lightning-button
+              ></lightning-layout-item> </lightning-layout
+          ></lightning-layout-item>
+          <lightning-layout-item size="12" class="slds-var-m-vertical_small">
+            <div class="slds-float_left small-body">Thursday, Aug 25, 2022</div>
+            <div class="slds-float_right bold-small-body">237 USD</div>
+          </lightning-layout-item>
+        </lightning-layout>
+      </template>
+    </lightning-layout-item>
+    <lightning-layout-item size="12">
+      <lightning-button
+        class="black-button slds-var-m-right_medium"
+        label="ADD SEGMENT"
+        variant="brand"
+      ></lightning-button
+      ><lightning-button
+        class="black-button slds-var-m-right_medium"
+        label="TOTAL FOR STAY"
+        variant="brand"
+      ></lightning-button>
+      <div class="slds-float_right">
+        <lightning-button
+          class="black-button slds-var-m-right_medium"
+          label="REMOVE ROOM"
+          variant="brand"
+        ></lightning-button
+        ><lightning-button class="select-button" variant="brand" label="SELECT">
+        </lightning-button>
+      </div>
+    </lightning-layout-item>
+  </lightning-layout>
 </template>
