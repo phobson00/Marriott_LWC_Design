@@ -1,13 +1,11 @@
 <template>
   <lightning-layout
     multiple-rows
-    class="slds-var-p-horizontal_medium slds-var-p-bottom_medium"
+    class="slds-var-p-vertical_large"
+    vertical-align="center"
   >
     <lightning-layout-item size="3" class="slds-border_right">
-      <lightning-layout
-        multiple-rows
-        class="slds-var-p-left_large slds-var-p-bottom_medium"
-      >
+      <lightning-layout multiple-rows>
         <lightning-layout-item class="small-body" size="12"
           >Stay Dates</lightning-layout-item
         >
@@ -17,10 +15,7 @@
       </lightning-layout>
     </lightning-layout-item>
     <lightning-layout-item size="3">
-      <lightning-layout
-        multiple-rows
-        class="slds-var-p-left_large slds-var-p-bottom_medium"
-      >
+      <lightning-layout multiple-rows class="slds-var-p-left_large">
         <lightning-layout-item class="small-body" size="12"
           >Total for Stay</lightning-layout-item
         >
@@ -30,12 +25,16 @@
       </lightning-layout>
     </lightning-layout-item>
     <lightning-layout-item size="3">
-      <lightning-icon icon-name="utility:clock"></lightning-icon>
-      <div class="small-body">Room(s) held for: 14:37</div>
+      <lightning-icon
+        icon-name="utility:clock"
+        class="slds-float_left clock-icon slds-var-m-right_x-small"
+        size="x-small"
+      ></lightning-icon>
+      <div class="small-body orange-text">Room(s) held for: 14:37</div>
     </lightning-layout-item>
-    <lightning-layout-item size="3" class="slds-var-p-bottom_medium">
+    <lightning-layout-item size="3">
       <lightning-button
-        class="book-now-button slds-float_right slds-var-m-right_medium slds-var-p-right_xxx-small"
+        class="book-now-button slds-float_right"
         label="BOOK NOW"
         variant="brand"
       ></lightning-button>
