@@ -8,7 +8,13 @@
         label="Reservation Status, Rate &amp; View Indicators"
         icon-name="utility:chevrondown"
         icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
       ></lightning-button>
     </lightning-layout-item>
+    <template if:true={showDropdown}>
+      <lightning-layout multiple-rows> hey </lightning-layout>
+    </template>
   </lightning-layout>
 </template>
