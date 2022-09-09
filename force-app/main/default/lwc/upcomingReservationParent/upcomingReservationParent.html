@@ -1,10 +1,63 @@
 <template>
-  <lightning-layout>
-    <c-navigation-bar></c-navigation-bar>
-  </lightning-layout>
-  <lightning-layout multiple-rows>
-    <lightning-layout-item size="12">
+  <c-navigation-bar></c-navigation-bar>
+  <lightning-layout
+    multiple-rows
+    class="slds-theme_default slds-var-p-around_large"
+  >
+    <lightning-layout-item
+      size="12"
+      class="slds-var-p-bottom_large slds-border_bottom"
+    >
       <c-hotel-info-header></c-hotel-info-header>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-p-top_small">
+      <lightning-button
+        label="Email"
+        icon-name="utility:chevrondown"
+        icon-position="right"
+        class="top-button small-body"
+        variant="base"
+      >
+      </lightning-button>
+      <lightning-button
+        label="SMS / Text"
+        icon-name="utility:chevrondown"
+        icon-position="right"
+        class="top-button small-body slds-var-m-left_large"
+        variant="base"
+      >
+      </lightning-button>
+      <lightning-button
+        label="Book Additional Rooms"
+        icon-name="utility:chevrondown"
+        icon-position="right"
+        class="top-button small-body slds-var-m-left_large"
+        variant="base"
+      >
+      </lightning-button>
+      <lightning-button
+        label="Reservation History"
+        icon-name="utility:chevrondown"
+        icon-position="right"
+        class="top-button small-body slds-var-m-left_large"
+        variant="base"
+      >
+      </lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-p-top_xx-large">
+      <lightning-layout horizontal-align="spread">
+        <lightning-layout-item class="H1">
+          Upcoming Reservation
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            label="EXISTING RESERVATION"
+            class="existing-button"
+            variant="brand"
+          >
+          </lightning-button
+        ></lightning-layout-item>
+      </lightning-layout>
     </lightning-layout-item>
   </lightning-layout>
 </template>
