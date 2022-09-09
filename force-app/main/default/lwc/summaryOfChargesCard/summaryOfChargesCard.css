@@ -1,3 +1,14 @@
+.summary-button {
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-color-border: #ffffff;
+  --slds-c-button-color-border-active: #ffffff;
+  --slds-c-button-color-border-hover: #ffffff;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
@@ -6,7 +17,8 @@
 
 @font-face {
   font-family: "Swiss_Regular";
-  src: url("/resource/Swiss/_MI_Swiss721BT-Medium.otf") format("TrueType");
+  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf")
+    format("TrueType");
 }
 
 @font-face {
@@ -26,7 +38,6 @@
   font-size: 55px;
   line-height: 66px;
 }
-
 .H1 {
   font-family: Swiss_Bold;
   font-size: 44px;
@@ -41,7 +52,7 @@
 
 .H3 {
   font-family: Proxima_Nova_Bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 26px;
 }
 
@@ -55,7 +66,24 @@
   font-family: Proxima_Nova_Regular;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 15;
+}
+
+.bold-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.medium-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bold-medium-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .bold-small-body {
@@ -66,4 +94,9 @@
 .small-body {
   font-family: Proxima_Nova_Regular;
   font-size: 12px;
+  font-weight: 10;
+}
+
+.small-line-height {
+  line-height: 5px;
 }

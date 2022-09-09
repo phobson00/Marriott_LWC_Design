@@ -1,0 +1,57 @@
+<template>
+  <lightning-layout
+    class="slds-theme_default slds-var-p-vertical_medium slds-var-p-horizontal_large"
+    horizontal-align="spread"
+    vertical-align="center"
+  >
+    <lightning-layout-item>
+      <lightning-button
+        class="H4 summary-button"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        label="Summary of Charges"
+        variant="base"
+      >
+      </lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <lightning-layout horizontal-align="end">
+        <lightning-layout-item class="slds-align_absolute-center">
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item size="8" class="bold-body">
+              265.48
+            </lightning-layout-item>
+            <lightning-layout-item size="8" class="small-body">
+              USD / Night
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item class="bold slds-align_absolute-center">
+          +
+        </lightning-layout-item>
+        <lightning-layout-item
+          class="slds-align_absolute-center slds-var-m-left_small"
+        >
+          <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item size="10" class="bold-body">
+              50.86
+            </lightning-layout-item>
+            <lightning-layout-item size="10" class="small-body">
+              USD Taxes &amp; Fees
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-align_absolute-center">
+          <lightning-layout multiple-rows horizontal-align="end">
+            <lightning-layout-item size="7" class="H3 slds-float_right">
+              316.34
+            </lightning-layout-item>
+            <lightning-layout-item size="7" class="small-body slds-float_right">
+              USD Subtotal
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

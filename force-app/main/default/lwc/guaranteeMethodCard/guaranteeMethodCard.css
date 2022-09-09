@@ -1,0 +1,143 @@
+.apply-button {
+  --slds-c-button-radius-border: 0%;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #1c1c1c;
+  --slds-c-button-brand-color-background-hover: #1c1c1c;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+  --slds-c-button-brand-text-color: #1c1c1c;
+  --slds-c-button-brand-text-color-active: #ffffff;
+  --slds-c-button-brand-text-color-hover: #ffffff;
+  --slds-c-button-brand-color-border: #1c1c1c;
+  --slds-c-button-brand-color-border-active: #1c1c1c;
+  --slds-c-button-brand-color-border-hover: #1c1c1c;
+  --slds-c-button-brand-spacing-inline-end: 5%;
+  --slds-c-button-brand-spacing-inline-start: 5%;
+  --slds-c-button-spacing-block-start: 5px;
+  --slds-c-button-spacing-block-end: 5px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px;
+  font-weight: 5;
+}
+
+.select-button {
+  --slds-c-button-brand-text-color: #d2d2d2;
+  --slds-c-button-brand-text-color-active: #d2d2d2;
+  --slds-c-button-brand-text-color-hover: #d2d2d2;
+  --slds-c-button-brand-color-border: #d2d2d2;
+  --slds-c-button-brand-color-border-active: #d2d2d2;
+  --slds-c-button-brand-color-border-hover: #d2d2d2;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-spacing-block-start: 4px;
+  --slds-c-button-spacing-block-end: 4px;
+}
+
+.close-button {
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-color-border: #ffffff;
+  --slds-c-button-color-border-active: #ffffff;
+  --slds-c-button-color-border-hover: #ffffff;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
+
+lightning-icon {
+  --slds-c-icon-color-foreground-default: #1c1c1c;
+}
+
+@font-face {
+  font-family: "Swiss_Bold";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Swiss_Regular";
+  src: url("/resource/Swiss/_MI_Swiss721BT-BlackCondensed.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Bold.otf")
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("/resource/Proxima_Nova/_MI_Proxima-Nova-Regular.otf")
+    format("TrueType");
+}
+
+.display {
+  font-family: Swiss_Bold;
+  font-size: 55px;
+  line-height: 66px;
+}
+.H1 {
+  font-family: Swiss_Bold;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.H2 {
+  font-family: Swiss_Bold;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.H3 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.H4 {
+  font-family: Proxima_Nova_Bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bold-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.medium-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bold-medium-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bold-small-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 12px;
+}
+
+.small-body {
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+  font-weight: 10;
+}
+
+.small-line-height {
+  line-height: 5px;
+}
