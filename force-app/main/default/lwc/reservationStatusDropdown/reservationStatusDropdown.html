@@ -2,7 +2,7 @@
   <lightning-layout multiple-rows>
     <lightning-layout-item
       size="12"
-      class="slds-var-p-horizontal_small slds-var-p-vertical_large slds-border_top slds-border_bottom"
+      class="slds-var-p-horizontal_small slds-var-p-vertical_medium slds-border_top slds-border_bottom"
     >
       <lightning-button
         label="Reservation Status, Rate &amp; View Indicators"
@@ -14,7 +14,78 @@
       ></lightning-button>
     </lightning-layout-item>
     <template if:true={showDropdown}>
-      <lightning-layout multiple-rows> hey </lightning-layout>
+      <lightning-layout-item size="12">
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="bold-small-body">
+            Room Number
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body">
+            Confirmation Number
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body">
+            Room Pool
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body">
+            Segment Number
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body">
+            Arrival Date
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body">
+            Market &amp; Rate Code
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body">
+            PMS Account
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="3">
+            <lightning-layout multiple-rows>
+              <lightning-layout-item size="12">
+                Indicators
+              </lightning-layout-item>
+              <lightning-layout-item size="12">
+                <lightning-layout multiple-rows>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                </lightning-layout>
+              </lightning-layout-item>
+            </lightning-layout>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
     </template>
   </lightning-layout>
 </template>
