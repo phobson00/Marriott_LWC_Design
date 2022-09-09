@@ -20,6 +20,32 @@
   font-weight: 5;
 }
 
+.select-button {
+  --slds-c-button-brand-text-color: #d2d2d2;
+  --slds-c-button-brand-text-color-active: #d2d2d2;
+  --slds-c-button-brand-text-color-hover: #d2d2d2;
+  --slds-c-button-brand-color-border: #d2d2d2;
+  --slds-c-button-brand-color-border-active: #d2d2d2;
+  --slds-c-button-brand-color-border-hover: #d2d2d2;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-spacing-block-start: 4px;
+  --slds-c-button-spacing-block-end: 4px;
+}
+
+.close-button {
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-color-border: #ffffff;
+  --slds-c-button-color-border-active: #ffffff;
+  --slds-c-button-color-border-hover: #ffffff;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
