@@ -1,6 +1,9 @@
 import { LightningElement } from "lwc";
+import marriott_images from "@salesforce/resourceUrl/Marriott_Images";
 
 export default class UpcomingReservationParent extends LightningElement {
+  image = marriott_images + "/images/marriott_image_1.jpg";
+
   connectedCallback() {
     this.invokeWorkspaceAPI("isConsoleNavigation").then((isConsole) => {
       if (isConsole) {
