@@ -1,3 +1,16 @@
 <template>
-    
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-vertical_medium slds-var-m-horizontal_x-large slds-border_bottom"
+  >
+    <lightning-button
+      label="Guest Information"
+      icon-name="utility:chevrondown"
+      icon-position="left"
+      class="H4 main-button"
+      variant="base"
+      onclick={dropdownHandler}
+    ></lightning-button>
+    <template if:true={showDropdown}> </template>
+  </lightning-layout>
 </template>
