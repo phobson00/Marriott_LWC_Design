@@ -13,9 +13,49 @@
   --slds-c-icon-color-foreground-default: #477d00;
 }
 
-.small-drop-button {
-  color: #1c1c1c;
+.chevron {
   --slds-c-icon-color-foreground-default: #1c1c1c;
+}
+
+.agent-checkbox {
+  --slds-c-checkbox-color-background-checked: #1c1c1c;
+  --slds-c-checkbox-mark-color-foreground: #ffffff;
+  --slds-c-checkbox-color-border: #d2d2d2;
+  --slds-c-checkbox-color-border-checked: #1c1c1c;
+  --slds-c-checkbox-color-border-focus: #1c1c1c;
+  --slds-c-checkbox-shadow-focus: 0px 0px 0px;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}
+
+.orange-button {
+  --slds-c-button-text-color: #b84c16;
+  --slds-c-button-text-color-active: #b84c16;
+  --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
+
+.apply-button {
+  --slds-c-button-radius-border: 0%;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #1c1c1c;
+  --slds-c-button-brand-color-background-hover: #1c1c1c;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+  --slds-c-button-brand-text-color: #1c1c1c;
+  --slds-c-button-brand-text-color-active: #ffffff;
+  --slds-c-button-brand-text-color-hover: #ffffff;
+  --slds-c-button-brand-color-border: #1c1c1c;
+  --slds-c-button-brand-color-border-active: #1c1c1c;
+  --slds-c-button-brand-color-border-hover: #1c1c1c;
+  --slds-c-button-brand-spacing-inline-end: 2%;
+  --slds-c-button-brand-spacing-inline-start: 2%;
+  --slds-c-button-spacing-block-start: 5px;
+  --slds-c-button-spacing-block-end: 5px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px;
+  font-weight: 5;
 }
 
 @font-face {
@@ -74,6 +114,12 @@
 .bold-big-body {
   font-family: Swiss_Bold;
   font-size: 18px;
+  line-height: 24px;
+}
+
+.bold-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 16px;
   line-height: 24px;
 }
 

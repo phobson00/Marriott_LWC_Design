@@ -29,10 +29,101 @@
 			Guaranteed unless otherwise noted
 		</lightning-layout-item>
 		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
-			<button class="slds-button slds-grid_align-spread slds-button_stretch small-drop-button">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch main-button">
 				<span class="bold-body">Accessibility</span>
-				<lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small" class="chevron"></lightning-icon>
 			</button>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch main-button">
+				<span class="bold-body">Location</span>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small" class="chevron"></lightning-icon>
+			</button>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch main-button">
+				<span class="bold-body">Room Features</span>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small" class="chevron"></lightning-icon>
+			</button>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch main-button">
+				<span class="bold-body">Bathroom</span>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small" class="chevron"></lightning-icon>
+			</button>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch main-button">
+				<span class="bold-body">Add - Ons and Traveller Details</span>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small" class="chevron"></lightning-icon>
+			</button>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch main-button">
+				<span class="bold-body">Check - in</span>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small" class="chevron"></lightning-icon>
+			</button>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch main-button">
+				<span class="bold-body">Enter a Specific Request Code</span>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small" class="chevron"></lightning-icon>
+			</button>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="slds-var-p-vertical_medium">
+			<lightning-layout multiple-rows>
+				<lightning-layout-item size="12" class="slds-var-m-top_medium">
+					<lightning-layout>
+						<lightning-layout-item size="6" class="slds-var-p-right_medium">
+							<lightning-input label="Anticipated Arrival Time" placeholder="Enter here"></lightning-input>
+						</lightning-layout-item>
+						<lightning-layout-item size="6" class="slds-var-p-right_medium">
+							<lightning-input label="Any Special Requests or Needs?" placeholder="Enter here"></lightning-input>
+						</lightning-layout-item>
+					</lightning-layout>
+					
+				</lightning-layout-item>
+				<lightning-layout-item class="small-body slds-var-m-top_xx-small" size="12">
+					45 characters, including space
+				</lightning-layout-item>
+			</lightning-layout>
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="slds-var-p-vertical_medium">
+			<lightning-layout multiple-rows>
+				<lightning-layout-item size="12" class="bold-body">
+					Room Preference Summary
+				</lightning-layout-item>
+				<lightning-layout-item size="12" class="slds-var-m-top_small body">
+					Room 1
+				</lightning-layout-item>
+				<lightning-layout-item class="slds-var-m-top_x-small slds-var-m-left_x-small" size="12">
+					<span class="bold-small-body">Guaranteed: </span><span class="small-body">A5, M5</span>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" class="slds-var-m-left_x-small">
+					<span class="bold-small-body">Request Only: </span><span class="small-body">Near elevator, Extra foam pillows, Feather - free room, Extra towels</span>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" class="slds-var-m-top_x-small">
+					<lightning-input
+						type="checkbox"
+						label="Do not send the confirmation"
+						class="agent-checkbox medium-body"
+					></lightning-input>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" class="slds-var-m-top_medium">
+					<lightning-button
+						label="Apply"
+						class="apply-button slds-var-m-right_medium"
+						variant="brand"
+					>
+					</lightning-button>
+					<lightning-button
+						label="CLEAR ALL"
+						class="orange-button bold-small-body"
+						variant="base"
+					>
+					</lightning-button>
+				</lightning-layout-item>
+			</lightning-layout>
 		</lightning-layout-item>
 	</lightning-layout>
   </template>
