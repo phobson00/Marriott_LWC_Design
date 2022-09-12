@@ -1,18 +1,24 @@
 <template>
   <lightning-layout
-    class="slds-var-p-around_x-small slds-border_bottom slds-theme_default slds-border_top slds-border_right slds-border_left"
+    class="slds-var-p-vertical_medium slds-theme_default slds-border_top"
     vertical-align="center"
     horizontal-align="spread"
   >
     <lightning-layout-item>
-      <a class="slds-var-m-left_x-small small-body link"
-        >Back to Choose a Room</a
-      >
+      <lightning-icon
+        icon-name="utility:chevronleft"
+        size="xx-small"
+      ></lightning-icon>
+      <a class="small-body link">Back to Choose a Room</a>
       <a class="new-search-button slds-var-m-left_large small-body link"
         >New Search</a
       >
+      <lightning-icon
+        icon-name="utility:chevronright"
+        size="xx-small"
+      ></lightning-icon>
     </lightning-layout-item>
-    <lightning-layout-item class="slds-float_right">
+    <lightning-layout-item>
       <lightning-button
         class="force-button slds-float_right"
         label="FORCE SELL"

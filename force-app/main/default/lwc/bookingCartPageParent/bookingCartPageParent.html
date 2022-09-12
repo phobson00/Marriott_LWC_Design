@@ -5,21 +5,21 @@
     ></lightning-layout-item>
     <lightning-layout-item
       size="12"
-      class="slds-border_bottom slds-var-m-top_large"
+      class="slds-var-m-top_large slds-var-p-horizontal_medium"
       ><c-hotel-list-subheader></c-hotel-list-subheader
     ></lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-p-horizontal_medium">
+      <c-cart-force-sell-card></c-cart-force-sell-card>
+    </lightning-layout-item>
     <lightning-layout-item
       size="12"
       style="background-color: #f4f4f4"
       class="slds-var-p-around_medium"
     >
       <lightning-layout multiple-rows>
-        <lightning-layout-item size="12">
-          <c-cart-force-sell-card></c-cart-force-sell-card>
-        </lightning-layout-item>
         <lightning-layout-item
           size="12"
-          class="H1 slds-var-m-vertical_large"
+          class="H1 slds-var-m-top_large"
           onclick={emptyCartHandler}
         >
           Booking Cart
