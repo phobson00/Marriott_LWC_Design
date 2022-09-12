@@ -53,6 +53,7 @@ mark {
 
 .img-wide {
   min-height: 180px;
+  min-width: 370px;
 }
 
 .img-skinny {
