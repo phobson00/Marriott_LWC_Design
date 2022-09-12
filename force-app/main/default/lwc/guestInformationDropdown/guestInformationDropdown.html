@@ -1,16 +1,55 @@
+<!-- sldsValidatorIgnore -->
 <template>
   <lightning-layout
     multiple-rows
     class="slds-var-p-vertical_medium slds-var-m-horizontal_x-large slds-border_bottom"
   >
-    <lightning-button
-      label="Guest Information"
-      icon-name="utility:chevrondown"
-      icon-position="left"
-      class="H4 main-button"
-      variant="base"
-      onclick={dropdownHandler}
-    ></lightning-button>
-    <template if:true={showDropdown}> </template>
+    <lightning-layout-item size="12">
+      <lightning-button
+        label="Guest Information"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <template if:true={showDropdown}>
+      <lightning-layout-item size="6" class="slds-var-m-top_small slds-var-p-right_medium">
+        <label class="body">Caller Type</label>
+        <button
+          class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+          onclick={dropMenu}
+        >
+          <span style="color: #707070" class="medium-body">Self</span
+          ><lightning-icon
+            icon-name="utility:chevrondown"
+            size="xx-small"
+          ></lightning-icon>
+        </button>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-m-vertical_large bold-body"
+      >
+        Guest 1
+      </lightning-layout-item>
+      <lightning-layout-item size="6" class="slds-var-m-top_small slds-var-p-right_medium">
+        <label class="body">Title</label>
+        <input placeholder="Optional" class="slds-input slds-var-m-top_x-small height-input"></input>
+      </lightning-layout-item>
+	  <lightning-layout-item size="12" class="slds-var-m-top_small">
+		<lightning-layout multiple-rows>
+			<lightning-layout-item size="6" class="slds-var-p-right_medium">
+				<label class="body">First Name</label>
+        		<input placeholder="Enter Here" class="slds-input slds-var-m-top_x-small height-input"></input>
+			</lightning-layout-item>
+			<lightning-layout-item size="6" class="slds-var-p-right_medium">
+				<label class="body">Last Name</label>
+        		<input placeholder="Optional" class="slds-input slds-var-m-top_x-small height-input"></input>
+			</lightning-layout-item>
+		</lightning-layout>
+      </lightning-layout-item>
+    </template>
   </lightning-layout>
 </template>
