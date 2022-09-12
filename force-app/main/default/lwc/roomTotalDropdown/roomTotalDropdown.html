@@ -1,3 +1,23 @@
 <template>
-    
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-vertical_medium slds-var-p-left_x-large slds-border_bottom"
+  >
+    <lightning-layout-item size="12">
+      <lightning-button
+        label="Room Total Summary"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="bold-body"
+      >265</lightning-layout-item
+    >
+    <lightning-layout-item size="12" class="small-body"
+      >USD Taxes and Fees</lightning-layout-item
+    >
+  </lightning-layout>
 </template>
