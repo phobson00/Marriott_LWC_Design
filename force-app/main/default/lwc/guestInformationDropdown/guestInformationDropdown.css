@@ -32,6 +32,19 @@ lightning-icon {
   height: 46px;
 }
 
+.phone-radio {
+  --slds-c-radio-shadow: 0px 0px 0px;
+  --slds-c-radio-shadow-focus: 0px 0px 0px;
+  --slds-c-radio-mark-color-foreground: #444054;
+  --slds-c-radio-color-background-checked: #444054;
+  --slds-c-radio-color-border-checked: #444054;
+  --slds-c-radio-color-border-focus: #444054;
+}
+
+.slds-form-element__control .slds-radio {
+  display: inline;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
