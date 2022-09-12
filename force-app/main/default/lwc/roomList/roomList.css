@@ -21,6 +21,10 @@
   text-decoration: underline;
 }
 
+.cart-icon {
+  --slds-c-icon-color-foreground-default: #1c1c28;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
