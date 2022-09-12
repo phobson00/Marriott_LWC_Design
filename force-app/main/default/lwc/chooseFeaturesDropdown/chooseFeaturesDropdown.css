@@ -9,6 +9,15 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
+.check-icon {
+  --slds-c-icon-color-foreground-default: #477d00;
+}
+
+.small-drop-button {
+  color: #1c1c1c;
+  --slds-c-icon-color-foreground-default: #1c1c1c;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
@@ -59,6 +68,12 @@
 .H4 {
   font-family: Proxima_Nova_Bold;
   font-size: 20px;
+  line-height: 24px;
+}
+
+.bold-big-body {
+  font-family: Swiss_Bold;
+  font-size: 18px;
   line-height: 24px;
 }
 

@@ -1,5 +1,6 @@
+<!-- sldsValidatorIgnore -->
 <template>
-  <lightning-layout horizontal-align="spread" class="slds-var-p-vertical_medium slds-var-p-left_x-large">
+  <lightning-layout horizontal-align="spread" class="slds-var-p-vertical_medium slds-var-p-left_x-large slds-border_bottom">
     <lightning-layout-item>
       <lightning-button
         label="Choose Room Features"
@@ -21,4 +22,19 @@
       >
     </lightning-layout-item>
   </lightning-layout>
+  <template if:true={showDropdown}>
+	<lightning-layout class="slds-var-p-horizontal_x-large" multiple-rows>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<lightning-icon size="x-small" icon-name="utility:check" class="slds-var-m-right_small check-icon"></lightning-icon>
+			Guaranteed unless otherwise noted
+		</lightning-layout-item>
+		<lightning-layout-item size="12" class="bold-big-body slds-var-p-vertical_medium slds-border_bottom">
+			<button class="slds-button slds-grid_align-spread slds-button_stretch small-drop-button">
+				<span class="bold-body">Accessibility</span>
+				<lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
+			</button>
+		</lightning-layout-item>
+	</lightning-layout>
+  </template>
+
 </template>
