@@ -1,13 +1,10 @@
 <template>
   <lightning-layout
     multiple-rows
-    class="slds-dropdown-trigger slds-dropdown-trigger_click color-background-alt slds-var-p-horizontal_medium slds-var-p-bottom_medium"
+    class="slds-dropdown-trigger slds-dropdown-trigger_click color-background-alt slds-var-p-bottom_medium"
   >
     <lightning-layout-item size="3" class="slds-border_right">
-      <lightning-layout
-        multiple-rows
-        class="slds-var-p-left_large slds-var-p-bottom_medium"
-      >
+      <lightning-layout multiple-rows class="slds-var-p-bottom_medium">
         <lightning-layout-item class="small-body" size="12"
           >Stay Dates</lightning-layout-item
         >
@@ -50,7 +47,7 @@
     </lightning-layout-item>
     <lightning-layout-item size="3" class="slds-var-p-bottom_medium">
       <lightning-button
-        class="edit-button slds-float_right slds-var-p-right_xx-small"
+        class="edit-button slds-float_right"
         label="EDIT"
         variant="brand"
         onclick={dropMenu}
