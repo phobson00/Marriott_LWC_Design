@@ -65,17 +65,19 @@
     <lightning-layout-item size="12">
       <c-reservation-status-dropdown></c-reservation-status-dropdown>
     </lightning-layout-item>
-    <lightning-layout-item size="12">
+    <lightning-layout-item
+      size="12"
+      class="slds-var-p-around_x-large slds-border_bottom"
+    >
       <lightning-layout>
         <lightning-layout-item>
           <img src={image} class="hotel-image" />
         </lightning-layout-item>
-        <lightning-layout-item
-          class="slds-var-m-left_medium slds-var-m-top_medium"
-        >
+        <lightning-layout-item class="slds-var-m-left_medium">
           <lightning-layout multiple-rows>
             <lightning-layout-item size="12" class="H4"
-              >Guest room, 1 Queen - QUEN</lightning-layout-item
+              >Room 1: #89376073 - Renovated Deluxe -
+              DBDB</lightning-layout-item
             >
             <lightning-layout-item size="12" class="slds-var-m-top_xx-small"
               ><lightning-button
@@ -84,35 +86,21 @@
                 class="orange-button bold-small-body"
               ></lightning-button
             ></lightning-layout-item>
-            <lightning-layout-item size="12" class="slds-var-m-top_xx-small"
-              ><span class="bold-small-body">Check in:</span>
+            <lightning-layout-item
+              size="12"
+              class="slds-var-m-top_xx-small small-body"
+              >Reservation for JIMMY JAM</lightning-layout-item
+            >
+            <lightning-layout-item size="12" class="slds-var-m-top_xxx-small"
+              ><span class="bold-small-body">From:</span>
               <span class="small-body">
-                &nbsp;Thursday, Aug 25 2022
+                &nbsp;Tue, Aug 16, 2022 - Tue, Aug 23, 2022
               </span></lightning-layout-item
             >
-            <lightning-layout-item size="12" class="slds-var-m-top_xx-small"
-              ><span class="bold-small-body">Check out:</span>
-              <span class="small-body">
-                &nbsp;Friday, Aug 26 2022
-              </span></lightning-layout-item
-            >
-            <lightning-layout-item size="12" class="slds-var-m-top_xx-small"
-              ><span class="bold-small-body">Room(s):</span>
-              <span class="small-body"> &nbsp;1 </span>
-              <span class="bold-small-body slds-var-m-left_small"
-                >Guest(s) per room:</span
-              >
-              <span class="small-body"> &nbsp;1 </span>
+            <lightning-layout-item size="12" class="slds-var-m-top_xxx-small"
+              ><span class="bold-small-body">Guests:</span>
+              <span class="small-body"> &nbsp;1 Adult</span>
             </lightning-layout-item>
-            <lightning-layout-item size="12" class="slds-var-m-top_small"
-              ><lightning-button
-                variant="base"
-                label="EDIT"
-                icon-name="utility:chevronright"
-                icon-position="right"
-                class="orange-button bold-small-body"
-              ></lightning-button
-            ></lightning-layout-item>
           </lightning-layout>
         </lightning-layout-item>
       </lightning-layout>
