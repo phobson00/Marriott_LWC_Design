@@ -1,3 +1,24 @@
 <template>
-    
+  <lightning-layout horizontal-align="spread" class="slds-var-p-around_medium">
+    <lightning-layout-item>
+      <lightning-button
+        label="Choose Room Features"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <span class="bold-small-body">Not Guaranteed: </span>
+      <span class="small-body">
+        Extra towels, Refrigerator, Extra feather pillows, Near elevator,
+        Non-commissionable rate</span
+      > </br>
+	  <span class="bold-small-body">Unavailable: </span>
+      <span class="small-body">Mobility Accessible Room with Tub</span
+      >
+    </lightning-layout-item>
+  </lightning-layout>
 </template>
