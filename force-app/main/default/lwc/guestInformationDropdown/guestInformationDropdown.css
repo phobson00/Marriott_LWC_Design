@@ -28,8 +28,12 @@ lightning-icon {
   --slds-c-icon-color-foreground-default: #1c1c1c;
 }
 
-.height-input {
+.standard-input {
   height: 46px;
+  --slds-c-input-shadow: 0px 0px 0px;
+  --slds-c-input-shadow-focus: 0px 0px 0px;
+  --slds-c-input-color-border-active: #1c1c1c;
+  --slds-c-input-color-border-focus: #1c1c1c;
 }
 
 .phone-radio {
@@ -43,6 +47,71 @@ lightning-icon {
 
 .slds-form-element__control .slds-radio {
   display: inline;
+}
+
+.blue-layout {
+  border-color: #006cc1;
+  background-color: #edf6ff;
+  border-radius: 3px;
+}
+
+.orange-button {
+  --slds-c-button-text-color: #b84c16;
+  --slds-c-button-text-color-active: #b84c16;
+  --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
+
+.add-phone-button {
+  --slds-c-button-radius-border: 0%;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #1c1c1c;
+  --slds-c-button-brand-color-background-hover: #1c1c1c;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+  --slds-c-button-brand-text-color: #1c1c1c;
+  --slds-c-button-brand-text-color-active: #ffffff;
+  --slds-c-button-brand-text-color-hover: #ffffff;
+  --slds-c-button-brand-color-border: #1c1c1c;
+  --slds-c-button-brand-color-border-active: #1c1c1c;
+  --slds-c-button-brand-color-border-hover: #1c1c1c;
+  --slds-c-button-brand-spacing-inline-end: 2%;
+  --slds-c-button-brand-spacing-inline-start: 2%;
+  --slds-c-button-spacing-block-start: 5px;
+  --slds-c-button-spacing-block-end: 5px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px;
+  font-weight: 5;
+}
+
+.agent-checkbox {
+  --slds-c-checkbox-color-background-checked: #1c1c1c;
+  --slds-c-checkbox-mark-color-foreground: #ffffff;
+  --slds-c-checkbox-color-border: #d2d2d2;
+  --slds-c-checkbox-color-border-checked: #1c1c1c;
+  --slds-c-checkbox-color-border-focus: #1c1c1c;
+  --slds-c-checkbox-shadow-focus: 0px 0px 0px;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}
+
+.apply-button {
+  --slds-c-button-radius-border: 0%;
+  --slds-c-button-brand-color-background: #444054;
+  --slds-c-button-brand-color-background-active: #444054;
+  --slds-c-button-brand-color-background-hover: #444054;
+  --slds-c-button-brand-color-border-background: #444054;
+  --slds-c-button-brand-color-border-background-active: #444054;
+  --slds-c-button-brand-color-border-background-hover: #444054;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 0px;
+  --slds-c-button-spacing-block-start: 7px;
+  --slds-c-button-spacing-block-end: 7px;
+  --slds-c-button-brand-spacing-inline-start: 32px;
+  --slds-c-button-brand-spacing-inline-end: 32px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px !important;
 }
 
 @font-face {
