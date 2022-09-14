@@ -1,10 +1,17 @@
 <template>
-  <div
-    class="slds-text-heading_large slds-theme_default slds-var-p-around_x-small H1"
-    onclick={errorHandler}
-  >
-    New Reservation
-  </div>
+  <lightning-layout class="slds-var-m-bottom_large" horizontal-align="spread">
+    <lightning-layout-item onclick={errorHandler} class="H1">
+      New Reservation
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <lightning-button
+        label="EXISTING RESERVATION"
+        class="existing-button"
+        variant="brand"
+      >
+      </lightning-button>
+    </lightning-layout-item>
+  </lightning-layout>
   <template if:true={error}>
     <div
       class="slds-notify slds-notify_alert slds-alert_error error"
@@ -21,54 +28,54 @@
   <lightning-tabset active-tab-value="hotel">
     <lightning-tab
       label="City, Airport or Address"
-      class="slds-var-p-around_x-small slds-grid"
+      class="slds-var-p-vertical_x-small slds-grid"
       onactive={cityTabHandler}
       value="location"
     >
       <lightning-layout multiple-rows>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-right_x-small">
           <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-left_x-small">
           <c-sell-options></c-sell-options>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-right_x-small">
           <c-rooms-and-guests></c-rooms-and-guests>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-left_x-small">
           <c-date-input-box></c-date-input-box>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-right_x-small">
           <c-points-checkbox></c-points-checkbox>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-left_x-small">
           <c-find-button></c-find-button>
         </lightning-layout-item>
       </lightning-layout>
     </lightning-tab>
     <lightning-tab
       label="Hotel Name"
-      class="slds-var-p-around_x-small slds-grid"
+      class="slds-grid"
       onactive={hotelTabHandler}
       value="hotel"
     >
       <lightning-layout multiple-rows>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-right_x-small">
           <c-dest-input-box placeholder={placeholder}></c-dest-input-box>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-left_x-small">
           <c-sell-options></c-sell-options>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-right_x-small">
           <c-rooms-and-guests></c-rooms-and-guests>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-left_x-small">
           <c-date-input-box></c-date-input-box>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-right_x-small">
           <c-points-checkbox></c-points-checkbox>
         </lightning-layout-item>
-        <lightning-layout-item size="6">
+        <lightning-layout-item size="6" class="slds-var-p-left_x-small">
           <c-find-button></c-find-button>
         </lightning-layout-item>
       </lightning-layout>
