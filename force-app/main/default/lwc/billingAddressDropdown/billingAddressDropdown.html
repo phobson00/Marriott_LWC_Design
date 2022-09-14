@@ -1,0 +1,24 @@
+<template>
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-top_medium slds-var-p-bottom_large slds-var-m-horizontal_x-large slds-border_bottom"
+  >
+    <lightning-layout-item size="12">
+      <lightning-button
+        label="Billing Address"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <template if:true={showDropdown}>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-m-top_ slds-var-p-right_medium"
+      >
+      </lightning-layout-item>
+    </template>
+  </lightning-layout>
+</template>
