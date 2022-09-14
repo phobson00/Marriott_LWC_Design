@@ -55,6 +55,59 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
+.select-button {
+  --slds-c-button-brand-text-color: #d2d2d2;
+  --slds-c-button-brand-text-color-active: #d2d2d2;
+  --slds-c-button-brand-text-color-hover: #d2d2d2;
+  --slds-c-button-brand-color-border: #d2d2d2;
+  --slds-c-button-brand-color-border-active: #d2d2d2;
+  --slds-c-button-brand-color-border-hover: #d2d2d2;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-spacing-block-start: 4px;
+  --slds-c-button-spacing-block-end: 4px;
+}
+
+.save-button {
+  --slds-c-button-radius-border: 0%;
+  --slds-c-button-brand-color-background: #444054;
+  --slds-c-button-brand-color-background-active: #444054;
+  --slds-c-button-brand-color-background-hover: #444054;
+  --slds-c-button-brand-color-border-background: #444054;
+  --slds-c-button-brand-color-border-background-active: #444054;
+  --slds-c-button-brand-color-border-background-hover: #444054;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 0px;
+  --slds-c-button-spacing-block-start: 7px;
+  --slds-c-button-spacing-block-end: 7px;
+  --slds-c-button-brand-spacing-inline-start: 32px;
+  --slds-c-button-brand-spacing-inline-end: 32px;
+  font-family: Swiss_Bold !important;
+  font-size: 16px !important;
+}
+
+.agent-checkbox {
+  --slds-c-checkbox-color-background-checked: #1c1c1c;
+  --slds-c-checkbox-mark-color-foreground: #ffffff;
+  --slds-c-checkbox-color-border: #d2d2d2;
+  --slds-c-checkbox-color-border-checked: #1c1c1c;
+  --slds-c-checkbox-color-border-focus: #1c1c1c;
+  --slds-c-checkbox-shadow-focus: 0px 0px 0px;
+  font-family: Proxima_Nova_Regular;
+  font-size: 12px;
+}
+
+lightning-icon {
+  --slds-c-icon-color-foreground-default: #1c1c1c;
+}
+
+lightning-textarea {
+  font-size: 16px !important;
+  font-family: Proxima_Nova_Regular !important;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
