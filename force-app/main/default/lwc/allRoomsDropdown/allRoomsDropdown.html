@@ -1,0 +1,55 @@
+<template>
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-vertical_medium slds-border_bottom"
+  >
+    <lightning-layout-item size="12">
+      <lightning-button
+        label="Summary of Charges (all rooms)"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <template if:true={showDropdown}>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-bottom_medium slds-var-p-top_large slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Subtotal
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            265.48 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Total Taxes &amp; Fees
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            42.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-p-top_medium">
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Total for Stay
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            1.55 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+    </template>
+  </lightning-layout>
+</template>

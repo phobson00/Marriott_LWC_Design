@@ -1,0 +1,473 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-top_medium slds-var-p-bottom_large slds-var-m-horizontal_x-large slds-border_bottom"
+  >
+    <lightning-layout-item size="12">
+      <lightning-button
+        label="Guest Information"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <template if:true={showDropdown}>
+      <lightning-layout-item
+        size="6"
+        class="slds-var-m-top_small slds-var-p-right_medium"
+      >
+        <label class="body">Caller Type</label>
+        <button
+          class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+          onclick={dropMenu}
+        >
+          <span style="color: #707070" class="medium-body">Self</span
+          ><lightning-icon
+            icon-name="utility:chevrondown"
+            size="xx-small"
+          ></lightning-icon>
+        </button>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-m-vertical_large bold-body"
+      >
+        Guest 1
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="6"
+        class="slds-var-m-top_small slds-var-p-right_medium"
+      >
+        <label class="body">Title</label>
+        <input
+          placeholder="Optional"
+          class="slds-input slds-var-m-top_x-small standard-input"
+        />
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_small">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">First Name</label>
+            <input
+              placeholder="Enter Here"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Last Name</label>
+            <input
+              placeholder="Optional"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_medium">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <lightning-layout multiple-rows>
+              <lightning-layout-item size="12" class="small-body">
+                Marriott Bonvoy Member Number
+              </lightning-layout-item>
+              <lightning-layout-item size="12" class="bold-medium-body">
+                783408141
+              </lightning-layout-item>
+            </lightning-layout>
+          </lightning-layout-item>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <span class="bold-small-body">Note: </span>
+            <span class="small-body"
+              >To be credited for this stay, the name on your Marriott Bonvoy
+              account must match the guest name.</span
+            >
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large bold-body">
+        Phone 1
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_medium">
+        <fieldset class="slds-form-element">
+          <div class="slds-form-element__control">
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-65"
+                value="radio-65"
+                name="default"
+                checked
+              />
+              <label class="slds-radio__label" for="radio-65">
+                <span class="slds-radio_faux"></span>
+                <span>Home</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-66"
+                value="radio-66"
+                name="default"
+              />
+              <label class="slds-radio__label" for="radio-66">
+                <span class="slds-radio_faux"></span>
+                <span>Mobile</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-67"
+                value="radio-67"
+                name="default"
+              />
+              <label class="slds-radio__label" for="radio-67">
+                <span class="slds-radio_faux"></span>
+                <span>Business</span>
+              </label>
+            </span>
+            <span class="slds-radio phone-radio">
+              <input
+                type="radio"
+                id="radio-68"
+                value="radio-68"
+                name="default"
+                class="slds-var-m-top_small"
+              />
+              <label class="slds-radio__label" for="radio-68">
+                <span class="slds-radio_faux"></span>
+                <span>Travel Agent</span>
+              </label>
+            </span>
+          </div>
+        </fieldset>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Country Code</label>
+            <button
+              class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+              onclick={dropMenu}
+            >
+              <span style="color: #707070" class="medium-body">India (91)</span
+              ><lightning-icon
+                icon-name="utility:chevrondown"
+                size="xx-small"
+              ></lightning-icon>
+            </button>
+          </lightning-layout-item>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Phone Number</label>
+            <input
+              placeholder="Enter Here"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="6"
+            class="slds-var-p-right_medium slds-var-m-top_large"
+          >
+            <label class="body">Extension</label>
+            <input
+              placeholder="Optional"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large bold-body">
+        Phone 2
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_medium">
+        <fieldset class="slds-form-element">
+          <div class="slds-form-element__control">
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-70"
+                value="radio-70"
+                name="default"
+                checked
+              />
+              <label class="slds-radio__label" for="radio-70">
+                <span class="slds-radio_faux"></span>
+                <span>Home</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-71"
+                value="radio-71"
+                name="default"
+              />
+              <label class="slds-radio__label" for="radio-66">
+                <span class="slds-radio_faux"></span>
+                <span>Mobile</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-72"
+                value="radio-72"
+                name="default"
+              />
+              <label class="slds-radio__label" for="radio-72">
+                <span class="slds-radio_faux"></span>
+                <span>Business</span>
+              </label>
+            </span>
+            <span class="slds-radio phone-radio">
+              <input
+                type="radio"
+                id="radio-73"
+                value="radio-73"
+                name="default"
+                class="slds-var-m-top_small"
+              />
+              <label class="slds-radio__label" for="radio-73">
+                <span class="slds-radio_faux"></span>
+                <span>Travel Agent</span>
+              </label>
+            </span>
+          </div>
+        </fieldset>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="4" class="slds-var-p-right_medium">
+            <label class="body">Country Code</label>
+            <button
+              class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+              onclick={dropMenu}
+            >
+              <span style="color: #707070" class="medium-body">Other</span
+              ><lightning-icon
+                icon-name="utility:chevrondown"
+                size="xx-small"
+              ></lightning-icon>
+            </button>
+          </lightning-layout-item>
+          <lightning-layout-item size="2" class="slds-var-p-right_medium">
+            <label class="body">Code</label>
+            <input
+              placeholder="Enter Here"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Phone Number</label>
+            <input
+              placeholder="Enter Here"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="12"
+            class="slds-var-m-top_medium slds-var-p-right_medium"
+          >
+            <lightning-layout
+              multiple-rows
+              class="slds-border_right slds-border_left slds-border_top slds-border_bottom slds-var-p-around_medium blue-layout"
+            >
+              <lightning-layout-item class="small-body" style="color: #006cc1">
+                SMS is not available for the selected country code
+              </lightning-layout-item>
+            </lightning-layout>
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="6"
+            class="slds-var-m-top_medium slds-var-p-right_medium"
+          >
+            <label class="body">Confirm SMS Language</label>
+            <button
+              class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+              onclick={dropMenu}
+            >
+              <span style="color: #707070" class="medium-body">Select</span
+              ><lightning-icon
+                icon-name="utility:chevrondown"
+                size="xx-small"
+              ></lightning-icon>
+            </button>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large bold-body">
+        Phone 3
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_medium">
+        <fieldset class="slds-form-element">
+          <div class="slds-form-element__control">
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-1"
+                value="radio-1"
+                name="default"
+                checked
+              />
+              <label class="slds-radio__label" for="radio-1">
+                <span class="slds-radio_faux"></span>
+                <span>Home</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input type="radio" id="radio-2" value="radio-2" name="default" />
+              <label class="slds-radio__label" for="radio-2">
+                <span class="slds-radio_faux"></span>
+                <span>Mobile</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input type="radio" id="radio-3" value="radio-3" name="default" />
+              <label class="slds-radio__label" for="radio-3">
+                <span class="slds-radio_faux"></span>
+                <span>Business</span>
+              </label>
+            </span>
+            <span class="slds-radio phone-radio">
+              <input
+                type="radio"
+                id="radio-4"
+                value="radio-4"
+                name="default"
+                class="slds-var-m-top_small"
+              />
+              <label class="slds-radio__label" for="radio-4">
+                <span class="slds-radio_faux"></span>
+                <span>Travel Agent</span>
+              </label>
+            </span>
+          </div>
+        </fieldset>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Country Code</label>
+            <button
+              class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+              onclick={dropMenu}
+            >
+              <span style="color: #707070" class="medium-body">India (91)</span
+              ><lightning-icon
+                icon-name="utility:chevrondown"
+                size="xx-small"
+              ></lightning-icon>
+            </button>
+          </lightning-layout-item>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Phone Number</label>
+            <input
+              placeholder="Enter Here"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="6"
+            class="slds-var-p-right_medium slds-var-m-top_large"
+          >
+            <label class="body">Extension</label>
+            <input
+              placeholder="Optional"
+              class="slds-input slds-var-m-top_x-small standard-input"
+            />
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-button
+          label="ADD PHONE NUMBER"
+          class="add-phone-button slds-var-m-right_medium"
+          variant="brand"
+        >
+        </lightning-button>
+        <lightning-button
+          label="ADD 2 MORE"
+          class="orange-button bold-small-body"
+          variant="base"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large bold-body">
+        Email
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_medium">
+        <fieldset class="slds-form-element">
+          <div class="slds-form-element__control">
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-8"
+                value="radio-1"
+                name="default"
+                checked
+              />
+              <label class="slds-radio__label" for="radio-1">
+                <span class="slds-radio_faux"></span>
+                <span>Primary</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input type="radio" id="radio-9" value="radio-2" name="default" />
+              <label class="slds-radio__label" for="radio-2">
+                <span class="slds-radio_faux"></span>
+                <span>Enter this reservation only</span>
+              </label>
+            </span>
+          </div>
+        </fieldset>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-layout multiple-rows>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Email Address</label>
+            <div class="bold-medium-body">
+              Deepa.anantraodeshpande@Marriott-sp.com
+            </div>
+          </lightning-layout-item>
+          <lightning-layout-item size="6" class="slds-var-p-right_medium">
+            <label class="body">Country Code</label>
+            <button
+              class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+              onclick={dropMenu}
+            >
+              <span style="color: #707070" class="medium-body">India (91)</span
+              ><lightning-icon
+                icon-name="utility:chevrondown"
+                size="xx-small"
+              ></lightning-icon>
+            </button>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-input
+          type="checkbox"
+          label="Do not send the confirmation"
+          class="agent-checkbox medium-body"
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-button
+          class="apply-button slds-var-m-right_medium"
+          variant="brand"
+          label="APPLY"
+        >
+        </lightning-button>
+        <lightning-button
+          label="CANCEL CHANGES"
+          class="orange-button bold-small-body"
+          variant="base"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+    </template>
+  </lightning-layout>
+</template>

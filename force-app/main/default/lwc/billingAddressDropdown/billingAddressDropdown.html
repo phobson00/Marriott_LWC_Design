@@ -1,0 +1,151 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-top_medium slds-var-p-bottom_large slds-var-m-horizontal_x-large slds-border_bottom"
+  >
+    <lightning-layout-item size="12">
+      <lightning-button
+        label="Billing Address"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <template if:true={showDropdown}>
+      <lightning-layout-item size="12" class="slds-var-m-top_large bold-body">
+        Phone 1
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_medium">
+        <fieldset class="slds-form-element">
+          <div class="slds-form-element__control">
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-65"
+                value="radio-65"
+                name="default"
+                checked
+              />
+              <label class="slds-radio__label" for="radio-65">
+                <span class="slds-radio_faux"></span>
+                <span>Home</span>
+              </label>
+            </span>
+            <span class="slds-radio slds-var-m-right_x-large phone-radio">
+              <input
+                type="radio"
+                id="radio-66"
+                value="radio-66"
+                name="default"
+              />
+              <label class="slds-radio__label" for="radio-66">
+                <span class="slds-radio_faux"></span>
+                <span>Business</span>
+              </label>
+            </span>
+          </div>
+        </fieldset>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="6"
+        class="slds-var-p-right_medium slds-var-m-top_large"
+      >
+        <label class="body">Country / Region</label>
+        <button
+          class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
+          onclick={dropMenu}
+        >
+          <span style="color: #707070" class="medium-body">India</span
+          ><lightning-icon
+            icon-name="utility:chevrondown"
+            size="xx-small"
+          ></lightning-icon>
+        </button>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-right_medium slds-var-m-top_large"
+      >
+        <label class="body">Street Address</label>
+        <input
+          placeholder="Optional"
+          class="slds-input slds-var-m-top_x-small standard-input"
+        />
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-right_medium slds-var-m-top_medium"
+      >
+        <input class="slds-input slds-var-m-top_x-small standard-input" />
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-right_medium slds-var-m-top_large"
+      >
+        <label class="body">City</label>
+        <input
+          placeholder="Optional"
+          class="slds-input slds-var-m-top_x-small standard-input"
+        />
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="6"
+        class="slds-var-p-right_medium slds-var-m-top_large"
+      >
+        <label class="body">State / Province</label>
+        <input
+          placeholder="Enter Here"
+          class="slds-input slds-var-m-top_x-small standard-input"
+        />
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="6"
+        class="slds-var-p-right_medium slds-var-m-top_large"
+      >
+        <label class="body">Post Code</label>
+        <input
+          placeholder="Enter Here"
+          class="slds-input slds-var-m-top_x-small standard-input"
+        />
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-button
+          label="ADD NEW ADDRESS"
+          class="add-phone-button slds-var-m-right_medium"
+          variant="brand"
+        >
+        </lightning-button>
+        <lightning-button
+          label="ADD 2 MORE"
+          class="orange-button bold-small-body"
+          variant="base"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-input
+          type="checkbox"
+          label="Do not send the confirmation"
+          class="agent-checkbox medium-body"
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-var-m-top_large">
+        <lightning-button
+          class="apply-button slds-var-m-right_medium"
+          variant="brand"
+          label="SUBMIT"
+        >
+        </lightning-button>
+        <lightning-button
+          label="CANCEL CHANGES"
+          class="orange-button bold-small-body"
+          variant="base"
+        >
+        </lightning-button>
+      </lightning-layout-item>
+    </template>
+  </lightning-layout>
+</template>

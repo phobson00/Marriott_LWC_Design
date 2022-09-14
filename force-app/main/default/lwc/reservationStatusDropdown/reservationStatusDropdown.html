@@ -1,0 +1,127 @@
+<template>
+  <lightning-layout multiple-rows>
+    <lightning-layout-item
+      size="12"
+      class="slds-var-p-horizontal_small slds-var-p-vertical_medium slds-border_top slds-border_bottom"
+    >
+      <lightning-button
+        label="Reservation Status, Rate &amp; View Indicators"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <template if:true={showDropdown}>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_small slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="bold-small-body" size="1">
+            Room Number
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="1">
+            Confirmation Number
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="1">
+            Room Pool
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="1">
+            Segment Number
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="1">
+            Arrival Date
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="1">
+            Market &amp; Rate Code
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="1">
+            PMS Account
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-small-body" size="3">
+            <lightning-layout multiple-rows>
+              <lightning-layout-item size="12">
+                Indicators
+              </lightning-layout-item>
+              <lightning-layout-item size="12" class="slds-var-m-top_x-small">
+                <lightning-layout multiple-rows>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">WL </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">HF </span>
+                    <span class="small-body">- Force Sold</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">HK </span>
+                    <span class="small-body">- Waitlist</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">S </span>
+                    <span class="small-body">- Suppressed Rate</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">H </span>
+                    <span class="small-body">- Housing Protected</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">NS </span>
+                    <span class="small-body">- No Show</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">NR </span>
+                    <span class="small-body">- No Rate</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">R </span>
+                    <span class="small-body">- Restricted</span>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6">
+                    <span class="bold-small-body">O </span>
+                    <span class="small-body">- Rate Overridden</span>
+                  </lightning-layout-item>
+                </lightning-layout>
+              </lightning-layout-item>
+            </lightning-layout>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_small slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="small-body" size="1">
+            Room 1
+          </lightning-layout-item>
+          <lightning-layout-item class="small-body" size="1">
+            96948585
+          </lightning-layout-item>
+          <lightning-layout-item class="small-body" size="1">
+            GENR
+          </lightning-layout-item>
+          <lightning-layout-item class="small-body" size="1">
+            Segment 1
+          </lightning-layout-item>
+          <lightning-layout-item class="small-body" size="1">
+            Aug 31, 2022
+          </lightning-layout-item>
+          <lightning-layout-item class="small-body" size="1">
+            12RMOC
+          </lightning-layout-item>
+          <lightning-layout-item size="1"></lightning-layout-item>
+          <lightning-layout-item size="3"> </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-top_medium slds-border_bottom"
+      >
+        <c-please-note-warning></c-please-note-warning>
+      </lightning-layout-item>
+    </template>
+  </lightning-layout>
+</template>

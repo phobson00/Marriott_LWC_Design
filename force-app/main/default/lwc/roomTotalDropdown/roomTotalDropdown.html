@@ -1,0 +1,193 @@
+<template>
+  <lightning-layout
+    multiple-rows
+    class="slds-var-p-vertical_medium slds-var-p-left_x-large slds-border_bottom"
+  >
+    <lightning-layout-item size="12">
+      <lightning-button
+        label="Room Total Summary"
+        icon-name="utility:chevrondown"
+        icon-position="left"
+        class="H4 main-button"
+        variant="base"
+        onclick={dropdownHandler}
+      ></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="bold-body slds-var-m-left_large"
+      >265</lightning-layout-item
+    >
+    <lightning-layout-item size="12" class="small-body slds-var-m-left_large"
+      >USD Taxes and Fees</lightning-layout-item
+    >
+  </lightning-layout>
+  <template if:true={showDropdown}>
+    <lightning-layout class="slds-var-p-horizontal_x-large" multiple-rows>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="bold-body"
+            >1 Room(s) for 1 night: Member Rate Flexible
+          </lightning-layout-item>
+          <lightning-layout-item>
+            <c-tax-fee-modal></c-tax-fee-modal>
+            <c-rate-details-modal
+              class="slds-var-m-left_medium"
+            ></c-rate-details-modal>
+            <c-cancellation-modal></c-cancellation-modal>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Wednesday, August 31 2022
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            265.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom bold-body"
+      >
+        Taxes and Fees
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Destination Amenity Fee
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            60.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >City Tax
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            42.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Convention Tourism Tax
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            1.55 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Occupancy Tax
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            2.52 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Occupancy Tax
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            29.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >State Province Tax
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            20.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Assessment License Tax
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            1.87 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Total Taxes and Fees
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            107.11 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Total Cash Rate
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            265.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout horizontal-align="spread">
+          <lightning-layout-item class="medium-body"
+            >Total for Stay in Hotel's Currency
+          </lightning-layout-item>
+          <lightning-layout-item class="bold-medium-body">
+            265.00 USD
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+    </lightning-layout>
+  </template>
+</template>
