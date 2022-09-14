@@ -133,5 +133,35 @@
     <lightning-layout-item size="12">
       <c-credit-card-info-dropdown></c-credit-card-info-dropdown>
     </lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-m-top_xx-large">
+      <lightning-button
+        label="Update Bonvoy options for this reservation"
+        icon-name="utility:chevronright"
+        icon-position="left"
+        class="H4 update-options-button"
+        variant="base"
+      ></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-m-top_xx-large">
+      <lightning-layout horizontal-align="spread">
+        <lightning-layout-item>
+          <lightning-layout multiple-rows>
+            <lightning-layout-item class="H2" size="12"
+              >Total for Stay</lightning-layout-item
+            >
+            <lightning-layout-item class="body" size="12"
+              >(All Rooms) in local currency</lightning-layout-item
+            >
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <span class="H3">265.48</span>
+          <span class="small-body"> USD</span>
+          <span class="H3"> &nbsp;&nbsp;+ &nbsp;&nbsp;224,000 </span>
+          <span class="small-body"> Points</span>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item size="12"> </lightning-layout-item>
   </lightning-layout>
 </template>
