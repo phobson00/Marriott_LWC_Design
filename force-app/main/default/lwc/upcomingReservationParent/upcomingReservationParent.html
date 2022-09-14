@@ -165,5 +165,102 @@
     <lightning-layout-item size="12">
       <c-all-rooms-dropdown></c-all-rooms-dropdown>
     </lightning-layout-item>
+    <lightning-layout-item
+      size="12"
+      class="slds-var-p-vertical_large slds-border_bottom"
+    >
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" class="H4"
+          >Additional Charges</lightning-layout-item
+        >
+        <lightning-layout-item size="12" class="body slds-var-m-top_medium"
+          >Valet parking, fee: 95 USD daily</lightning-layout-item
+        >
+        <lightning-layout-item size="12" class="body"
+          >Changes in taxes or fees implemented after booking will affect the
+          total room price.</lightning-layout-item
+        >
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item
+      size="12"
+      class="slds-var-p-vertical_large slds-border_bottom"
+    >
+      <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" class="H4"
+          >Modifying Your Reservation</lightning-layout-item
+        >
+        <lightning-layout-item size="12" class="body slds-var-m-top_medium"
+          >Please note that a change in the length or dates of your reservation
+          may result in a rate change.</lightning-layout-item
+        >
+        <lightning-layout-item size="12" class="body"
+          >An arrival on Thursday or Friday or Saturday.</lightning-layout-item
+        >
+        <lightning-layout-item size="12" class="body"
+          >An overnight stay on Friday or Saturday.</lightning-layout-item
+        >
+      </lightning-layout>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-p-vertical_xx-large">
+      <lightning-layout
+        class="slds-theme_default slds-var-p-vertical_medium"
+        multiple-rows
+      >
+        <lightning-layout-item size="12" class="H3">
+          Reservation Comments
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-var-m-top_large">
+          <label class="body">Comment Type</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-var-m-top_xx-small">
+          <button
+            class="slds-button slds-button_brand select-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small"
+            onclick={dropMenu}
+          >
+            <span style="color: #707070" class="medium-body">General</span
+            ><lightning-icon
+              icon-name="utility:chevrondown"
+              size="xx-small"
+            ></lightning-icon>
+          </button>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-var-m-top_large">
+          <label class="body">Comments</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <textarea class="slds-textarea"></textarea>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-var-m-top_x-small">
+          <lightning-layout horizontal-align="spread">
+            <lightning-layout-item class="slds-var-m-left_xxx-small">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" class="small-body">
+                  57 characters, including spaces
+                </lightning-layout-item>
+                <lightning-layout-item
+                  size="12"
+                  class="slds-var-m-top_xx-small"
+                >
+                  <lightning-input
+                    type="checkbox"
+                    label="Do not send the confirmation"
+                    class="agent-checkbox medium-body"
+                  ></lightning-input>
+                </lightning-layout-item>
+              </lightning-layout>
+            </lightning-layout-item>
+            <lightning-layout-item>
+              <lightning-button
+                class="save-button"
+                variant="brand"
+                label="SAVE"
+              >
+              </lightning-button>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
   </lightning-layout>
 </template>
