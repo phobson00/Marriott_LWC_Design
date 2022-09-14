@@ -34,6 +34,9 @@ lightning-icon {
   --slds-c-input-shadow-focus: 0px 0px 0px;
   --slds-c-input-color-border-active: #1c1c1c;
   --slds-c-input-color-border-focus: #1c1c1c;
+  font-family: Proxima_Nova_Regular;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .phone-radio {
