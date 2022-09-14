@@ -1,27 +1,41 @@
 <template>
-  <div>
-    <div
-      class="slds-var-p-around_medium lgc-bg"
-      style="background-color: #1c1c1c"
-    >
+  <lightning-layout
+    horizontal-align="spread"
+    vertical-align="center"
+    class="slds-var-p-vertical_medium lgc-bg"
+    style="background-color: #1c1c1c"
+  >
+    <lightning-layout-item>
       <c-reservations-dropdown label="Reservations"></c-reservations-dropdown>
+    </lightning-layout-item>
+    <lightning-layout-item>
       <c-reservations-dropdown
         label="Marriott Bonvoy"
       ></c-reservations-dropdown>
+    </lightning-layout-item>
+    <lightning-layout-item>
       <c-reservations-dropdown label="Tools"></c-reservations-dropdown>
+    </lightning-layout-item>
 
+    <lightning-layout-item>
       <c-contact-dropdown></c-contact-dropdown>
+    </lightning-layout-item>
 
+    <lightning-layout-item>
       <c-travel-planner-dropdown></c-travel-planner-dropdown>
+    </lightning-layout-item>
 
+    <lightning-layout-item>
       <c-booking-cart-dropdown></c-booking-cart-dropdown>
+    </lightning-layout-item>
 
+    <lightning-layout-item>
       <lightning-button
         label="REFRESH"
         variant="inverse"
         class="slds-var-p-around_small"
       >
       </lightning-button>
-    </div>
-  </div>
+    </lightning-layout-item>
+  </lightning-layout>
 </template>
