@@ -1,14 +1,78 @@
 <template>
-  <lightning-layout>
+  <c-navigation-bar></c-navigation-bar>
+  <lightning-layout
+    class="slds-theme_default slds-var-p-top_xx-large slds-var-p-left_large"
+  >
     <lightning-layout-item>
-      <lightning-icon icon-name="utility:user" size="x-large"></lightning-icon>
+      <lightning-icon
+        icon-name="action:user"
+        size="large"
+        class="user-icon"
+        style="zoom: 800%"
+      ></lightning-icon>
     </lightning-layout-item>
 
-    <lightning-layout-item>
+    <lightning-layout-item class="slds-var-m-left_medium">
       <lightning-layout multiple-rows>
-        <lightning-layout-item>Jimmy</lightning-layout-item>
+        <lightning-layout-item size="12" class="H4"
+          >Jimmy</lightning-layout-item
+        >
 
-        <lightning-layout-item> Profile </lightning-layout-item>
+        <lightning-layout-item size="12" class="H2 slds-var-m-top_small">
+          Profile
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+  <lightning-layout
+    class="slds-theme_default slds-var-p-top_x-large slds-var-p-horizontal_large"
+    multiple-rows
+  >
+    <lightning-layout-item size="12">
+      PERSONAL INFORMATION
+    </lightning-layout-item>
+    <lightning-layout-item
+      size="12"
+      class="slds-var-p-horizontal_large slds-var-m-top_small"
+    >
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item class="medium-body"
+          >Member Number
+        </lightning-layout-item>
+        <lightning-layout-item class="medium-body gray-text">
+          7363252350
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item class="medium-body"
+          >Loyalty Account Combined
+        </lightning-layout-item>
+        <lightning-layout-item class="medium-body gray-text">
+          Not Combined
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item class="medium-body"
+          >Personal Information
+        </lightning-layout-item>
+        <lightning-layout-item class="bold-medium-body">
+          <lightning-button
+            variant="base"
+            label="EDIT"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
       </lightning-layout>
     </lightning-layout-item>
   </lightning-layout>

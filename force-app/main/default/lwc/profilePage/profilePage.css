@@ -6,6 +6,17 @@
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }
 
+.user-icon {
+  --slds-c-icon-color-background: #edeef1;
+  --slds-c-icon-color-foreground: #c8d3e3;
+  --slds-c-icon-color-foreground-default: #c8d3e3;
+  --slds-c-icon-radius-border: 50%;
+}
+
+.gray-text {
+  color: #707070;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
