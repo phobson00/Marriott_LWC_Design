@@ -1,6 +1,11 @@
 import { LightningElement } from "lwc";
+import mastercard_icon from "@salesforce/resourceUrl/MasterCard_Icon";
+import visa_icon from "@salesforce/resourceUrl/Visa_Icon";
 
 export default class ProfilePage extends LightningElement {
+  mastercardIcon = `${mastercard_icon}#mastercard`;
+  visaIcon = `${visa_icon}#visa`;
+
   connectedCallback() {
     this.invokeWorkspaceAPI("isConsoleNavigation").then((isConsole) => {
       if (isConsole) {

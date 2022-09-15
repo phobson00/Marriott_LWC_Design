@@ -28,7 +28,7 @@
     class="slds-theme_default slds-var-p-top_x-large slds-var-p-horizontal_large"
     multiple-rows
   >
-    <lightning-layout-item size="12">
+    <lightning-layout-item size="12" class="bold-small-body">
       PERSONAL INFORMATION
     </lightning-layout-item>
     <lightning-layout-item
@@ -65,6 +65,256 @@
           >Personal Information
         </lightning-layout-item>
         <lightning-layout-item class="bold-medium-body">
+          <lightning-button
+            variant="base"
+            label="EDIT"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+  <lightning-layout
+    class="slds-theme_default slds-var-p-top_x-large slds-var-p-horizontal_large"
+    multiple-rows
+  >
+    <lightning-layout-item
+      size="12"
+      class="bold-small-body slds-var-p-bottom_xx-large"
+    >
+      PREFERENCES
+    </lightning-layout-item>
+    <lightning-layout-item size="12" class="slds-var-p-horizontal_large">
+      <lightning-layout class="slds-border_bottom"></lightning-layout>
+    </lightning-layout-item>
+  </lightning-layout>
+  <lightning-layout
+    class="slds-theme_default slds-var-p-vertical_x-large slds-var-p-horizontal_large"
+    multiple-rows
+  >
+    <lightning-layout-item size="12" class="bold-small-body">
+      PAYMENT PREFERENCES
+    </lightning-layout-item>
+    <lightning-layout-item
+      size="12"
+      class="slds-var-p-horizontal_large slds-var-m-top_small"
+    >
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item>
+          <lightning-layout>
+            <lightning-layout-item
+              style="height: 27px; width: 32px"
+              class="slds-border_top slds-border_bottom slds-border_left slds-border_right"
+              ><svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href={mastercardIcon}></use>
+              </svg>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_small">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="6" class="body"
+                  >**** **** **** 1234</lightning-layout-item
+                >
+                <lightning-layout-item
+                  class="bold-small-body"
+                  style="color: #477d00"
+                  size="4"
+                >
+                  PRIMARY
+                </lightning-layout-item>
+
+                <lightning-layout-item size="7" class="small-body gray-text"
+                  >MASTER CARD</lightning-layout-item
+                >
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            variant="base"
+            label="EDIT"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item>
+          <lightning-layout>
+            <lightning-layout-item
+              style="height: 27px; width: 32px"
+              class="slds-border_top slds-border_bottom slds-border_left slds-border_right"
+              ><svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href={visaIcon}></use>
+              </svg>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_small">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" class="body"
+                  >**** **** **** 6515</lightning-layout-item
+                >
+
+                <lightning-layout-item size="12" class="small-body gray-text"
+                  >VISA</lightning-layout-item
+                >
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            variant="base"
+            label="EDIT"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item>
+          <lightning-layout>
+            <lightning-layout-item
+              style="height: 27px; width: 32px"
+              class="slds-border_top slds-border_bottom slds-border_left slds-border_right"
+              ><svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href={visaIcon}></use>
+              </svg>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_small">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" class="body"
+                  >**** **** **** 9999</lightning-layout-item
+                >
+
+                <lightning-layout-item size="12" class="small-body gray-text"
+                  >TEST 1</lightning-layout-item
+                >
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            variant="base"
+            label="EDIT"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item>
+          <lightning-layout>
+            <lightning-layout-item
+              style="height: 27px; width: 32px"
+              class="slds-border_top slds-border_bottom slds-border_left slds-border_right"
+              ><svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href={mastercardIcon}></use>
+              </svg>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_small">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" class="body"
+                  >**** **** **** 1111</lightning-layout-item
+                >
+
+                <lightning-layout-item size="12" class="small-body gray-text"
+                  >TEST 2</lightning-layout-item
+                >
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            variant="base"
+            label="EDIT"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item>
+          <lightning-layout>
+            <lightning-layout-item
+              style="height: 27px; width: 32px"
+              class="slds-border_top slds-border_bottom slds-border_left slds-border_right"
+              ><svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href={mastercardIcon}></use>
+              </svg>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_small">
+              <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" class="body"
+                  >**** **** **** 9876</lightning-layout-item
+                >
+
+                <lightning-layout-item size="12" class="small-body gray-text"
+                  >TEST 3</lightning-layout-item
+                >
+              </lightning-layout>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            variant="base"
+            label="EDIT"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        vertical-align="center"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item class="body">
+          Credit / Debit Card
+        </lightning-layout-item>
+        <lightning-layout-item>
+          <lightning-button
+            variant="base"
+            label="ADD"
+            class="orange-button bold-small-body"
+            icon-name="utility:chevronright"
+            icon-position="right"
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout
+        horizontal-align="spread"
+        vertical-align="center"
+        class="slds-var-p-vertical_medium slds-border_bottom"
+      >
+        <lightning-layout-item class="body">
+          Folio Delivery Method
+        </lightning-layout-item>
+        <lightning-layout-item>
           <lightning-button
             variant="base"
             label="EDIT"
