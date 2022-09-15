@@ -16,6 +16,17 @@
   font-size: 16px !important;
 }
 
+.orange-button {
+  --slds-c-button-text-color: #b84c16;
+  --slds-c-button-text-color-active: #b84c16;
+  --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-color-border: transparent;
+  --slds-c-button-color-border-active: transparent;
+  --slds-c-button-color-border-hover: transparent;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+}
+
 @font-face {
   font-family: "Swiss_Bold";
   src: url("/resource/Swiss/_MI_Swiss721BT-BoldCondensed.otf")
@@ -95,6 +106,12 @@
 .small-body {
   font-family: Proxima_Nova_Regular;
   font-size: 12px;
+  font-weight: 10;
+}
+
+.bold-small-small-body {
+  font-family: Proxima_Nova_Bold;
+  font-size: 10px;
   font-weight: 10;
 }
 
