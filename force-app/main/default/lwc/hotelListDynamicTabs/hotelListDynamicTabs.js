@@ -6,6 +6,7 @@ export default class HotelListDynamicTabs extends LightningElement {
 
   tabClass =
     "slds-tabs_default__item slds-border_right slds-border_left slds-size_1-of-2";
+  tabClass1 = this.tabClass + " slds-active";
 
   isThreeTab = false;
   isFourTab = false;
@@ -40,6 +41,7 @@ export default class HotelListDynamicTabs extends LightningElement {
       this.numberOfTabs - 1,
       this.numberOfTabs
     );
+    this.tabClass1 = this.tabClass + " slds-active";
   }
 
   setIsTabRemove() {
@@ -55,5 +57,6 @@ export default class HotelListDynamicTabs extends LightningElement {
       this.numberOfTabs + 1,
       this.numberOfTabs
     );
+    this.tabClass1 = this.tabClass + " slds-active";
   }
 }

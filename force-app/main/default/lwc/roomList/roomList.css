@@ -1,11 +1,11 @@
 .select-button {
   --slds-c-button-radius-border: 0%;
   --slds-c-button-brand-color-background: #444054;
-  --slds-c-button-brand-color-background-active: #444054;
-  --slds-c-button-brand-color-background-hover: #444054;
+  --slds-c-button-brand-color-background-active: #676373;
+  --slds-c-button-brand-color-background-hover: #676373;
   --slds-c-button-brand-color-border-background: #444054;
-  --slds-c-button-brand-color-border-background-active: #444054;
-  --slds-c-button-brand-color-border-background-hover: #444054;
+  --slds-c-button-brand-color-border-background-active: #676373;
+  --slds-c-button-brand-color-border-background-hover: #676373;
   --slds-c-button-shadow-focus: 0 0 0px;
   --slds-c-button-sizing-border: 0px;
   --slds-c-button-spacing-block-start: 7px;
@@ -17,8 +17,14 @@
 }
 
 .add-cart-button {
-  color: #1c1c28;
-  text-decoration: underline;
+  --slds-c-button-brand-color-background: #ffffff;
+  --slds-c-button-brand-color-background-active: #ffffff;
+  --slds-c-button-brand-color-background-hover: #ffffff;
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-shadow-focus: 0 0 0px;
+  --slds-c-button-sizing-border: 0px;
 }
 
 .cart-icon {
