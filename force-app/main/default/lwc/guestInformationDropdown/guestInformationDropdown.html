@@ -19,17 +19,35 @@
         size="6"
         class="slds-var-m-top_small slds-var-p-right_medium"
       >
-        <label class="body">Caller Type</label>
-        <button
-          class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-around_small slds-var-m-top_x-small"
-          onclick={dropMenu}
+        <lightning-layout
+          class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_full"
         >
-          <span style="color: #707070" class="medium-body">Self</span
-          ><lightning-icon
-            icon-name="utility:chevrondown"
-            size="xx-small"
-          ></lightning-icon>
-        </button>
+          <lightning-layout-item size="12">
+            <label class="body">Caller Type</label>
+            <button
+              class="slds-button slds-button_brand caller-type-button slds-button_stretch slds-grid_align-spread slds-var-p-vertical_small slds-var-m-top_x-small"
+              onclick={showDrop}
+            >
+              <span style="color: #707070" class="medium-body">Self</span
+              ><lightning-icon
+                icon-name="utility:chevrondown"
+                size="xx-small"
+              ></lightning-icon>
+            </button>
+          </lightning-layout-item>
+          <lightning-layout-item
+            size="12"
+            class="slds-dropdown slds-dropdown_left slds-size_full"
+          >
+            <lightning-menu-item
+              style="--slds-c-button-text-color: #b84c16"
+              label="Self"
+            ></lightning-menu-item>
+            <lightning-menu-item label="Contact 1"></lightning-menu-item>
+            <lightning-menu-item label="Contact 2"></lightning-menu-item>
+            <lightning-menu-item label="Contact 3"></lightning-menu-item>
+          </lightning-layout-item>
+        </lightning-layout>
       </lightning-layout-item>
       <lightning-layout-item
         size="12"
