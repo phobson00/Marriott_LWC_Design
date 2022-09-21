@@ -1,8 +1,11 @@
 .new-search-button {
-  color: #1c1c1c;
-  font-family: Proxima_Nova_Regular;
-  font-size: small;
-  text-decoration: underline;
+  --slds-c-button-shadow: 0px 0px 0px;
+  --slds-c-button-shadow-focus: 0px 0px 0px;
+  --slds-c-button-text-color: #1c1c1c;
+  --slds-c-button-text-color-active: #1c1c1c;
+  --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-color-background-active: #8d8d8d;
+  --slds-c-button-color-background-hover: #8d8d8d;
 }
 
 lightning-icon {

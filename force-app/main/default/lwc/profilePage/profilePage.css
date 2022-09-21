@@ -2,6 +2,8 @@
   --slds-c-button-text-color: #b84c16;
   --slds-c-button-text-color-active: #b84c16;
   --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-color-background-active: #dba58a;
+  --slds-c-button-color-background-hover: #dba58a;
   --slds-c-button-shadow: 0px 0px 0px;
   --slds-c-button-shadow-focus: 0px 0px 0px;
 }

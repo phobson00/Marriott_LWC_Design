@@ -6,8 +6,8 @@ lightning-button-menu {
   --slds-c-button-border-color-active: transparent;
   --slds-c-button-border-color-hover: transparent;
   --slds-c-button-background-color: transparent;
-  --slds-c-button-background-color-active: transparent;
-  --slds-c-button-background-color-hover: transparent;
+  --slds-c-button-background-color-active: #8d8d8d;
+  --slds-c-button-background-color-hover: #8d8d8d;
   --slds-c-button-shadow: 0px 0px 0px;
   --slds-c-button-shadow-focus: 0px 0px 0px;
   font-family: Proxima_Nova_Regular;

@@ -20,7 +20,7 @@ mark {
   --slds-c-button-spacing-inline-start: 5px;
   --slds-c-button-spacing-inline-end: 5px;
   --slds-c-button-color-background: #ffffff;
-  --slds-c-button-color-background-active: ##ff9662;
+  --slds-c-button-color-background-active: #ff9662;
   --slds-c-button-color-background-hover: #ff9662;
   --slds-c-button-color-border: #d2d2d2;
   --slds-c-button-color-border-active: #1c1c1c;
@@ -39,7 +39,7 @@ mark {
   --slds-c-button-spacing-inline-start: 5px;
   --slds-c-button-spacing-inline-end: 5px;
   --slds-c-button-color-background: #ff9662;
-  --slds-c-button-color-background-active: ##ff9662;
+  --slds-c-button-color-background-active: #ff9662;
   --slds-c-button-color-background-hover: #ff9662;
   --slds-c-button-color-border: #d2d2d2;
   --slds-c-button-color-border-active: #1c1c1c;
@@ -62,15 +62,11 @@ mark {
 }
 
 .orange-button {
-  --slds-c-button-color-background: #ffffff;
-  --slds-c-button-color-background-active: #ffffff;
-  --slds-c-button-color-background-hover: #ffffff;
-  --slds-c-button-color-border: #ffffff;
-  --slds-c-button-color-border-active: #ffffff;
-  --slds-c-button-color-border-hover: #ffffff;
   --slds-c-button-text-color: #b84c16;
   --slds-c-button-text-color-active: #b84c16;
   --slds-c-button-text-color-hover: #b84c16;
+  --slds-c-button-color-background-active: #dba58a;
+  --slds-c-button-color-background-hover: #dba58a;
   --slds-c-button-shadow-focus: 0 0 0px;
   --slds-c-button-sizing-border: 0px;
   font-family: Proxima_Nova_Regular;

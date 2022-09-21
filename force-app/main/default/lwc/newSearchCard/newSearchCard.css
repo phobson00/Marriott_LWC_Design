@@ -27,6 +27,8 @@
   --slds-c-button-text-color: #1c1c1c;
   --slds-c-button-text-color-active: #1c1c1c;
   --slds-c-button-text-color-hover: #1c1c1c;
+  --slds-c-button-color-background-active: #8d8d8d;
+  --slds-c-button-color-background-hover: #8d8d8d;
 }
 
 @font-face {
